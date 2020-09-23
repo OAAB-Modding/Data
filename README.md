@@ -18,3 +18,55 @@ Compiled draft:
 
 --*Rule #0: the ESM may only be edited by ONE person at the time*
 
+--Credits
+@_gwynne__ - Tel Mora painting
+Aitrus - glass helm
+Alisiagae - ebony halberd, scroll ideas
+Archipel de Pertevue - Dungeon grate, archery target
+Autoclock - Telvanni spear
+B00ze - daylight script
+Barabas - guar skull
+cdcooley - invisible creature model
+DanielCoffey and doccdr - Book textures
+David Gurrea - Infernace architectural textures
+Dongle - water meshes
+EJ-12 - Various textures and effects and lots of technical assistance
+Foresti - some textures for the bug armor
+Greatness7 - Particle motes, scripting help
+Kiteflyer61 - Archery target original models
+Korana - fern model
+Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contributions to special effects
+Lady Eternity - drip model and texture source
+lidicus - spider creature
+LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, and bandages
+Lougian - dust motes particles, rock meshes, and vine meshes
+mikhog - for acid burn sound effect
+Momo - sack models, pitchfork, and grain texture
+Morovir - rock cluster meshes 01 and 04
+Morrowind Modding Community Discord for assistance, feedback, and critique
+Mr_Siika - bat creature
+Project Tamriel - cliff meshes
+Qarl - blood splatter texture
+ramccoid - web textures
+RedFurryDemon - scrollrack meshes, magic icons
+Reizeron - blind slaughterfish, incense burner, kwama towers, cave drip resource, character marker
+Remiros - Ebony pickaxe, Intelligent Textures
+Rotat - native corprus stalkers
+RubberMan - grindstone sound, weapon racks
+Rytelier - some kwama cave rock meshes
+Sachiel - cave bridge mesh, rocks
+Schwaa - the bug shields
+Siberian Crab - Crystals textures
+Spok - Imperial fort windows
+Strotis - millstone model
+Stuporstar - smith and crafting resource
+Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project
+Taddeus - rock meshes and AO map
+Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue
+Textures.com - for various texture sources
+The Wanderer - original Book models
+UIX Redemption - Water reflection map
+Westly - mindcleaver model and texture
+Wollibeebee - mountain meshes, cliff meshes
+Yar-Yulme - NIF resources
+
