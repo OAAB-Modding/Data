@@ -57,6 +57,7 @@ Rytelier - some kwama cave rock meshes
 Sachiel - cave bridge mesh, rocks
 Schwaa - the bug shields
 Siberian Crab - Crystals textures
+Silicon Bros - Light bonemold armor
 Spok - Imperial fort windows
 Strotis - millstone model
 Stuporstar - smith and crafting resource
