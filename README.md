@@ -24,6 +24,7 @@ Aitrus - glass helm
 Alisiagae - ebony halberd, scroll ideas
 Archipel de Pertevue - Dungeon grate, archery target
 Autoclock - Telvanni spear
+Axeljk - Cloth helm
 B00ze - daylight script
 Barabas - guar skull
 cdcooley - invisible creature model
