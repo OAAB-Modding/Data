@@ -37,8 +37,15 @@
 
 --*No-asset-retraction policy goes here?*
 
---*Rule #0: the ESM may only be edited by ONE person at the time*
-
+--*Rule #0: the ESM may only be edited by ONE person at the time*  
+  
+### OAAB_Data team
+Melchior Dahrk - is doing most of the work with planning, repo structure, and assets  
+Remiros - is making awesome assets whenever he's not busy complaining about having to change IDs  
+RedFurryDemon - is mainly doing technical Github stuff and complainging about asset quality  
+R-Zero - is taking his time to upload his assets, will hopefully do so before 2090  
+OperatorJack - badly wanted to take credit for some part of this project  
+  
 ### Credits
 `@_gwynne__` - Tel Mora painting  
 Aitrus - glass helm  
@@ -71,9 +78,6 @@ Mr_Siika - bat creature
 Project Tamriel - cliff meshes  
 Qarl - blood splatter texture  
 ramccoid - web textures  
-RedFurryDemon - scrollrack meshes, magic icons  
-Reizeron - blind slaughterfish, incense burner, kwama towers, cave drip resource, character marker  
-Remiros - Ebony pickaxe, Intelligent Textures  
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks  
 Rytelier - some kwama cave rock meshes  
