@@ -49,7 +49,8 @@ OperatorJack - badly wanted to take credit for some part of this project
 ### Credits
 `@_gwynne__` - Tel Mora painting  
 Aitrus - glass helm  
-Alisiagae - ebony halberd, scroll ideas  
+Alisiagae - ebony halberd, scroll ideas
+AnOldFriend - wax texture  
 Archipel de Pertevue - Dungeon grate, archery target  
 Autoclock - Telvanni spear  
 Axeljk - Cloth helm  
