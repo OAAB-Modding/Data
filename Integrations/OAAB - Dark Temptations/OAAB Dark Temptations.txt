@@ -1,0 +1,11 @@
+OAAB Dark Temptations
+by OperatorJack
+
+"Oh, a parting gift for your troubles. An agent of madness to summon to your side. Go and spread Sheogorath's gift wherever you wander." - Sheogorath
+
+This mod adds a "Summon Dark Seducer" spell as an additional quest reward for the Sheogorath quest (DA_Sheogorath). You will receive the spell upon completion of the quest (Journal Index 70). 
+
+This mod requires OAAB_Data, MWSE, and Magicka Expanded 00 - Framework.
+
+Code - OperatorJack
+Icons - RedFurryDemon
