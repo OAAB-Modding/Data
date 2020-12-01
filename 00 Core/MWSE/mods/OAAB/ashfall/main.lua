@@ -1,5 +1,5 @@
-event.register("Ashfall:Interop", function()
-    event.trigger("Ashfall:RegisterActivators", { data = {
+event.register("Ashfall:Interop", function(ashfall)
+    ashfall.registerActivators{
 		AB_Flora_AshTree_01 = "tree",
 		AB_Flora_AshTree_02 = "tree",
 		AB_Ex_VelWellFountain = "well",
@@ -35,10 +35,10 @@ event.register("Ashfall:Interop", function()
 		AB_Fx_WaterRect256c = "water",
 		AB_Fx_WaterSquare1024 = "water",
 		AB_Fx_WaterSquare256 = "water",
-		AB_Fx_WaterSquare512 = "water",
-    }})
+		AB_Fx_WaterSquare512 = "water"
+    }
 
-    event.trigger("Ashfall:RegisterWaterContainers", { data = {
+    ashfall.registerWaterContainers{
         ab_misc_6thmug = "mug",
         ab_misc_combottle_01 = "bottle",
         ab_misc_combottle_02 = "bottle",
@@ -76,10 +76,10 @@ event.register("Ashfall:Interop", function()
         ab_misc_drinkgreef = "bottle",
         ab_misc_drinkmazte = "bottle",
         ab_misc_drinkshein = "bottle",
-        ab_misc_drinksujamma = "bottle",
-    }})
+        ab_misc_drinksujamma = "bottle"
+    }
 
-    event.trigger("Ashfall:RegisterFoods", { data = {
+    ashfall.registerFoods{
 		AB_IngCrea_GuarMeat_01 = "meat",
 		AB_IngCrea_HorseMeat01 = "meat",
 		AB_IngCrea_SfMeat_01 = "meat",
@@ -91,9 +91,9 @@ event.register("Ashfall:Interop", function()
 		AB_IngFood_SaltricePorridge = "food",
 		AB_IngFood_ScuttlePie = "food",
 		AB_IngFood_Sweetroll = "food"
-    }})
+    }
 
-    event.trigger("Ashfall:RegisterHeatSources", { data = {
+    ashfall.registerHeatSources{
 		AB_Fx_Lava1024 = 250,
 		AB_Fx_Lava256rnd = 250,
 		AB_Fx_Lava4096 = 250,
@@ -118,5 +118,5 @@ event.register("Ashfall:Interop", function()
 		AB_In_LavaCrust01 = 100,
 		AB_In_LavaCrust02 = 100,
 		AB_In_LavaCrust03 = 100
-    }})
+    }
 end)
