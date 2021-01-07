@@ -81,7 +81,8 @@ Project Tamriel - cliff meshes
 Qarl - blood splatter texture  
 ramccoid - web textures  
 Rotat - native corprus stalkers  
-RubberMan - grindstone sound, weapon racks  
+RubberMan - grindstone sound, weapon racks
+Ruffin Vangarr - Dreugh armor
 Rytelier - some kwama cave rock meshes  
 Sachiel - cave bridge mesh, rocks  
 Schwaa - the bug shields  
