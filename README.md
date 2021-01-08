@@ -86,7 +86,7 @@ Ruffin Vangarr - Dreugh armor
 Rytelier - some kwama cave rock meshes  
 Sachiel - cave bridge mesh, rocks  
 Schwaa - the bug shields  
-Siberian Crab - Crystals textures  
+Siberian Crab - Crystals textures, Holamayan resources  
 Silicon Bros - Light bonemold armor  
 Spok - Imperial fort windows  
 Stripes - Wood tankard  
