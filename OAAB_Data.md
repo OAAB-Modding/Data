@@ -58,7 +58,8 @@ Axeljk - Cloth helm
 B00ze - daylight script  
 Barabas - guar skull  
 cdcooley - invisible creature model  
-DanielCoffey and doccdr - Book textures  
+DanielCoffey and doccdr - Book textures
+Danke - Cephalopod pauldrons  
 David Gurrea - Infernace architectural textures  
 Dongle - water meshes  
 EJ-12 - Various textures and effects and lots of technical assistance  
