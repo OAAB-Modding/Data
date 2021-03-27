@@ -1,29 +1,31 @@
 # OAAB-Data
-# Version 1.5.1
+# Version 1.6.0
 
-### Downloading the repo - mod authors and users
+### Nexus Download Instructions
+**Manual Installation**
+--00 Core
+--01 GitD Patch				install after GitD (no sunray effect)
+--01 GitD Patch Sunrays		install after GitD (includes sunray effect - do not use with "01 GitD Patch")
+--02 Epic Plants Patch		install if you use Epic Plants
+
+**Wrye Mash / MO2**  
+--1. Archive format is Mash installers compatible
+--1. 01 GitD patches are mutially exclusive
+
+### Mod Repo Instructions - ADVANCED USERS AND MODDERS
+**Downloading the repo**
 --1. Scroll up and click `Code` button.  
 --2. Click `Download ZIP`.  
 --3. Install like any other mod.  
-  
-### Setting up the repo - OAAB_Data contributors
---0. Create a Github account if you don't have it yet.  
---1. Download Github Desktop if you don't have it yet. You can also use another Git client.  
---2. Ping RFD on TCWL #red-mountain to get added as a repo contributor.  
---3. Scroll up and click `Code` button.  
---4. Click `Open with GitHub Desktop`.  
   
 **Manual installation**  
 --1. Set up the local repo path anywhere you want; default one is okay.  
 --2. Copy the files to your Morrowind Data folder.  
 
-**Wrye Mash**  
+**Wrye Mash / MO2**  
 --1. Set up the local repo path in your Mash mod folder.  
-  
-**MO2**  
---1. Set up the local repo path in your MO2 mod folder.  
 
-### Asset guidelines (compiled draft)  
+### Asset guidelines
 1) Style of new assets should be vanilla-compatible.  
 1.1) Design elements should draw inspiration from vanilla parts of the same or similar sets where applicable. When not applicable, the design elements should maintain a visual consistency with the rest of the game as much as possible. As an example, new silver weapon models would do good to use the spiraly crossguard designs of vanilla silver swords. Dunmer furniture uses organic curves compared to Imperial straight lines, etc.  
 1.2) proportions of items, buildings, characters, and other objects should all align with the vanilla experience. Including but not limited to scale with respect to the player and other objects. Examples: thickness of tables or girth of weapons relative to actors.  
@@ -35,17 +37,15 @@
 6) UV maps should have as little stretching and seams as possible.  
 7) Item stats should be submitted to the group document for peer review (proposed stats can be used when merging)  
 
-
---*No-asset-retraction policy goes here?*
-
---*Rule #0: the ESM may only be edited by ONE person at the time*  
   
 ### OAAB_Data team
-Melchior Dahrk - is doing most of the work with planning, repo structure, and assets  
-Remiros - is making awesome assets whenever he's not busy complaining about having to change IDs  
-RedFurryDemon - is mainly doing technical Github stuff and complainging about asset quality  
-R-Zero - is taking his time to upload his assets, will hopefully do so before 2090  
-OperatorJack - badly wanted to take credit for some part of this project  
+Melchior Dahrk
+OperatorJack
+R-Zero
+RedFurryDemon 
+Remiros
+Wolli
+
   
 ### Credits
 `@_gwynne__` - Tel Mora painting  
