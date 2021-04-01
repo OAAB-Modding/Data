@@ -1,0 +1,34 @@
+[deprecated-objects]
+"AB_Furn_BoneSkelArmUpperL" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelArmUpperL.1", location = [-0.1545, -9.7756, 1.6762] }
+"AB_Misc_BoneSkelArmUpperL" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelArmUpperL.1", location = [-0.1545, -9.7756, 1.6762] }
+"AB_Furn_BoneSkelArmUpperR" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelArmUpperR.1", location = [0.1204, -9.7756, 1.6762] }
+"AB_Misc_BoneSkelArmUpperR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelArmUpperR.1", location = [0.1204, -9.7756, 1.6762] }
+"AB_Furn_BoneSkelFootL" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelFootL.1", location = [0.0, -3.7963, 6.2614] }
+"AB_Misc_BoneSkelFootL" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelFootL.1", location = [0.0, -3.7963, 6.2614] }
+"AB_Furn_BoneSkelFootR" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelFootR.1", location = [-0.6134, -3.7966, 6.2343] }
+"AB_Misc_BoneSkelFootR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelFootR.1", location = [-0.6134, -3.7966, 6.2343] }
+"AB_Furn_BoneSkelHandL" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelHand1L.1", location = [-0.6375, -5.374, 1.3555] }
+"AB_Misc_BoneSkelHandL" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelHandL.1", location = [-0.6375, -5.374, 1.3555] }
+"AB_Furn_BoneSkelHandR" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelHand1R.1", location = [0.4683, -5.3741, 1.3558] }
+"AB_Misc_BoneSkelHandR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelHandR.1", location = [0.4683, -5.3741, 1.3558] }
+"AB_Furn_BoneSkelLegUpperL" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelLegUpperL.1", location = [3.8489, -15.4715, 2.2149] }
+"AB_Misc_BoneSkelLegUpperL" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelLegUpperL.1", location = [3.8489, -15.4715, 2.2149] }
+"AB_Furn_BoneSkelLegUpperR" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelLegUpperR.1", location = [-1.9937, -15.4715, 2.2149] }
+"AB_Misc_BoneSkelLegUpperR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelLegUpperR.1", location = [-1.9937, -15.4715, 2.2149] }
+"AB_Furn_BoneSkelLegShinL" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelLegShinL.1", location = [0.0, -19.271, 3.5782] }
+"AB_Misc_BoneSkelLegShinL" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelLegShinL.1", location = [0.0, -19.271, 3.5782] }
+"AB_Furn_BoneSkelLegShinR" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelLegShinR.1", location = [-1.1757, -19.3221, 3.5782] }
+"AB_Misc_BoneSkelLegShinR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelLegShinR.1", location = [-1.1757, -19.3221, 3.5782] }
+"AB_Furn_BoneSkelArmWristL" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelArmWristL.1", location = [0.0, -7.3125, 1.7394] }
+"AB_Misc_BoneSkelArmWristL" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelArmWristL.1", location = [0.0, -7.3125, 1.7394] }
+"AB_Furn_BoneSkelArmWristR" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelArmWristR.1", location = [-0.2839, -7.2415, 1.9169] }
+"AB_Misc_BoneSkelArmWristR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelArmWristR.1", location = [-0.2839, -7.2415, 1.9169] }
+"AB_light_BlueWater128" = { version = "2.0.0", replacement = "AB_light@_BlueWater_128" }
+"AB_light_BlueWater256" = { version = "2.0.0", replacement = "AB_light@_BlueWater_256" }
+"AB_light_BlueWater512" = { version = "2.0.0", replacement = "AB_light@_BlueWater_512" }
+"AB_light_BlueWater768" = { version = "2.0.0", replacement = "AB_light@_BlueWater_768" }
+"AB_Light_Red_768" = { version = "2.0.0", replacement = "red_768" }
+"AB_lvl_DwemerIngredients" = { version = "2.0.0", replacement = "AB_lvl_DwemerIng" }
+"AB_lvl_ScrollsEnchantedAll" = { version = "2.0.0", replacement = "AB_lvl_ScrollsEnchAll" }
+
+[deprecated-assets]
