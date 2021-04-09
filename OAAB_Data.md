@@ -84,7 +84,7 @@ Qarl - blood splatter texture
 ramccoid - web textures  
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks
-Ruffin Vangarr - Dreugh armor
+Ruffin Vangarr - Dreugh armor, Concept art daedric helms
 Rytelier - some kwama cave rock meshes  
 Sachiel - cave bridge mesh, rocks  
 Schwaa - the bug shields  
