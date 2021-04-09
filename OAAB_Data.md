@@ -58,7 +58,8 @@ Autoclock - Telvanni spear
 Axeljk - Cloth helm  
 B00ze - daylight script  
 Barabas - guar skull  
-cdcooley - invisible creature model  
+cdcooley - invisible creature model
+Chainy - scorch mark decals  
 DanielCoffey and doccdr - Book textures
 Danke - Cephalopod pauldrons  
 David Gurrea - Infernace architectural textures  
