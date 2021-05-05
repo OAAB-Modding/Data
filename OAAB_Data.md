@@ -76,6 +76,7 @@ lidicus - spider creature
 LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, and bandages  
 Lougian - dust motes particles, rock meshes, and vine meshes  
 ManaUser - Tomb leveled lists from Grave Goods  
+Merlord - Wood Axe
 mikhog - for acid burn sound effect  
 Momo - sack models, pitchfork, and grain texture  
 Morovir - rock cluster meshes 01 and 04  
@@ -97,7 +98,7 @@ Stripes - Wood tankard
 Strotis - millstone model  
 Stuporstar - smith and crafting resource  
 Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project  
-Taddeus - rock meshes and AO map  
+Taddeus - rock meshes and AO map, grill
 Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue  
 Textures.com - for various texture sources  
 The Wanderer - original Book models, wooden hourglass  
