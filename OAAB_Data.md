@@ -101,7 +101,7 @@ Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I 
 Taddeus - rock meshes and AO map, grill
 Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes  
 Textures.com - for various texture sources  
-The Wanderer - original Book models, wooden hourglass  
+The Wanderer - original Book models, wooden hourglass, dock hoist  
 UIX Redemption - Water reflection map  
 Westly - mindcleaver model and texture  
 Wollibeebee - mountain meshes, cliff meshes  
