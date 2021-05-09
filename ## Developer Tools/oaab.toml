@@ -30,5 +30,6 @@
 "AB_Light_Red_768" = { version = "2.0.0", replacement = "red_768" }
 "AB_lvl_DwemerIngredients" = { version = "2.0.0", replacement = "AB_lvl_DwemerIng" }
 "AB_lvl_ScrollsEnchantedAll" = { version = "2.0.0", replacement = "AB_lvl_ScrollsEnchAll" }
+"AB_Fx_Four01" = { version = "2.0.0", replacement = "AB_Fx_Flour01" }
 
 [deprecated-assets]
