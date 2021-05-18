@@ -1,4 +1,5 @@
-OAAB_Cells.esp contains cells starting with OAAB_ which serve 2 functions:
+OAAB_Cells.esp is for mod developers only and is not needed for any OAAB-dependent mods to function.
+The plugin contains cells starting with OAAB_ which serve 2 functions:
 
 1. Palette cells (e.g. copy things into your working cell)
 2. Showcases with example scripts for certain assets (see InfoBox markers which contain extra info about certain assets)
