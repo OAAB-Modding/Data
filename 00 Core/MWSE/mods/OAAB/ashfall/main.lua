@@ -81,7 +81,8 @@ if ashfall then
         ab_misc_drinkgreef = "bottle",
         ab_misc_drinkmazte = "bottle",
         ab_misc_drinkshein = "bottle",
-        ab_misc_drinksujamma = "bottle"
+        ab_misc_drinksujamma = "bottle"\
+		ab_misc_impcanteen = "bottle"
     }
 
     ashfall.registerFoods{
