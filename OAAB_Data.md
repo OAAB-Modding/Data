@@ -45,6 +45,7 @@ R-Zero
 RedFurryDemon 
 Remiros
 Wolli
+XeroFoxx
 
   
 ### Credits
@@ -57,11 +58,13 @@ Autoclock - Telvanni spear
 Axeljk - Cloth helm  
 B00ze - daylight script  
 Barabas - guar skull  
-cdcooley - invisible creature model  
+cdcooley - invisible creature model
+Chainy - scorch mark decals  
 DanielCoffey and doccdr - Book textures
 Danke - Cephalopod pauldrons  
 David Gurrea - Infernace architectural textures  
 Dongle - water meshes  
+Draconik - glass light
 EJ-12 - Various textures and effects and lots of technical assistance  
 Foresti - some textures for the bug armor  
 Greatness7 - Particle motes, scripting help  
@@ -73,6 +76,7 @@ lidicus - spider creature
 LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, and bandages  
 Lougian - dust motes particles, rock meshes, and vine meshes  
 ManaUser - Tomb leveled lists from Grave Goods  
+Merlord - Wood Axe
 mikhog - for acid burn sound effect  
 Momo - sack models, pitchfork, and grain texture  
 Morovir - rock cluster meshes 01 and 04  
@@ -83,7 +87,7 @@ Qarl - blood splatter texture
 ramccoid - web textures  
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks
-Ruffin Vangarr - Dreugh armor
+Ruffin Vangarr - Dreugh armor, Concept art daedric helms
 Rytelier - some kwama cave rock meshes  
 Sachiel - cave bridge mesh, rocks  
 Schwaa - the bug shields  
@@ -94,10 +98,10 @@ Stripes - Wood tankard
 Strotis - millstone model  
 Stuporstar - smith and crafting resource  
 Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project  
-Taddeus - rock meshes and AO map  
-Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue  
+Taddeus - rock meshes and AO map, grill
+Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes  
 Textures.com - for various texture sources  
-The Wanderer - original Book models, wooden hourglass  
+The Wanderer - original Book models, wooden hourglass, dock hoist  
 UIX Redemption - Water reflection map  
 Westly - mindcleaver model and texture  
 Wollibeebee - mountain meshes, cliff meshes  

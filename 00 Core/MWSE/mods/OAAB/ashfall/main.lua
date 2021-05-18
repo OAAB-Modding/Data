@@ -1,41 +1,46 @@
-event.register("Ashfall:Interop", function(ashfall)
+local ashfall = include("mer.ashfall.interop")
+if ashfall then
+
     ashfall.registerActivators{
 		AB_Flora_AshTree_01 = "tree",
 		AB_Flora_AshTree_02 = "tree",
+		AB_Furn_ComBucket02Water = "water",
+		AB_Furn_Barrel01Water = "water",
+		AB_Furn_LwBowlWater = "water",
 		AB_Ex_VelWellFountain = "well",
-		AB_Fx_WaterCircle1024 = "water",
-		AB_Fx_WaterCircle128 = "water",
-		AB_Fx_WaterCircle2048 = "water",
-		AB_Fx_WaterCircle256 = "water",
-		AB_Fx_WaterCircle512 = "water",
-		AB_Fx_WaterCircle64 = "water",
-		AB_Fx_WaterFallMid = "water",
-		AB_Fx_WaterFallSmall = "water",
-		AB_Fx_WaterFallTall = "water",
-		AB_Fx_WaterFlowCv256a = "water",
-		AB_Fx_WaterFlowCv256b = "water",
-		AB_Fx_WaterFlowCv512a = "water",
-		AB_Fx_WaterFlowCv512b = "water",
-		AB_Fx_WaterFlowSq1024 = "water",
-		AB_Fx_WaterFlowSq256 = "water",
-		AB_Fx_WaterFlowSq512 = "water",
-		AB_Fx_WaterFlowSt256a = "water",
-		AB_Fx_WaterFlowSt256b = "water",
-		AB_Fx_WaterFlowSt256c = "water",
-		AB_Fx_WaterRapid = "water",
-		AB_Fx_WaterRapidCv256a = "water",
-		AB_Fx_WaterRapidCv256b = "water",
-		AB_Fx_WaterRapidCv512a = "water",
-		AB_Fx_WaterRapidCv512b = "water",
-		AB_Fx_WaterRapidSt256a = "water",
-		AB_Fx_WaterRapidSt256b = "water",
-		AB_Fx_WaterRapidSt256c = "water",
-		AB_Fx_WaterRect256a = "water",
-		AB_Fx_WaterRect256b = "water",
-		AB_Fx_WaterRect256c = "water",
-		AB_Fx_WaterSquare1024 = "water",
-		AB_Fx_WaterSquare256 = "water",
-		AB_Fx_WaterSquare512 = "water"
+		AB_Fx_WaterCircle1024 = "waterDirty",
+		AB_Fx_WaterCircle128 = "waterDirty",
+		AB_Fx_WaterCircle2048 = "waterDirty",
+		AB_Fx_WaterCircle256 = "waterDirty",
+		AB_Fx_WaterCircle512 = "waterDirty",
+		AB_Fx_WaterCircle64 = "waterDirty",
+		AB_Fx_WaterFallMid = "waterDirty",
+		AB_Fx_WaterFallSmall = "waterDirty",
+		AB_Fx_WaterFallTall = "waterDirty",
+		AB_Fx_WaterFlowCv256a = "waterDirty",
+		AB_Fx_WaterFlowCv256b = "waterDirty",
+		AB_Fx_WaterFlowCv512a = "waterDirty",
+		AB_Fx_WaterFlowCv512b = "waterDirty",
+		AB_Fx_WaterFlowSq1024 = "waterDirty",
+		AB_Fx_WaterFlowSq256 = "waterDirty",
+		AB_Fx_WaterFlowSq512 = "waterDirty",
+		AB_Fx_WaterFlowSt256a = "waterDirty",
+		AB_Fx_WaterFlowSt256b = "waterDirty",
+		AB_Fx_WaterFlowSt256c = "waterDirty",
+		AB_Fx_WaterRapid = "waterDirty",
+		AB_Fx_WaterRapidCv256a = "waterDirty",
+		AB_Fx_WaterRapidCv256b = "waterDirty",
+		AB_Fx_WaterRapidCv512a = "waterDirty",
+		AB_Fx_WaterRapidCv512b = "waterDirty",
+		AB_Fx_WaterRapidSt256a = "waterDirty",
+		AB_Fx_WaterRapidSt256b = "waterDirty",
+		AB_Fx_WaterRapidSt256c = "waterDirty",
+		AB_Fx_WaterRect256a = "waterDirty",
+		AB_Fx_WaterRect256b = "waterDirty",
+		AB_Fx_WaterRect256c = "waterDirty",
+		AB_Fx_WaterSquare1024 = "waterDirty",
+		AB_Fx_WaterSquare256 = "waterDirty",
+		AB_Fx_WaterSquare512 = "waterDirty"
     }
 
     ashfall.registerWaterContainers{
@@ -92,6 +97,11 @@ event.register("Ashfall:Interop", function(ashfall)
 		AB_IngFood_ScuttlePie = "food",
 		AB_IngFood_Sweetroll = "food"
     }
+	
+	ashfall.registerWoodAxes{
+		"AB_w_ToolWoodAxe"
+	
+	}
 
     ashfall.registerHeatSources{
 		AB_Fx_Lava1024 = 250,
@@ -119,4 +129,5 @@ event.register("Ashfall:Interop", function(ashfall)
 		AB_In_LavaCrust02 = 100,
 		AB_In_LavaCrust03 = 100
     }
-end)
+
+end
