@@ -1,5 +1,6 @@
 OAAB Dark Temptations
 by OperatorJack
+v1.1
 
 "Oh, a parting gift for your troubles. An agent of madness to summon to your side. Go and spread Sheogorath's gift wherever you wander." - Sheogorath
 
@@ -9,3 +10,7 @@ This mod requires OAAB_Data, MWSE, and Magicka Expanded 00 - Framework.
 
 Code - OperatorJack
 Icons - RedFurryDemon
+
+Changelog
+v1.0 Initial release
+v1.1 Made summoning passive

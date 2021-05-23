@@ -44,7 +44,7 @@ local function addEffect()
 		name = "Summon Dark Seducer",
 		description = getDescription("Dark Seducer"),
 		baseCost = 30,
-		creatureId = "AB_Dae_DarkSeducer",
+		creatureId = "AB_Dae_DarkSeducerSumm",
 		icon = "OAAB-DT\\RFD_dt_darksedu.dds"
 	})
 end
