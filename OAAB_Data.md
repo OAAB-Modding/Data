@@ -86,7 +86,8 @@ Morrowind Modding Community Discord for assistance, feedback, and critique
 Mr_Siika - bat creature  
 Project Tamriel - cliff meshes  
 Qarl - blood splatter texture  
-ramccoid - web textures  
+ramccoid - web textures
+Rats - smudged/dripping blood decal textures from TR 
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks
 Ruffin Vangarr - Dreugh armor, Concept art daedric helms
