@@ -78,7 +78,7 @@ lidicus - spider creature
 LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, and bandages  
 Lougian - dust motes particles, rock meshes, and vine meshes  
 ManaUser - Tomb leveled lists from Grave Goods  
-Merlord - Wood Axe
+Merlord - Wood Axe, Hammer
 mikhog - for acid burn sound effect  
 Momo - sack models, pitchfork, and grain texture  
 Morovir - rock cluster meshes 01 and 04  
