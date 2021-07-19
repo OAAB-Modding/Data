@@ -31,5 +31,6 @@
 "AB_lvl_DwemerIngredients" = { version = "2.0.0", replacement = "AB_lvl_DwemerIng" }
 "AB_lvl_ScrollsEnchantedAll" = { version = "2.0.0", replacement = "AB_lvl_ScrollsEnchAll" }
 "AB_Fx_Four01" = { version = "2.0.0", replacement = "AB_Fx_Flour01" }
+"AB_Misc_ComPewterCup_01" = { version = "2.0.0", replacement = "AB_Misc_ComPewterCup01" }
 
 [deprecated-assets]
