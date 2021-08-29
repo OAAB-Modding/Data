@@ -1,5 +1,5 @@
 # OAAB-Data
-# Version 1.7.1
+# Version 1.8.0
 
 ### Nexus Download Instructions
 **Manual Installation**
@@ -94,7 +94,7 @@ Ruffin Vangarr - Dreugh armor, Concept art daedric helms
 Rytelier - some kwama cave rock meshes  
 Sachiel - cave bridge mesh, rocks  
 Schwaa - the bug shields  
-Siberian Crab - Crystals textures, Holamayan resources  
+Siberian Crab - Resdayn Revival assets, Crystals textures, Holamayan resources  
 Silicon Bros - Light bonemold armor  
 Spok - Imperial fort windows  
 Stripes - Wood tankard  
