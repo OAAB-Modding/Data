@@ -34,3 +34,6 @@
 "AB_Misc_ComPewterCup_01" = { version = "2.0.0", replacement = "AB_Misc_ComPewterCup01" }
 
 [deprecated-assets]
+"craneplatformlong.nif"
+"craneplatformmid.nif"
+"craneplatformshort.nif"
