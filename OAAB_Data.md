@@ -1,14 +1,16 @@
 # OAAB-Data
-# Version 1.9.0
+# Version 1.8.0
 
 ### Nexus Download Instructions
 **Manual Installation**
 --00 Core
+--01 GitD Patch				install after GitD (no sunray effect)
 --01 GitD Patch Sunrays		install after GitD (includes sunray effect - do not use with "01 GitD Patch")
 --02 Epic Plants Patch		install if you use Epic Plants
 
 **Wrye Mash / MO2**  
 --1. Archive format is Mash installers compatible
+--1. 01 GitD patches are mutially exclusive
 
 ### Mod Repo Instructions - ADVANCED USERS AND MODDERS
 **Downloading the repo**
