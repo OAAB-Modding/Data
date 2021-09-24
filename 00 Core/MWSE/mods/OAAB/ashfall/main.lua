@@ -101,6 +101,7 @@ if ashfall then
 	
 	ashfall.registerWoodAxes{
 		"AB_w_ToolWoodAxe"
+		"AB_w_ImpEtool"
 	
 	}
 
