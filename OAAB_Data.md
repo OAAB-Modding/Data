@@ -58,7 +58,8 @@ Archipel de Pertevue - Dungeon grate, archery target
 Autoclock - Telvanni spear  
 Axeljk - Cloth helm  
 B00ze - daylight script  
-Barabas - guar skull  
+Barabas - guar skull
+Cait - sturgeon animations
 cdcooley - invisible creature model
 Chainy - scorch mark decals  
 DanielCoffey and doccdr - Book textures
