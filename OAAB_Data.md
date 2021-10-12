@@ -1,5 +1,5 @@
 # OAAB-Data
-# Version 1.10.0
+# Version 1.11.0
 
 ### Nexus Download Instructions
 **Manual Installation**
@@ -52,12 +52,14 @@ XeroFoxx
 `@_gwynne__` - Tel Mora painting  
 Aitrus - glass helm  
 Alisiagae - ebony halberd, scroll ideas
-AnOldFriend - wax texture  
+AnOldFriend - wax texture
+Anumaril - Imperial and Glass Tanto and Wakizashi edits from T_D  
 Archipel de Pertevue - Dungeon grate, archery target  
 Autoclock - Telvanni spear  
 Axeljk - Cloth helm  
 B00ze - daylight script  
-Barabas - guar skull  
+Barabas - guar skull
+Cait - sturgeon animations
 cdcooley - invisible creature model
 Chainy - scorch mark decals  
 DanielCoffey and doccdr - Book textures
