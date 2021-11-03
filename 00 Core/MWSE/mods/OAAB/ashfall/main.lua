@@ -100,7 +100,7 @@ if ashfall then
 		AB_IngFood_SaltriceBread = "food",
 		AB_IngFood_SaltricePorridge = "food",
 		AB_IngFood_ScuttlePie = "food",
-		AB_IngFood_Sweetroll = "food"
+		AB_IngFood_Sweetroll = "food",
 		AB_IngCrea_SturgeonRoe = "food"
     }
 	
