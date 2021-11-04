@@ -8,3 +8,4 @@ This mod MUST be used with a leveled lists merger if you use any other mods whic
 Version 1.0 - initial release
 Version 1.1 - added sturgeon to slaughterfish leveled list
 Version 1.2 - added female dwarven spectres to dwe leveled lists
+Version 1.3 - added weaponized dwarven spectres to dwe leveled lists
