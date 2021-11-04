@@ -37,10 +37,12 @@
 
   
 ### OAAB_Data team
+Draconik
 Endoran
 Greatness7
 Melchior Dahrk
 OperatorJack
+Pika
 R-Zero
 RedFurryDemon 
 Remiros
