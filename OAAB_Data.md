@@ -1,5 +1,5 @@
 # OAAB-Data
-# Version 1.11.0
+# Version 1.12.0
 
 ### Nexus Download Instructions
 **Manual Installation**
@@ -37,10 +37,12 @@
 
   
 ### OAAB_Data team
+Draconik
 Endoran
 Greatness7
 Melchior Dahrk
 OperatorJack
+Pika
 R-Zero
 RedFurryDemon 
 Remiros

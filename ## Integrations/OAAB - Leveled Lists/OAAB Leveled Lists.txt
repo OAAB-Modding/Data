@@ -1,0 +1,10 @@
+OAAB Leveled Lists
+by Melchior Dahrk
+
+This mod adds OAAB items to vanilla leveled lists so that you will find these items everywhere in the game where you would find similar vanilla items.
+
+This mod MUST be used with a leveled lists merger if you use any other mods which modify leveled lists.
+
+v2 Fixed infinite recursion on leveled lists
+v3 Fixed some more infinite recursion that I missed
+v4 Added ebony alchemy apparatus to leveled lists

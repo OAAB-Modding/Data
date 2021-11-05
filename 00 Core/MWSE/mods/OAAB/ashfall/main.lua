@@ -90,6 +90,9 @@ if ashfall then
 		AB_IngCrea_GuarMeat_01 = "meat",
 		AB_IngCrea_HorseMeat01 = "meat",
 		AB_IngCrea_SfMeat_01 = "meat",
+		AB_IngCrea_SturgeonMeat01 = "meat",
+		AB_IngCrea_SturgeonMeat02 = "meat",
+		AB_IngCrea_SturgeonMeat03 = "meat",
 		AB_IngFlor_BgSlime_01 = "vegetable",
 		AB_IngFood_KwamaEggCentCut = "food",
 		AB_IngFood_KwamaEggCentWrap = "food",
@@ -97,7 +100,8 @@ if ashfall then
 		AB_IngFood_SaltriceBread = "food",
 		AB_IngFood_SaltricePorridge = "food",
 		AB_IngFood_ScuttlePie = "food",
-		AB_IngFood_Sweetroll = "food"
+		AB_IngFood_Sweetroll = "food",
+		AB_IngCrea_SturgeonRoe = "food"
     }
 	
 	ashfall.registerWoodAxes{
