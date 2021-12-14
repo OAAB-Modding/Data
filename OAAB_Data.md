@@ -69,7 +69,7 @@ DanielCoffey and doccdr - Book textures
 Danke - Cephalopod pauldrons  
 David Gurrea - Infernace architectural textures  
 Dongle - water meshes  
-Draconik - glass light
+Draconik - glass light, pomegranate
 EJ-12 - Various textures and effects and lots of technical assistance  
 Foresti - some textures for the bug armor  
 Greatness7 - Particle motes, scripting help
