@@ -74,6 +74,7 @@ EJ-12 - Various textures and effects and lots of technical assistance
 Foresti - some textures for the bug armor  
 Greatness7 - Particle motes, scripting help
 Heinrich - iron and steel armor stands  
+Hemaris - square Imperial stairs
 Kiteflyer61 - Archery target original models  
 Korana - fern model  
 Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contributions to special effects  
