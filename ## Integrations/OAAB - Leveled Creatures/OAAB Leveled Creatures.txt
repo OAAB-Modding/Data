@@ -3,9 +3,19 @@ by Melchior Dahrk
 
 This mod adds OAAB creatures to vanilla leveled creature lists so that you will find them in the world as you explore.
 
+Grazelands -> Herne, Dark Seducer
+Sheogorad -> Dark Seducer
+Shore -> Land Dreugh
+Water -> Sturgeon
+Cave -> Bats
+Daedric -> Herne, Dark Seducer
+Dwemer -> Female Dwarven Spectre, Weapon-wielding Dwarven Spectres
+Egg Mine -> Kwama Grubber
+
 This mod MUST be used with a leveled lists merger if you use any other mods which modify leveled creature lists.
 
 Version 1.0 - initial release
 Version 1.1 - added sturgeon to slaughterfish leveled list
 Version 1.2 - added female dwarven spectres to dwe leveled lists
 Version 1.3 - added weaponized dwarven spectres to dwe leveled lists
+Version 1.4 - added land dreugh to shore leveled lists

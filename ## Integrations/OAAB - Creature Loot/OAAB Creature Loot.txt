@@ -1,0 +1,18 @@
+OAAB Creature Loot
+by Melchior Dahrk
+
+This mod adds some of the new items in OAAB_Data to appropriate creatures:
+
+Clannfear Claw -> Clannfear
+Daedroth Teeth -> Daedroth
+Dreugh Shell -> Dreugh
+Guar Meat -> Guar
+Blighted Kwama Egg -> Blighted Kwama Worker
+Scrib Shell -> Scrib
+Slaughterfish Meat -> Slaughterfish
+Winged Twilight Membrane -> Winged Twilight
+
+This mod MUST be used with an object merger. tes3merge is the recommended tool to use for this (https://www.nexusmods.com/morrowind/mods/46870).
+
+1.0 - initial release
+1.1 - included PfP fixes to avoid conflict

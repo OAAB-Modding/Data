@@ -53,6 +53,7 @@ XeroFoxx
 ### Credits
 `@_gwynne__` - Tel Mora painting  
 Aitrus - glass helm  
+Aleist3r - Land Dreugh model
 Alisiagae - ebony halberd, scroll ideas
 AnOldFriend - wax texture
 Anumaril - Imperial and Glass Tanto and Wakizashi edits from T_D  
@@ -68,14 +69,17 @@ DanielCoffey and doccdr - Book textures
 Danke - Cephalopod pauldrons  
 David Gurrea - Infernace architectural textures  
 Dongle - water meshes  
-Draconik - glass light
+Draconik - glass light, pomegranate
 EJ-12 - Various textures and effects and lots of technical assistance  
 Foresti - some textures for the bug armor  
-Greatness7 - Particle motes, scripting help  
+Greatness7 - Particle motes, scripting help
+Heinrich - iron and steel armor stands  
+Hemaris - square Imperial stairs
 Kiteflyer61 - Archery target original models  
 Korana - fern model  
 Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contributions to special effects  
-Lady Eternity - drip model and texture source  
+Lady Eternity - drip model and texture source
+Lamb Shark - Land Dreugh head model and texture  
 lidicus - spider creature  
 LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, and bandages  
 Lougian - dust motes particles, rock meshes, and vine meshes  
@@ -86,6 +90,7 @@ Momo - sack models, pitchfork, and grain texture
 Morovir - rock cluster meshes 01 and 04  
 Morrowind Modding Community Discord for assistance, feedback, and critique  
 Mr_Siika - bat creature  
+mwgek - middle class dunmer furniture
 Project Tamriel - cliff meshes  
 Qarl - blood splatter texture  
 ramccoid - web textures
@@ -104,7 +109,7 @@ Strotis - millstone model
 Stuporstar - smith and crafting resource  
 Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project  
 Taddeus - rock meshes and AO map, grill
-Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes  
+Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes, land dreugh animation, rich common furniture  
 Textures.com - for various texture sources  
 The Wanderer - original Book models, wooden hourglass, dock hoist  
 UIX Redemption - Water reflection map  
