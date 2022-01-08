@@ -1,5 +1,5 @@
 # OAAB-Data
-# Version 1.13.0
+# Version 1.13.2
 
 ### Nexus Download Instructions
 **Manual Installation**
@@ -75,6 +75,7 @@ Foresti - some textures for the bug armor
 Greatness7 - Particle motes, scripting help
 Heinrich - iron and steel armor stands  
 Hemaris - square Imperial stairs
+Joanasc - land dreugh animations
 Kiteflyer61 - Archery target original models  
 Korana - fern model  
 Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contributions to special effects  
