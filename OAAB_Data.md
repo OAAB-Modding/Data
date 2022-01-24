@@ -70,7 +70,8 @@ Danke - Cephalopod pauldrons
 David Gurrea - Infernace architectural textures  
 Dongle - water meshes  
 Draconik - glass light, pomegranate
-EJ-12 - Various textures and effects and lots of technical assistance  
+EJ-12 - Various textures and effects and lots of technical assistance
+elucidace - Breton male hairstyles  
 Foresti - some textures for the bug armor  
 Greatness7 - Particle motes, scripting help
 Heinrich - iron and steel armor stands  
