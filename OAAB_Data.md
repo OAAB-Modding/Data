@@ -74,7 +74,7 @@ EJ-12 - Various textures and effects and lots of technical assistance
 Foresti - some textures for the bug armor  
 Greatness7 - Particle motes, scripting help
 Heinrich - iron and steel armor stands  
-Hemaris - square Imperial stairs
+Hemaris - square Imperial stairs, common cards textures
 Joanasc - land dreugh animations
 Kiteflyer61 - Archery target original models  
 Korana - fern model  
@@ -110,7 +110,7 @@ Strotis - millstone model
 Stuporstar - smith and crafting resource  
 Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project  
 Taddeus - rock meshes and AO map, grill
-Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes, land dreugh animation, rich common furniture, dunmer marketstands  
+Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes, land dreugh animation, rich common furniture, dunmer marketstands, common cards  
 Textures.com - for various texture sources  
 The Wanderer - original Book models, wooden hourglass, dock hoist  
 UIX Redemption - Water reflection map  
