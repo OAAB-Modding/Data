@@ -41,11 +41,11 @@ if ashfall then
 		AB_Fx_WaterSquare1024 = "waterDirty",
 		AB_Fx_WaterSquare256 = "waterDirty",
 		AB_Fx_WaterSquare512 = "waterDirty",
-		AB_Terr_StreamGravelBendL = "partial"
-		AB_Terr_StreamGravelBendR = "partial"
-		AB_Terr_StreamGravelLong = "partial"
-		AB_Terr_StreamGravelShort01 = "partial"
-		AB_Terr_StreamGravelShort02 = "partial"
+		AB_Terr_StreamGravelBendL = "partial",
+		AB_Terr_StreamGravelBendR = "partial",
+		AB_Terr_StreamGravelLong = "partial",
+		AB_Terr_StreamGravelShort01 = "partial",
+		AB_Terr_StreamGravelShort02 = "partial",
 		AB_Terr_StreamGravelSplit = "partial"
     }
 
