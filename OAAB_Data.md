@@ -1,11 +1,13 @@
 # OAAB-Data
-# Version 1.14.0
+# Version 1.14.1
 
 ### Nexus Download Instructions
 **Manual Installation**
 --00 Core
---01 GitD Patch Sunrays		install after GitD (includes sunray effect - do not use with "01 GitD Patch")
---02 Epic Plants Patch		install if you use Epic Plants
+--01 Epic Plants Patch				install if you use Epic Plants
+--02 SM_Bitter Coast Trees Patch	install if you use SM_Bitter Coast trees
+--03 Breton Knife-Ears Patch		install if you use Knife-Ears
+
 
 **Wrye Mash / MO2**  
 --1. Archive format is Mash installers compatible
