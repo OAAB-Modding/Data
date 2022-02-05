@@ -150,4 +150,66 @@ if ashfall then
 		AB_In_LavaCrust03 = 100
     }
 
+	ashfall.registerTeas{
+		['ab_ingflor_pomegranate01'] = {
+			teaName = "Pomegranate Tea",
+			teaDescription = "A tea with refreshing fruit accents brewed with pomegranate seeds. Its sweet taste has a tart bite to it that makes you forget your ills.",
+			effectDescription = "Restore All Attributes 1 Point",
+			spell = {
+				id = "AB_sp_PomegranateTea",
+				spellType = tes3.spellType.spell,
+				effects = {
+					{
+						id = tes3.effect.restoreAttribute,
+						attribute = tes3.attribute.endurance,
+						amount = 1,
+						duration = 1
+					},
+					{
+						id = tes3.effect.restoreAttribute,
+						attribute = tes3.attribute.strength,
+						amount = 1,
+						duration = 1
+					},
+					{
+						id = tes3.effect.restoreAttribute,
+						attribute = tes3.attribute.agility,
+						amount = 1,
+						duration = 1
+					},
+					{
+						id = tes3.effect.restoreAttribute,
+						attribute = tes3.attribute.intelligence,
+						amount = 1,
+						duration = 1
+					},
+					{
+						id = tes3.effect.restoreAttribute,
+						attribute = tes3.attribute.willpower,
+						amount = 1,
+						duration = 1
+					},
+					{
+						id = tes3.effect.restoreAttribute,
+						attribute = tes3.attribute.luck,
+						amount = 1,
+						duration = 1
+					},
+					{
+						id = tes3.effect.restoreAttribute,
+						attribute = tes3.attribute.speed,
+						amount = 1,
+						duration = 1
+					},
+					{
+						id = tes3.effect.restoreAttribute,
+						attribute = tes3.attribute.personality,
+						amount = 1,
+						duration = 1
+					},
+				}
+			}
+		}
+	}
+
 end
