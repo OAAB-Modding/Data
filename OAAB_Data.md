@@ -101,7 +101,7 @@ ramccoid - web textures
 Rats - smudged/dripping blood decal textures from TR 
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks, basis for broken crates
-Ruffin Vangarr - Dreugh armor, Concept art daedric helms
+Ruffin Vangarr - Dreugh armor, Concept art daedric helms, Morag Tong helms, Tongman Iron Helm, Chitin Scout Helm
 Rytelier - some kwama cave rock meshes  
 Sachiel - cave bridge mesh, rocks  
 Schwaa - the bug shields  
