@@ -58,7 +58,7 @@ Aitrus - glass helm
 Aleist3r - Land Dreugh model
 Alisiagae - ebony halberd, scroll ideas
 AnOldFriend - wax texture
-Anroha - chitin weapons, dreugh weapons
+Anroha - chitin weapons, dreugh weapons, ashlander ebony and glass arrows
 Anumaril - Imperial and Glass Tanto and Wakizashi edits from T_D  
 Archipel de Pertevue - Dungeon grate, archery target  
 Autoclock - Telvanni spear  
