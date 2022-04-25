@@ -58,6 +58,7 @@ Aitrus - glass helm
 Aleist3r - Land Dreugh model
 Alisiagae - ebony halberd, scroll ideas
 AnOldFriend - wax texture
+Anroha - chitin weapons, dreugh weapons, ashlander ebony and glass arrows, stalhrim battle axe
 Anumaril - Imperial and Glass Tanto and Wakizashi edits from T_D  
 Archipel de Pertevue - Dungeon grate, archery target  
 Autoclock - Telvanni spear  
@@ -95,13 +96,14 @@ Morovir - rock cluster meshes 01 and 04
 Morrowind Modding Community Discord for assistance, feedback, and critique  
 Mr_Siika - bat creature  
 mwgek - middle class dunmer furniture
+Phitt - midsized emperor parasols
 Project Tamriel - cliff meshes  
 Qarl - blood splatter texture  
 ramccoid - web textures
 Rats - smudged/dripping blood decal textures from TR 
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks, basis for broken crates
-Ruffin Vangarr - Dreugh armor, Concept art daedric helms
+Ruffin Vangarr - Dreugh armor, Concept art daedric helms, Morag Tong helms, Tongman Iron Helm, Chitin Scout Helm
 Rytelier - some kwama cave rock meshes  
 Sachiel - cave bridge mesh, rocks  
 Schwaa - the bug shields  

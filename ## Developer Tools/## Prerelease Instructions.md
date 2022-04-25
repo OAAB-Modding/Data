@@ -1,13 +1,13 @@
 #OAAB_Data Prerelease Instructions
---1. Update branch from master
---2. Document change log
---3. Scan OAAB_Data.esm with Mod Packager
---4. Address any missing assets
---5. Clean OAAB_Data.esm with tes3cmd
---6. Ensure OAAB_Data.esm date is set to 1/1/2020 12:00AM with Wrye Mash
---7. Export OAAB_Data.esm with Mod Packager
---8. Repeat steps 3-5 for OAAB_Cells.esp
---9. Export OAAB_Cells.esp with Mod Packager and add to OAAB_Data.esm export (to ensure that any scripted example meshes (like levers) are copied into the data)
---10. Manually copy over Lua files
---11. Run Ordenador on exported assets
---12. Compress archive and upload
+--1. Scan OAAB_Data.esm with Mod Packager
+--2. Address any missing/incorrect assets
+--3. Clean OAAB_Data.esm with tes3cmd
+--4. Export with Mod Packager
+--5. Copy export into repo folder (skipping duplicates) to check for any missing assets
+--6. Repeat steps 1-5 for OAAB_Cells.esp
+--7. Push any updates required to master branch
+--8. Update release branch from master
+--9. Document change log
+--10. Publish dev blog update
+--11. Push version tag. Format is `x.x.x`
+--12. Verify the publish-release-archive action worked
