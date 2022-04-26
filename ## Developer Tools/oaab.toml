@@ -46,7 +46,7 @@
 "AB_Misc_ComPewterCup_01" = { version = "2.0.0", replacement = "AB_Misc_ComPewterCup01" }
 "AB_In_DeScaffold_01" = { version = "2.0.0", replacement = "AB_Ex_DeScaffold01" }
 "AB_w_AshlBoneArrow" = { version = "2.0.0", replacement = "AB_w_BoneArrow" }
-"AB_o_CorpseNecro_01 = { version = "2.0.0", replacement = "AB_o_Corpse10Flies" }
+"AB_o_CorpseNecro_01" = { version = "2.0.0", replacement = "AB_o_Corpse10Flies" }
 
 [deprecated-assets]
 "craneplatformlong.nif" = { version = "2.0.0" }
