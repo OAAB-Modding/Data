@@ -35,6 +35,7 @@
 "AB_Furn_BoneSkelArmWristR" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelArmWristR.2", translation = [ -0.283874512, -7.241455078, 1.916809082] }
 "AB_Furn_BoneSkelArmWristR.1" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelArmWristR.2", translation = [ -0.283874512, -7.241455078, 1.916809082] }
 "AB_Misc_BoneSkelArmWristR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelArmWristR.1", translation = [ -0.283874512, -7.241455078, 1.916809082] }
+"AB_Misc_BoneSkelSkullNoJaw" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelSkullUpper" }
 "AB_light_BlueWater128" = { version = "2.0.0", replacement = "AB_light@_BlueWater_128" }
 "AB_light_BlueWater256" = { version = "2.0.0", replacement = "AB_light@_BlueWater_256" }
 "AB_light_BlueWater512" = { version = "2.0.0", replacement = "AB_light@_BlueWater_512" }
@@ -43,10 +44,14 @@
 "AB_lvl_DwemerIngredients" = { version = "2.0.0", replacement = "AB_lvl_DwemerIng" }
 "AB_lvl_ScrollsEnchantedAll" = { version = "2.0.0", replacement = "AB_lvl_ScrollsEnchAll" }
 "AB_Fx_Four01" = { version = "2.0.0", replacement = "AB_Fx_Flour01" }
+"AB_o_BoxFlourRespawn" = { version = "2.0.0", replacement = "AB_o_BoxFlour" }
 "AB_Misc_ComPewterCup_01" = { version = "2.0.0", replacement = "AB_Misc_ComPewterCup01" }
 "AB_In_DeScaffold_01" = { version = "2.0.0", replacement = "AB_Ex_DeScaffold01" }
 "AB_w_AshlBoneArrow" = { version = "2.0.0", replacement = "AB_w_BoneArrow" }
 "AB_o_CorpseNecro_01" = { version = "2.0.0", replacement = "AB_o_Corpse10Flies" }
+"AB_Furn_StaffMold_a" = { version = "2.0.0", replacement = "AB_Furn_StaffResinCasting" }
+"AB_Furn_StaffHeater_a" = { version = "2.0.0", replacement = "apparatus_a_calcinator_01" }
+"AB_In_WebTrap" = { version = "2.0.0", replacement = "AB_In_WebBall" }
 
 [deprecated-assets]
 "craneplatformlong.nif" = { version = "2.0.0" }
