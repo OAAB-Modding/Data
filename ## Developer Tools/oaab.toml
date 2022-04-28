@@ -52,6 +52,10 @@
 "AB_Furn_StaffMold_a" = { version = "2.0.0", replacement = "AB_Furn_StaffResinCasting" }
 "AB_Furn_StaffHeater_a" = { version = "2.0.0", replacement = "apparatus_a_calcinator_01" }
 "AB_In_WebTrap" = { version = "2.0.0", replacement = "AB_In_WebBall" }
+"AB_Furn_Banner6th01" = { version = "2.0.0", replacement = "AB_Furn_6thBanner01" }
+"AB_Furn_RedoranBanner03" = { version = "2.0.0", replacement = "AB_Furn_RedBanner03" }
+"AB_Furn_RedoranBanner_01" = { version = "2.0.0", replacement = "AB_Furn_RedBanner01" }
+"AB_Furn_RedoranBanner_02" = { version = "2.0.0", replacement = "AB_Furn_RedBanner02" }
 
 [deprecated-assets]
 "craneplatformlong.nif" = { version = "2.0.0" }
