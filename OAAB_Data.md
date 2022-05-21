@@ -102,7 +102,7 @@ Project Tamriel - cliff meshes
 Qarl - blood splatter texture  
 ramccoid - web textures
 Rats - smudged/dripping blood decal textures from TR
-Resdayn Revival Team - various resources from RR_Data
+Resdayn Revival Team (Cernon, Scarab-Phoenix, SiberianCrab, Zobator) - various resources from RR_Data
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks, basis for broken crates
 Ruffin Vangarr - Dreugh armor, Concept art daedric helms, Morag Tong helms, Tongman Iron Helm, Chitin Scout Helm
