@@ -5,3 +5,7 @@ This mod adds OAAB_Data items to the Drip loot tables.
 Drip adds Diablo 2 style loot to Morrowind. Unique weapons, armor, clothing and accessories are dynamically generated, with over a hundred unique modifiers and more than a million possible combinations.
 
 https://www.nexusmods.com/morrowind/mods/51242
+
+Changelog
+1.0 - initial release
+1.1 - fixed interop syntax
