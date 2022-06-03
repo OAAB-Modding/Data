@@ -42,7 +42,6 @@
 Anroha
 Axeljk
 Corsair
-Draconik
 Endoran
 Greatness7
 Melchior Dahrk
