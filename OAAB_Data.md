@@ -39,6 +39,9 @@
 
   
 ### OAAB_Data team
+Anroha
+Axeljk
+Corsair
 Draconik
 Endoran
 Greatness7
@@ -49,6 +52,7 @@ Pika
 R-Zero
 RedFurryDemon 
 Remiros
+revenorror
 Wolli
 XeroFoxx
 
