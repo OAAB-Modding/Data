@@ -127,5 +127,6 @@ The Wanderer - original Book models, wooden hourglass, dock hoist
 Tyddy - dunmer market stands  
 UIX Redemption - Water reflection map  
 Westly - mindcleaver model and texture  
-Wollibeebee - mountain meshes, cliff meshes  
+Wollibeebee - mountain meshes, cliff meshes
+WulfShaman - wide Vivec bridge gap  
 Yar-Yulme - NIF resources  
