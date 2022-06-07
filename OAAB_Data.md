@@ -4,9 +4,10 @@
 ### Nexus Download Instructions
 **Manual Installation**
 --00 Core
---01 Epic Plants Patch				install if you use Epic Plants
---02 SM_Bitter Coast Trees Patch	install if you use SM_Bitter Coast trees
---03 Breton Knife-Ears Patch		install if you use Knife-Ears
+--01 Epic Plants Patch				install if you use Epic Plants (https://www.nexusmods.com/morrowind/mods/46180)
+--02 SM_Bitter Coast Trees Patch	install if you use SM_Bitter Coast trees (https://www.nexusmods.com/morrowind/mods/49883)
+--03 Breton Knife-Ears Patch		install if you use Knife-Ears (https://www.nexusmods.com/morrowind/mods/49584)
+--04 Better Telvanni Crystal Patch	install if you use Better Telvanni Crystals (https://www.nexusmods.com/morrowind/mods/50818)
 
 
 **Wrye Mash / MO2**  
