@@ -117,7 +117,7 @@ Schwaa - the bug shields
 Siberian Crab - Resdayn Revival assets, Crystals textures, Holamayan resources  
 Silicon Bros - Light bonemold armor  
 Spok - Imperial fort windows  
-Stripes - Wood tankard  
+Stripes - Wood tankard, cave wall 512 and edge pieces
 Strotis - millstone model  
 Stuporstar - smith and crafting resource  
 Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project  
