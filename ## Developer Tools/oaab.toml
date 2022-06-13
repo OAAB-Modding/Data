@@ -56,6 +56,7 @@
 "AB_Furn_RedoranBanner03" = { version = "2.0.0", replacement = "AB_Furn_RedBanner03" }
 "AB_Furn_RedoranBanner_01" = { version = "2.0.0", replacement = "AB_Furn_RedBanner01" }
 "AB_Furn_RedoranBanner_02" = { version = "2.0.0", replacement = "AB_Furn_RedBanner02" }
+"AB_Furn_ImpPlanter_01" = { version = "2.0.0", replacement = "AB_Furn_ImpPlanterAsh" }
 
 [deprecated-assets]
 "craneplatformlong.nif" = { version = "2.0.0" }
