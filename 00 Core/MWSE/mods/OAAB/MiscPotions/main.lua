@@ -6,6 +6,7 @@ end
 
 local function preventBlockedSounds(e)
     local ref = e.reference or tes3.player
+    if not ref.supportsLuaData then return end
 
     local blockedSounds = ref.tempData.OAAB_blockedSounds
     if not blockedSounds then return end
@@ -26,13 +27,13 @@ event.register("addSound", preventBlockedSounds)
 
 
 -- Prevent drink sounds
-local function blockPotionEquipEvent(e)
+local function stopDrinkSounds(e)
     if not e.item.id:find("^AB_alc_") then return end
 
     addBlockedSound(e.reference, "drink")
     event.trigger("OAAB:equip", e)
 end
-event.register("equip", blockPotionEquipEvent, {priority = -1000})
+event.register("equip", stopDrinkSounds, {priority = -1000})
 
 
 -- Prevent item pick/drop sounds
