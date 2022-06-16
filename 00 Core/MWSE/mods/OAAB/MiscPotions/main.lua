@@ -23,7 +23,7 @@ local function preventBlockedSounds(e)
 
     return false
 end
-event.register("addSound", preventBlockedSounds)
+event.register("addSound", preventBlockedSounds, {priority = 1000})
 
 
 -- Prevent drink sounds
@@ -33,7 +33,7 @@ local function stopDrinkSounds(e)
     addBlockedSound(e.reference, "drink")
     event.trigger("OAAB:equip", e)
 end
-event.register("equip", stopDrinkSounds, {priority = -1000})
+event.register("equip", stopDrinkSounds, {priority = 1000})
 
 
 -- Prevent item pick/drop sounds
@@ -48,4 +48,4 @@ local function stopItemSounds(e)
 
     return false
 end
-event.register("playItemSound", stopItemSounds, {priority = -1000})
+event.register("playItemSound", stopItemSounds, {priority = 1000})
