@@ -119,7 +119,7 @@ Silicon Bros - Light bonemold armor
 Spok - Imperial fort windows  
 Stripes - Wood tankard, cave wall 512 and edge pieces
 Strotis - millstone model  
-Stuporstar - smith and crafting resource  
+Stuporstar - smith and crafting resource, Uvirith's Legacy resource
 Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project  
 Taddeus - rock meshes and AO map, grill
 Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes, land dreugh animation, rich common furniture, common cards, nine-holes, dice  
