@@ -1,80 +1,51 @@
--- List of sounds we want to block.
-local soundsToBlock = {}
-
--- Strings suck, objects for life.
-local function onInitialized()
-    -- Currently only manually blocking the Drink sound.
-    local sounds = { 
-        "Drink" 
-    }
-    for _, soundId in ipairs(sounds) do
-        soundsToBlock[tes3.getSound(soundId)] = true
-    end
+local function addBlockedSound(ref, soundId)
+    local blockedSounds = table.getset(ref.tempData, "OAAB_blockedSounds", {})
+    local previousCount = table.getset(blockedSounds, soundId, 0)
+    blockedSounds[soundId] = previousCount + 1
 end
-event.register("initialized", onInitialized)
 
--- Set to true to disable blacklisted sounds.
-local blockSounds = false
+local function preventBlockedSounds(e)
+    local ref = e.reference or tes3.player
+    if not ref.supportsLuaData then return end
 
--- Handles the blocking.
-local function blockPlayerSounds(e)
-    if (blockSounds and e.reference == tes3.player and soundsToBlock[e.sound]) then
-        return false
+    local blockedSounds = ref.tempData.OAAB_blockedSounds
+    if not blockedSounds then return end
+
+    local id = e.sound.id:lower()
+    local count = blockedSounds[id]
+    if count == nil then return end
+
+    if count > 1 then
+        blockedSounds[id] = count - 1
+    else
+        blockedSounds[id] = nil
     end
-end
-event.register("addSound", blockPlayerSounds)
 
--- 
--- Block event for relevant items.
--- 
-local function blockPotionEvent(e)
-    if (e.item.id:find("^AB_alc_")) then
-        e.claim = true
-        return true
-    end
     return false
 end
+event.register("addSound", preventBlockedSounds, {priority = 1000})
 
-local function blockPotionEquipEvent(e)
-    local blocked = blockPotionEvent(e)
 
-    if (blocked == true) then
-        -- Enable sound blocking for drink sound.
-        blockSounds = true
-        event.trigger("OAAB:equip", e)
-    end
+-- Prevent drink sounds
+local function stopDrinkSounds(e)
+    if not e.item.id:find("^AB_alc_") then return end
+
+    addBlockedSound(e.reference, "drink")
+    event.trigger("OAAB:equip", e)
 end
-local function blockPotionEquippedEvent(e)
-    local blocked = blockPotionEvent(e)
-
-    if (blocked == true) then
-        -- Disable sound blocking for drink sound.
-        blockSounds = false
-        event.trigger("OAAB:equipped", e)
-    end
-end
-event.register("equip", blockPotionEquipEvent, {priority = 1000})
-event.register("equipped", blockPotionEquippedEvent, {priority = 1000})
+event.register("equip", stopDrinkSounds, {priority = 1000})
 
 
+-- Prevent item pick/drop sounds
 local function stopItemSounds(e)
-    if (e.item.id:find("^AB_alc_")) then
-        if (e.state == 0) then --UP
-            tes3.playSound({
-                reference = e.reference,
-                sound = "Item Misc Up"
-            })
-        elseif (e.state == 1) then -- DOWN
-            tes3.playSound({
-                reference = e.reference,
-                sound = "Item Misc Down"
-            })
-        elseif (e.state == 2) then -- ?
+    if not e.item.id:find("^AB_alc_") then return end
 
-        elseif (e.state == 3) then -- ?
-
-        end
-        return false
+    if e.state == 0 then -- UP
+        tes3.playSound({reference = e.reference, sound = "Item Misc Up"})
+    elseif e.state == 1 then -- DOWN
+        tes3.playSound({reference = e.reference, sound = "Item Misc Down"})
     end
+
+    return false
 end
-event.register("playItemSound", stopItemSounds)
+event.register("playItemSound", stopItemSounds, {priority = 1000})

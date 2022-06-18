@@ -4,9 +4,10 @@
 ### Nexus Download Instructions
 **Manual Installation**
 --00 Core
---01 Epic Plants Patch				install if you use Epic Plants
---02 SM_Bitter Coast Trees Patch	install if you use SM_Bitter Coast trees
---03 Breton Knife-Ears Patch		install if you use Knife-Ears
+--01 Epic Plants Patch				install if you use Epic Plants (https://www.nexusmods.com/morrowind/mods/46180)
+--02 SM_Bitter Coast Trees Patch	install if you use SM_Bitter Coast trees (https://www.nexusmods.com/morrowind/mods/49883)
+--03 Breton Knife-Ears Patch		install if you use Knife-Ears (https://www.nexusmods.com/morrowind/mods/49584)
+--04 Better Telvanni Crystal Patch	install if you use Better Telvanni Crystals (https://www.nexusmods.com/morrowind/mods/50818)
 
 
 **Wrye Mash / MO2**  
@@ -39,15 +40,20 @@
 
   
 ### OAAB_Data team
-Draconik
+Anroha
+Axeljk
+Corsair
 Endoran
 Greatness7
 Melchior Dahrk
+Merlord
+MwGek
 OperatorJack
 Pika
 R-Zero
 RedFurryDemon 
 Remiros
+revenorror
 Wolli
 XeroFoxx
 
@@ -86,7 +92,7 @@ Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contribu
 Lady Eternity - drip model and texture source
 Lamb Shark - Land Dreugh head model and texture  
 lidicus - spider creature  
-LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, and bandages  
+LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, Telvanni assets, and bandages  
 Lougian - dust motes particles, rock meshes, and vine meshes  
 ManaUser - Tomb leveled lists from Grave Goods  
 Merlord - Wood Axe, Hammer
@@ -100,7 +106,8 @@ Phitt - midsized emperor parasols
 Project Tamriel - cliff meshes  
 Qarl - blood splatter texture  
 ramccoid - web textures
-Rats - smudged/dripping blood decal textures from TR 
+Rats - smudged/dripping blood decal textures from TR
+Resdayn Revival Team (Cernon, Scarab-Phoenix, SiberianCrab, Zobator) - various resources from RR_Data
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks, basis for broken crates
 Ruffin Vangarr - Dreugh armor, Concept art daedric helms, Morag Tong helms, Tongman Iron Helm, Chitin Scout Helm
@@ -110,9 +117,9 @@ Schwaa - the bug shields
 Siberian Crab - Resdayn Revival assets, Crystals textures, Holamayan resources  
 Silicon Bros - Light bonemold armor  
 Spok - Imperial fort windows  
-Stripes - Wood tankard  
+Stripes - Wood tankard, cave wall 512 and edge pieces
 Strotis - millstone model  
-Stuporstar - smith and crafting resource  
+Stuporstar - smith and crafting resource, Uvirith's Legacy resource
 Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project  
 Taddeus - rock meshes and AO map, grill
 Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes, land dreugh animation, rich common furniture, common cards, nine-holes, dice  
@@ -121,5 +128,6 @@ The Wanderer - original Book models, wooden hourglass, dock hoist
 Tyddy - dunmer market stands  
 UIX Redemption - Water reflection map  
 Westly - mindcleaver model and texture  
-Wollibeebee - mountain meshes, cliff meshes  
+Wollibeebee - mountain meshes, cliff meshes
+WulfShaman - wide Vivec bridge gap  
 Yar-Yulme - NIF resources  
