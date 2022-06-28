@@ -17,3 +17,4 @@
 --2. OAAB Drip: add new armor, clothing, and/or weapons to loot tables; update materials list
 --3. OAAB Leveled Creatures: add new creatures to vanilla leveled lists
 --4. OAAB Leveled Items: add new items to `_internal` leveled lists; create new lists when applicable
+--5. Ashfall Interop: add new objects to the interop
