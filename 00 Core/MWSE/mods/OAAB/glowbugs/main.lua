@@ -7,7 +7,6 @@ local function refCreated(e)
         activeBugs[e.reference] = true
     end
 end
-event.register("referenceSceneNodeCreated", refCreated)
 
 
 --- Detect when bug references are deleted, and stop tracking them.
@@ -15,7 +14,6 @@ event.register("referenceSceneNodeCreated", refCreated)
 local function refDeleted(e)
     activeBugs[e.object] = nil
 end
-event.register("objectInvalidated", refDeleted)
 
 
 --- Toggle visibility for all currently active bugs references.
@@ -71,8 +69,6 @@ local function updateBugs()
 
     toggleBugsVisibility(isBugsVisible)
 end
-event.register("cellChanged", updateBugs)
-event.register("weatherTransitionFinished", updateBugs)
 
 
 --- Harvest a single bug. Called on "activate" event.
@@ -113,12 +109,11 @@ local function harvestBugs(e)
 
     return false
 end
-event.register("activate", harvestBugs, {priority = 600})
 
 
 --- Update bugs once per hour.
 ---
-event.register("loaded", function()
+local function bugsTimer()
     timer.start{
         type = timer.game,
         iterations = -1,
@@ -127,4 +122,16 @@ event.register("loaded", function()
             timer.delayOneFrame(updateBugs)
         end
     }
+end
+
+
+event.register("initialized", function()
+    if tes3.isModActive("OAAB_Data.esm") then
+        event.register("referenceSceneNodeCreated", refCreated)
+        event.register("objectInvalidated", refDeleted)
+        event.register("cellChanged", updateBugs)
+        event.register("weatherTransitionFinished", updateBugs)
+        event.register("activate", harvestBugs, {priority = 600})
+        event.register("loaded", bugsTimer)
+    end
 end)

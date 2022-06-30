@@ -5,12 +5,13 @@
 --4. Export with Mod Packager
 --5. Copy export into repo folder (skipping duplicates) to check for any missing assets
 --6. Repeat steps 1-5 for OAAB_Cells.esp
---7. Push any updates required to master branch
---8. Update release branch from master
---9. Document change log
---10. Publish dev blog update
---11. Push version tag. Format is `x.x.x`
---12. Verify the publish-release-archive action worked
+--7. Ashfall Interop: add new objects to the interop
+--8. Push any updates required to master branch
+--9. Update release branch from master
+--10. Document change log
+--11. Publish dev blog update
+--12. Push version tag. Format is `x.x.x`
+--13. Verify the publish-release-archive action worked
 
 #OAAB Integrations Postrelease Instructions (when applicable)
 --1. OAAB Creature Loot: add new ingredients to vanilla creatures

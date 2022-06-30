@@ -4,6 +4,11 @@ if ashfall then
     ashfall.registerActivators{
 		AB_Flora_AshTree_01 = "tree",
 		AB_Flora_AshTree_02 = "tree",
+		AB_Flora_ParasolMid01 = "tree",
+		AB_Flora_ParasolMid02 = "tree",
+		AB_Flora_ParasolMid03 = "tree",
+		AB_Flora_TramaHedge_01 = "tree",
+		AB_Flora_TramaHedge_02 = "tree",
 		AB_Furn_ComBucket02Water = "water",
 		AB_Furn_Barrel01Water = "water",
 		AB_Furn_LwBowlWater = "water",
@@ -16,6 +21,8 @@ if ashfall then
 		AB_Fx_WaterCircle64 = "waterDirty",
 		AB_Fx_WaterFallMid = "waterDirty",
 		AB_Fx_WaterFallSmall = "waterDirty",
+		AB_Fx_WaterFallStreamCanal = "waterDirty",
+		AB_Fx_WaterFallStreamMid = "waterDirty",
 		AB_Fx_WaterFallTall = "waterDirty",
 		AB_Fx_WaterFlowCv256a = "waterDirty",
 		AB_Fx_WaterFlowCv256b = "waterDirty",
@@ -41,6 +48,7 @@ if ashfall then
 		AB_Fx_WaterSquare1024 = "waterDirty",
 		AB_Fx_WaterSquare256 = "waterDirty",
 		AB_Fx_WaterSquare512 = "waterDirty",
+		AB_Ex_HlaWell01 = "well",
 		AB_Terr_StreamGravelBendL = "partial",
 		AB_Terr_StreamGravelBendR = "partial",
 		AB_Terr_StreamGravelLong = "partial",
@@ -122,6 +130,7 @@ if ashfall then
 	
 	ashfall.registerWoodAxes{
 		"AB_w_ToolWoodAxe",
+		"AB_w_FlintAxe",
 		"AB_w_ImpEtool"
 	
 	}

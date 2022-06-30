@@ -19,3 +19,4 @@ Version 1.1 - added sturgeon to slaughterfish leveled list
 Version 1.2 - added female dwarven spectres to dwe leveled lists
 Version 1.3 - added weaponized dwarven spectres to dwe leveled lists
 Version 1.4 - added land dreugh to shore leveled lists
+Version 1.5 - added iron atronach to atronach leveled lists
