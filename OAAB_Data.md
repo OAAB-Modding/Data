@@ -87,6 +87,7 @@ Greatness7 - Particle motes, scripting help
 Heinrich - iron and steel armor stands  
 Hemaris - square Imperial stairs, common cards textures
 Joanasc - land dreugh animations
+jojjo - iron atronach armor
 Kiteflyer61 - Archery target original models  
 Korana - fern model  
 Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contributions to special effects  
