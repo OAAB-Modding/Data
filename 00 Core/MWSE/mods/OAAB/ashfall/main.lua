@@ -125,7 +125,18 @@ if ashfall then
 		AB_IngFood_SaltricePorridge = "food",
 		AB_IngFood_ScuttlePie = "food",
 		AB_IngFood_Sweetroll = "food",
-		AB_IngCrea_SturgeonRoe = "food"
+		AB_IngCrea_SturgeonRoe = "food",
+		AB_IngFlor_Dustcap = "mushroom",
+		AB_IngFlor_Fomentarius = "mushroom",
+		AB_IngFlor_GlMuscaria_01 = "mushroom",
+		AB_IngFlor_Urnula = "mushroom",
+		AB_IngFlor_ViMuscaria_01 = "mushroom",
+		AB_IngFlor_Harrada_01 = "vegetable",
+		AB_IngFlor_Harrada_02 = "vegetable",
+		AB_IngFlor_BlueKanet_01 = "herb",
+		AB_IngFlor_Bloodgrass_01 = "herb",
+		AB_IngFlor_Bloodgrass_02 = "herb",
+		AB_IngFlor_CinderSparkLichen_01 = "herb"
     }
 	
 	ashfall.registerWoodAxes{
