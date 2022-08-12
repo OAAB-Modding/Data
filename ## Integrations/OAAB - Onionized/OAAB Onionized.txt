@@ -1,0 +1,8 @@
+OAAB Onionized
+
+This mod "Onionizes" some OAAB clothing and armor so they can be layered with the MWSE Onion framework (https://www.nexusmods.com/morrowind/mods/50352)
+
+This currently covers the neck wraps in OAAB_Data. But more is planned to be added in the future.
+
+Changelog
+1.0 - initial release
