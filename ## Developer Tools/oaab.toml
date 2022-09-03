@@ -57,6 +57,33 @@
 "AB_Furn_RedoranBanner_01" = { version = "2.0.0", replacement = "AB_Furn_RedBanner01" }
 "AB_Furn_RedoranBanner_02" = { version = "2.0.0", replacement = "AB_Furn_RedBanner02" }
 "AB_Furn_ImpPlanter_01" = { version = "2.0.0", replacement = "AB_Furn_ImpPlanterAsh" }
+"AB_bk_AlchemistBeginners" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AvoidingDanger" = { version = "2.0.0", replacement = "bk_ABCs" }
+"AB_bk_AlchemistCompendium" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium1" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium2" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium3" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium4" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium5" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendiumClosed" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistFauna" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFaunaSolstheim" = { version = "2.0.0", replacement = "bk_firmament" }
+"AB_bk_AlchemistFlora1" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora2" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora3" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora4" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora5" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora6" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFloraMournhold" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_BlacksmithComplete" = { version = "2.0.0", replacement = "bk_frontierconquestaccommodat" }
+"AB_bk_DaedraLesser" = { version = "2.0.0", replacement = "bk_SpiritOfTheDaedra" }
+"AB_bk_DaeshrineSurvey" = { version = "2.0.0", replacement = "bk_reflectionsoncultworship..." }
+"AB_bk_DunmerStrongholds" = { version = "2.0.0", replacement = "bk_easternprovincesimpartial" }
+"AB_bk_DwemerRuins" = { version = "2.0.0", replacement = "bk_tamrielicreligions" }
+"AB_bk_GuideToEnchanting_sk" = { version = "2.0.0", replacement = "bk_OriginOfTheMagesGuild" }
+"AB_bk_NordSongs" = { version = "2.0.0", replacement = "bk_BlueBookOfRiddles" }
+"AB_bk_SayingsOfTamriel" = { version = "2.0.0", replacement = "bk_istunondescosmology" }
+"AB_bk_TombRegistry" = { version = "2.0.0", replacement = "bk_PilgrimsPath" }
 
 [deprecated-assets]
 "craneplatformlong.nif" = { version = "2.0.0" }
