@@ -90,6 +90,8 @@
 "AB_Ex_RedPillarRamoran" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
 "AB_Ex_RedPillarSarethi" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
 "AB_Ex_RedPillarVenim" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Furn_EnchantInfuser" = { version = "2.0.0", replacement = "AB_Furn_EnchInfuser" }
+"AB_Furn_EnchantMat" = { version = "2.0.0", replacement = "AB_Furn_EnchMat" }
 
 
 [deprecated-assets]
