@@ -84,6 +84,13 @@
 "AB_bk_NordSongs" = { version = "2.0.0", replacement = "bk_BlueBookOfRiddles" }
 "AB_bk_SayingsOfTamriel" = { version = "2.0.0", replacement = "bk_istunondescosmology" }
 "AB_bk_TombRegistry" = { version = "2.0.0", replacement = "bk_PilgrimsPath" }
+"AB_Ex_RedPillarArobar" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarLlethri" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarMorvayn" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarRamoran" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarSarethi" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarVenim" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+
 
 [deprecated-assets]
 "craneplatformlong.nif" = { version = "2.0.0" }
