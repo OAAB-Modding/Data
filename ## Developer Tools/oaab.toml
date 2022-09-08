@@ -94,6 +94,7 @@
 "AB_Furn_EnchantMat" = { version = "2.0.0", replacement = "AB_Furn_EnchMat" }
 "AB_Furn_ImpFan01_a" = { version = "2.0.0", replacement = "AB_Ex_ImpGrate02", scale = [ 0.5] }
 "AB_Furn_PaintingTelMora" = { version = "2.0.0", replacement = "AB_Misc_ComArtPaintMorr04" }
+"AB_Furn_VaeStakeHead01" = { version = "2.0.0", replacement = "AB_Furn_StakeHead01" }
 
 
 [deprecated-assets]
