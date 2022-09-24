@@ -95,6 +95,20 @@
 "AB_Furn_ImpFan01_a" = { version = "2.0.0", replacement = "AB_Ex_ImpGrate02", scale = 0.5 }
 "AB_Furn_PaintingTelMora" = { version = "2.0.0", replacement = "AB_Misc_ComArtPaintMorr04" }
 "AB_Furn_VaeStakeHead01" = { version = "2.0.0", replacement = "AB_Furn_StakeHead01" }
+"AB_sc_AlchemyRecipe01" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe02" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe03" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe04" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe05" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe06" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe07" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe08" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_bk_AlchemistFloraBloat" = { version = "2.0.0", replacement = "bk_6thhouseravings" }
+"AB_bk_AlchemistFloraSolstheim" = { version = "2.0.0", replacement = "AB_bk_NativeFloraOfSolstheim" }
+"AB_bk_MarasTear" = { version = "2.0.0", replacement = "AB_bk_MarasTear_sko" }
+"AB_bk_WhiteGuar" = { version = "2.0.0", replacement = "AB_bk_WhiteGuar_sk" }
+"AB_bk_CrudeLimericks" = { version = "2.0.0", replacement = "AB_bk_OfMenAndMer" }
+"AB_bk_DiseaseBlight" = { version = "2.0.0", replacement = "AB_bk_OnLycanthropy" }
 
 
 [deprecated-assets]
