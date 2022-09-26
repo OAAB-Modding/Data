@@ -109,6 +109,7 @@
 "AB_bk_WhiteGuar" = { version = "2.0.0", replacement = "AB_bk_WhiteGuar_sk" }
 "AB_bk_CrudeLimericks" = { version = "2.0.0", replacement = "AB_bk_OfMenAndMer" }
 "AB_bk_DiseaseBlight" = { version = "2.0.0", replacement = "AB_bk_OnLycanthropy" }
+"AB_Ex_RedWindow01" = { version = "2.0.0", replacement = "AB_Ex_RedWindow03" }
 "AB_Ex_CranePlatLong" = { version = "2.0.0" }
 "AB_Ex_CranePlatMid" = { version = "2.0.0" }
 "AB_Ex_CranePlatShort" = { version = "2.0.0" }
