@@ -131,3 +131,9 @@
 "AB_Info_LightRay" = { version = "2.0.0" }
 "AB_Info_ScamptallowCandles" = { version = "2.0.0" }
 "AB_Info_VelHiddenTowerDoor" = { version = "2.0.0" }
+"AB_bk_BloatCultivation" = { version = "2.0.0", replacement = "bk_manyfacesmissinggod" }
+"AB_bk_DiseaseCommon" = { version = "2.0.0", replacement = "bk_spiritofnirn" }
+"AB_bk_GuideToBretons" = { version = "2.0.0", replacement = "bk_BlueBookOfRiddles" }
+"AB_bk_GuideToOrcs" = { version = "2.0.0", replacement = "bk_ABCs" }
+"AB_bk_ImperialEggMining" = { version = "2.0.0", replacement = "bk_MixedUnitTactics" }
+"AB_bk_Minerals" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
