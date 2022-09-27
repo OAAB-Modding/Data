@@ -131,6 +131,7 @@
 "AB_Info_LightRay" = { version = "2.0.0" }
 "AB_Info_ScamptallowCandles" = { version = "2.0.0" }
 "AB_Info_VelHiddenTowerDoor" = { version = "2.0.0" }
+"AB_bk_AlchemistFloraBloat" = { version = "2.0.0" }
 "AB_bk_BloatCultivation" = { version = "2.0.0", replacement = "bk_manyfacesmissinggod" }
 "AB_bk_DiseaseCommon" = { version = "2.0.0", replacement = "bk_spiritofnirn" }
 "AB_bk_GuideToBretons" = { version = "2.0.0", replacement = "bk_BlueBookOfRiddles" }
