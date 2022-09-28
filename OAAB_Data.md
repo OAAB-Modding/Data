@@ -46,6 +46,7 @@ Axeljk
 Corsair
 Endoran
 Greatness7
+Hemaris
 Melchior Dahrk
 Merlord
 MwGek
@@ -87,11 +88,13 @@ Greatness7 - Particle motes, scripting help
 Heinrich - iron and steel armor stands  
 Hemaris - square Imperial stairs, common cards textures
 Joanasc - land dreugh animations
+jojjo - iron atronach armor
 Kiteflyer61 - Archery target original models  
 Korana - fern model  
 Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contributions to special effects  
 Lady Eternity - drip model and texture source
 Lamb Shark - Land Dreugh head model and texture  
+Leyawynn - Redoran house affiliation pillar
 lidicus - spider creature  
 LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, Telvanni assets, and bandages  
 Lougian - dust motes particles, rock meshes, and vine meshes  

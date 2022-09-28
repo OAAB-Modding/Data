@@ -67,5 +67,6 @@ local recipes = {
 CraftingFramework.MenuActivator:new{
     id = "AB_Furn_StaffTable_a",
     type = "activate",
+	name = "Staff Enchanter",
     recipes = recipes
 }

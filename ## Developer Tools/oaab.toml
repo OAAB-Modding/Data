@@ -12,10 +12,10 @@
 "AB_Furn_BoneSkelFootR.1" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelFootR.2", translation = [-0.613403320, -3.796600342, 6.234313965] }
 "AB_Misc_BoneSkelFootR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelFootR.1", translation = [-0.613403320, -3.796600342, 6.234313965] }
 "AB_Furn_BoneSkelHandL" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelHand1L.2", translation = [-0.636718750, -5.374023438, 1.355834961] }
-"AB_Furn_BoneSkelHandL.1" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelHand1L.2", translation = [-0.636718750, -5.374023438, 1.355834961] }
+"AB_Furn_BoneSkelHand1L.1" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelHand1L.2", translation = [-0.636718750, -5.374023438, 1.355834961] }
 "AB_Misc_BoneSkelHandL" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelHandL.1", translation = [-0.636718750, -5.374023438, 1.355834961] }
 "AB_Furn_BoneSkelHandR" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelHand1R.2", translation = [0.468299866, -5.374099731, 1.355773926] }
-"AB_Furn_BoneSkelHandR.1" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelHand1R.2", translation = [0.468299866, -5.374099731, 1.355773926] }
+"AB_Furn_BoneSkelHand1R.1" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelHand1R.2", translation = [0.468299866, -5.374099731, 1.355773926] }
 "AB_Misc_BoneSkelHandR" = { version = "2.0.0", replacement = "AB_Misc_BoneSkelHandR.1", translation = [0.468299866, -5.374099731, 1.355773926] }
 "AB_Furn_BoneSkelLegUpperL" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelLegUpperL.2", translation = [3.848907471, -15.471496582, 2.214904785] }
 "AB_Furn_BoneSkelLegUpperL.1" = { version = "2.0.0", replacement = "AB_Furn_BoneSkelLegUpperL.2", translation = [3.848907471, -15.471496582, 2.214904785] }
@@ -57,8 +57,88 @@
 "AB_Furn_RedoranBanner_01" = { version = "2.0.0", replacement = "AB_Furn_RedBanner01" }
 "AB_Furn_RedoranBanner_02" = { version = "2.0.0", replacement = "AB_Furn_RedBanner02" }
 "AB_Furn_ImpPlanter_01" = { version = "2.0.0", replacement = "AB_Furn_ImpPlanterAsh" }
-
-[deprecated-assets]
-"craneplatformlong.nif" = { version = "2.0.0" }
-"craneplatformmid.nif" = { version = "2.0.0" }
-"craneplatformshort.nif" = { version = "2.0.0" }
+"AB_bk_AlchemistBeginners" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AvoidingDanger" = { version = "2.0.0", replacement = "bk_ABCs" }
+"AB_bk_AlchemistCompendium" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium1" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium2" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium3" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium4" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium5" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendiumClosed" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistFauna" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFaunaSolstheim" = { version = "2.0.0", replacement = "bk_firmament" }
+"AB_bk_AlchemistFlora1" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora2" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora3" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora4" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora5" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora6" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFloraMournhold" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_BlacksmithComplete" = { version = "2.0.0", replacement = "bk_frontierconquestaccommodat" }
+"AB_bk_DaedraLesser" = { version = "2.0.0", replacement = "bk_SpiritOfTheDaedra" }
+"AB_bk_DaeshrineSurvey" = { version = "2.0.0", replacement = "bk_reflectionsoncultworship..." }
+"AB_bk_DunmerStrongholds" = { version = "2.0.0", replacement = "bk_easternprovincesimpartial" }
+"AB_bk_DwemerRuins" = { version = "2.0.0", replacement = "bk_tamrielicreligions" }
+"AB_bk_GuideToEnchanting_sk" = { version = "2.0.0", replacement = "bk_OriginOfTheMagesGuild" }
+"AB_bk_NordSongs" = { version = "2.0.0", replacement = "bk_BlueBookOfRiddles" }
+"AB_bk_SayingsOfTamriel" = { version = "2.0.0", replacement = "bk_istunondescosmology" }
+"AB_bk_TombRegistry" = { version = "2.0.0", replacement = "bk_PilgrimsPath" }
+"AB_Ex_RedPillarArobar" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarLlethri" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarMorvayn" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarRamoran" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarSarethi" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Ex_RedPillarVenim" = { version = "2.0.0", replacement = "AB_Ex_RedAffPillar", translation = [ 0, 0, -60] }
+"AB_Furn_EnchantInfuser" = { version = "2.0.0", replacement = "AB_Furn_EnchInfuser" }
+"AB_Furn_EnchantMat" = { version = "2.0.0", replacement = "AB_Furn_EnchMat" }
+"AB_Furn_ImpFan01_a" = { version = "2.0.0", replacement = "AB_Ex_ImpGrate02", scale = 0.5 }
+"AB_Furn_PaintingTelMora" = { version = "2.0.0", replacement = "AB_Misc_ComArtPaintMorr04" }
+"AB_Furn_VaeStakeHead01" = { version = "2.0.0", replacement = "AB_Furn_StakeHead01" }
+"AB_sc_AlchemyRecipe01" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe02" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe03" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe04" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe05" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe06" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe07" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_sc_AlchemyRecipe08" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
+"AB_bk_AlchemistFloraBloat" = { version = "2.0.0", replacement = "bk_6thhouseravings" }
+"AB_bk_AlchemistFloraSolstheim" = { version = "2.0.0", replacement = "AB_bk_NativeFloraOfSolstheim" }
+"AB_bk_MarasTear" = { version = "2.0.0", replacement = "AB_bk_MarasTear_sko" }
+"AB_bk_WhiteGuar" = { version = "2.0.0", replacement = "AB_bk_WhiteGuar_sk" }
+"AB_bk_CrudeLimericks" = { version = "2.0.0", replacement = "AB_bk_OfMenAndMer" }
+"AB_bk_DiseaseBlight" = { version = "2.0.0", replacement = "AB_bk_OnLycanthropy" }
+"AB_Ex_RedWindow01" = { version = "2.0.0", replacement = "AB_Ex_RedWindow03" }
+"AB_Ex_CranePlatLong" = { version = "2.0.0" }
+"AB_Ex_CranePlatMid" = { version = "2.0.0" }
+"AB_Ex_CranePlatShort" = { version = "2.0.0" }
+"AB_Info_CandlePlacement" = { version = "2.0.0" }
+"AB_Info_CaveScaffold" = { version = "2.0.0" }
+"AB_Info_ClimbingPicks" = { version = "2.0.0" }
+"AB_Info_DwrvChainJunction" = { version = "2.0.0" }
+"AB_Info_DwrvGrateStairs" = { version = "2.0.0" }
+"AB_Info_DwrvMachineKit" = { version = "2.0.0" }
+"AB_Info_DwrvNixieLights" = { version = "2.0.0" }
+"AB_Info_DwrvScaffold" = { version = "2.0.0" }
+"AB_Info_DwrvScaffoldLadders" = { version = "2.0.0" }
+"AB_Info_DwrvStencilTricks" = { version = "2.0.0" }
+"AB_Info_DwrvStove" = { version = "2.0.0" }
+"AB_Info_ImpChainPull" = { version = "2.0.0" }
+"AB_Info_KwamaAcidDrips" = { version = "2.0.0" }
+"AB_Info_KwamaEggBoom" = { version = "2.0.0" }
+"AB_Info_KwamaForagerTower" = { version = "2.0.0" }
+"AB_Info_LightRay" = { version = "2.0.0" }
+"AB_Info_ScamptallowCandles" = { version = "2.0.0" }
+"AB_Info_VelHiddenTowerDoor" = { version = "2.0.0" }
+"AB_bk_AlchemistFloraBloat" = { version = "2.0.0" }
+"AB_bk_BloatCultivation" = { version = "2.0.0", replacement = "bk_manyfacesmissinggod" }
+"AB_bk_DiseaseCommon" = { version = "2.0.0", replacement = "bk_spiritofnirn" }
+"AB_bk_GuideToBretons" = { version = "2.0.0", replacement = "bk_BlueBookOfRiddles" }
+"AB_bk_GuideToOrcs" = { version = "2.0.0", replacement = "bk_ABCs" }
+"AB_bk_ImperialEggMining" = { version = "2.0.0", replacement = "bk_MixedUnitTactics" }
+"AB_bk_Minerals" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFlora" = { version = "2.0.0", replacement = "AB_bk_WildflowersVvardenfell_o" }
+"AB_bk_AlchemistFloraClose" = { version = "2.0.0", replacement = "AB_bk_WildflowersVvardenfell" }
+"AB_sc_AncestralGuidance" = { version = "2.0.0", replacement = "AB_ScEn_AncestralGuidance" }
+"AB_Misc_AshlFlute" = { version = "2.0.0", replacement = "AB_Mus_AshlFlute" }

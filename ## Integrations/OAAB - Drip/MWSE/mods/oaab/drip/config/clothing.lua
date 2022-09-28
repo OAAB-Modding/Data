@@ -5,6 +5,7 @@ return {
     "ab_c_commonbelt02",
     "ab_c_commonring01",
     "ab_c_commonring02",
+	"ab_c_commonrobeblack",
     "ab_c_commonshirt02b",
     "ab_c_commonshirt05l",
     "ab_c_expensiveamulet01",
