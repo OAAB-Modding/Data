@@ -9,3 +9,4 @@ https://www.nexusmods.com/morrowind/mods/51242
 Changelog
 1.0 - initial release
 1.1 - fixed interop syntax
+1.2 - added new items to DRIP list
