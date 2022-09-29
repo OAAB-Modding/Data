@@ -1,5 +1,5 @@
 # OAAB-Data
-# Version 1.16.3
+# Version 2.0.0
 
 ### Nexus Download Instructions
 **Manual Installation**
@@ -66,7 +66,7 @@ Aitrus - glass helm
 Aleist3r - Land Dreugh model
 Alisiagae - ebony halberd, scroll ideas
 AnOldFriend - wax texture
-Anroha - chitin weapons, dreugh weapons, ashlander ebony and glass arrows, stalhrim battle axe
+Anroha - chitin weapons, dreugh weapons, ashlander ebony and glass arrows, stalhrim battle axe, iron box, common desk with shelf
 Anumaril - Imperial and Glass Tanto and Wakizashi edits from T_D  
 Archipel de Pertevue - Dungeon grate, archery target  
 Autoclock - Telvanni spear  
@@ -114,7 +114,7 @@ Rats - smudged/dripping blood decal textures from TR
 Resdayn Revival Team (Cernon, Scarab-Phoenix, SiberianCrab, Zobator) - various resources from RR_Data
 Rotat - native corprus stalkers  
 RubberMan - grindstone sound, weapon racks, basis for broken crates
-Ruffin Vangarr - Dreugh armor, Concept art daedric helms, Morag Tong helms, Tongman Iron Helm, Chitin Scout Helm
+Ruffin Vangarr - Dreugh armor, Concept art daedric helms, Morag Tong helms, Tongman Iron Helm, Chitin Scout Helm, black robe
 Rytelier - some kwama cave rock meshes  
 Sachiel - cave bridge mesh, rocks  
 Schwaa - the bug shields  
