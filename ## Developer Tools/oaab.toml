@@ -59,13 +59,13 @@
 "AB_Furn_ImpPlanter_01" = { version = "2.0.0", replacement = "AB_Furn_ImpPlanterAsh" }
 "AB_bk_AlchemistBeginners" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
 "AB_bk_AvoidingDanger" = { version = "2.0.0", replacement = "bk_ABCs" }
-"AB_bk_AlchemistCompendium" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
-"AB_bk_AlchemistCompendium1" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
-"AB_bk_AlchemistCompendium2" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
-"AB_bk_AlchemistCompendium3" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
-"AB_bk_AlchemistCompendium4" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
-"AB_bk_AlchemistCompendium5" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
-"AB_bk_AlchemistCompendiumClosed" = { version = "2.0.0", replacement = "bk_galerionthemystic" }
+"AB_bk_AlchemistCompendium" = { version = "2.0.0", replacement = "bk_galerionthemystic", rotation = [ 0, 0, 90] }
+"AB_bk_AlchemistCompendium1" = { version = "2.0.0", replacement = "bk_galerionthemystic", rotation = [ 0, 0, 90] }
+"AB_bk_AlchemistCompendium2" = { version = "2.0.0", replacement = "bk_galerionthemystic", rotation = [ 0, 0, 90] }
+"AB_bk_AlchemistCompendium3" = { version = "2.0.0", replacement = "bk_galerionthemystic", rotation = [ 0, 0, 90] }
+"AB_bk_AlchemistCompendium4" = { version = "2.0.0", replacement = "bk_galerionthemystic", rotation = [ 0, 0, 90] }
+"AB_bk_AlchemistCompendium5" = { version = "2.0.0", replacement = "bk_galerionthemystic", rotation = [ 0, 0, 90] }
+"AB_bk_AlchemistCompendiumClosed" = { version = "2.0.0", replacement = "bk_galerionthemystic", rotation = [ 0, 0, 90] }
 "AB_bk_AlchemistFauna" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
 "AB_bk_AlchemistFaunaSolstheim" = { version = "2.0.0", replacement = "bk_firmament" }
 "AB_bk_AlchemistFlora1" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
