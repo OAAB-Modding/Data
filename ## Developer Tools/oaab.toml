@@ -142,3 +142,4 @@
 "AB_bk_AlchemistFloraClose" = { version = "2.0.0", replacement = "AB_bk_WildflowersVvardenfell" }
 "AB_sc_AncestralGuidance" = { version = "2.0.0", replacement = "AB_ScEn_AncestralGuidance" }
 "AB_Misc_AshlFlute" = { version = "2.0.0", replacement = "AB_Mus_AshlFlute" }
+"AB_IngCrea_SpiderVenom" = { version = "2.1.0", replacement = "AB_IngCrea_SpiderMilk" }
