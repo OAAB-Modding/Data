@@ -50,6 +50,7 @@ Hemaris
 Melchior Dahrk
 Merlord
 MwGek
+Olaf
 OperatorJack
 Pika
 R-Zero
