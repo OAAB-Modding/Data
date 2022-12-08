@@ -128,6 +128,7 @@ if ashfall then
 		AB_IngFood_KwamaEggCentCut = "food",
 		AB_IngFood_KwamaEggCentWrap = "food",
 		AB_IngFood_KwamaLoaf = "food",
+		AB_IngFood_KwamaLoafSlice = "food",
 		AB_IngFood_SaltriceBread = "food",
 		AB_IngFood_SaltricePorridge = "food",
 		AB_IngFood_ScuttlePie = "food",
