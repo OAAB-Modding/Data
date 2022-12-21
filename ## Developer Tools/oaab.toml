@@ -75,6 +75,7 @@
 "AB_bk_AlchemistFlora5" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
 "AB_bk_AlchemistFlora6" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
 "AB_bk_AlchemistFloraMournhold" = { version = "2.0.0", replacement = "bk_specialfloraoftamriel" }
+"AB_bk_AlchemistFloraClosed" = { version "2.2.0", replacement = "AB_bk_WildflowersVvardenfell" }
 "AB_bk_BlacksmithComplete" = { version = "2.0.0", replacement = "bk_frontierconquestaccommodat" }
 "AB_bk_DaedraLesser" = { version = "2.0.0", replacement = "bk_SpiritOfTheDaedra" }
 "AB_bk_DaeshrineSurvey" = { version = "2.0.0", replacement = "bk_reflectionsoncultworship..." }
