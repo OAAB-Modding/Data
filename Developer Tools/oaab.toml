@@ -81,6 +81,7 @@
 "AB_bk_DaeshrineSurvey" = { version = "2.0.0", replacement = "bk_reflectionsoncultworship..." }
 "AB_bk_DunmerStrongholds" = { version = "2.0.0", replacement = "bk_easternprovincesimpartial" }
 "AB_bk_DwemerRuins" = { version = "2.0.0", replacement = "bk_tamrielicreligions" }
+"AB_bk_Guars" = { version = "2.2.0", replacement = "AB_bk_TamingGuar" }
 "AB_bk_GuideToEnchanting_sk" = { version = "2.0.0", replacement = "bk_OriginOfTheMagesGuild" }
 "AB_bk_NordSongs" = { version = "2.0.0", replacement = "bk_BlueBookOfRiddles" }
 "AB_bk_SayingsOfTamriel" = { version = "2.0.0", replacement = "bk_istunondescosmology" }
