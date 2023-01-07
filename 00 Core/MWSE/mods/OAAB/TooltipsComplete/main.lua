@@ -1,9 +1,25 @@
 local tooltipsComplete = include("Tooltips Complete.interop")
 local tooltipData = {
+
+	-- Ingredients:
     { id = "ab_dri_sillapi", description = "Sillapi is an egg miner's drink, sometimes used as a medicine as it can dull the pain and induce tranquil sleep. It's brewed from various kwama products, often right in the mines, and traditionally stored in a jug made of a treated kwama egg.", itemType = "ingredients" },
 	{ id = "ab_ingcrea_dungcake", description = "A flat, crumbly patty made of dried manure. Has a slight musky smell.", itemType = "ingredients" },
+	
+	-- Clothing:
 	{ id = "ab_c_commonamulet02", description = "A common amulet fashioned from slaughterfish teeth. The teeth have an iridescent coating which makes them popular adornments.", itemType = "clothing" },
+	{ id = "ab_c_dwemeramuletclock", description = "A small ornate device of Dwemer make. The intricate mechanisms inside seem to still move in the same rhythm even after millenia.", itemType = "clothing" },
+	
+	-- Miscellaneous:
 	{ id = "ab_misc_sfishhead", description = "A severed slaughterfish head. Frequently used as chum to attract other slaughterfish.", itemType = "miscItem" },
+	{ id = "ab_misc_shackles", description = "A simple, cheap, yet quite effective type of restraint, all too familiar to both criminal and slave.", itemType = "miscItem" },
+	
+	-- Weapons:
+	{ id = "ab_w_dreughshortbow", description = "A smaller-sized bow made from springy Dreugh cartilage. Has some viscosity to its movements, compared to bows of different material.", itemType = "weapon" },	
+	{ id = "ab_w_dwrvstar", description = "A disc-shaped thrown blade of Dwemer make. Still maintains its razor sharpness and metallic sheen.", itemType = "weapon" },
+	{ id = "ab_w_dwrvknife", description = "A small knife made of Dwemer metal, designed for throwing. Would probably feel a bit too heavy if not for its well-calculated balance.", itemType = "weapon" },
+	{ id = "ab_w_dwrvtoolcrowbar", description = "An old rusty crow bar made by the Dwemer. Hefty and sturdy, it might come in handy when trying to operate, or break down, their ancient machines.", itemType = "weapon" },
+	
+	-- Arrow quivers:
 	{ id = "AB_w_AshlEbonyArrow10x", description = "Attack: 3 - 5", itemType = "miscItem" },
 	{ id = "AB_w_AshlGlassArrow10x", description = "Attack: 1 - 5", itemType = "miscItem" },
 	{ id = "AB_w_BoneArrow10x", description = "Attack: 2 - 3", itemType = "miscItem" },
