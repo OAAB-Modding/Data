@@ -6,12 +6,13 @@
 --5. Copy export into repo folder (skipping duplicates) to check for any missing assets
 --6. Repeat steps 1-5 for OAAB_Cells.esp
 --7. Ashfall Interop: add new objects to the interop
---8. Push any updates required to master branch
---9. Update release branch from master
---10. Document change log
---11. Publish dev blog update
---12. Push version tag. Format is `x.x.x`
---13. Verify the publish-release-archive action worked
+--8. CSO Interop: add new objects and textures to the interop
+--9. Push any updates required to master branch
+--10. Update release branch from master
+--11. Document change log
+--12. Publish dev blog update
+--13. Push version tag. Format is `x.x.x`
+--14. Verify the publish-release-archive action worked
 
 #OAAB Integrations Postrelease Instructions (when applicable)
 --1. OAAB Creature Loot: add new ingredients to vanilla creatures
