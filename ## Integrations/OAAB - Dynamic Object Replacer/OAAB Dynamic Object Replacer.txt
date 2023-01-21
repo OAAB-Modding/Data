@@ -1,0 +1,67 @@
+OAAB Dynamic Object Replacer
+
+Inspired by powerOfThree's Base Object Swapper for Skyrim, MWSE Dynamic Object Replacer by GOOGLEPOX is an MWSE framework which dynamically replaces object references at runtime.
+
+Download Dynamic Object Replacer here: https://www.nexusmods.com/morrowind/mods/52105
+
+This OAAB_Data integration mod takes advantage of this framework to dynamically replace certain vanilla objects in the game with related OAAB_Data objects. Right now, this covers Creatures and Gems. For example, if a Golden Saint would appear in the game, there's a 50% chance that it will be replaced by a Dark Seducer with this mod installed. Or a ruby offering at a shrine has a 10% chance to be replaced with an amethyst. Basically, you'll have even more opporunities to run across OAAB_Data items integrated into your game with this mod loaded.
+
+Please note that this mod does NOT directly interfere with any other OAAB Integrations. However, if you use this together with OAAB Leveled Creatures, they'll somewhat duplicate efforts and you'll likely end up with more OAAB creatures in your game. Therefore, it's recommended to use this mod instead if you're an MWSE user. This mod is perfectly safe to use with OAAB Leveled Lists.
+
+For specific replacements and chances, refer to the tables below:
+
+
+Creatures Integration:
+Dwarven Spectre:
+-25% chance to be replaced by a female spectre
+-25% chance to be replaced by an armed male spectre
+-25% chance to be replaced by an armed female spectre
+
+Scamp:
+-20% chance to replaced by a Herne
+
+Golden Saint:
+-50% chance to be replaced by a Dark Seducer
+
+Storm Atronach:
+-5% chance to be replaced by a Storm Monarch
+
+Flame Atronach:
+-10% chance to be replaced by an Iron Atronach
+
+Slaughterfish:
+-10% chance to be replaced by a Blind Slaughterfish
+
+Small Slaughterfish:
+-10% chance to be replaced by a Sturgeon
+-5% chance to be replaced by an Ancient Sturgeon
+
+Scrib:
+-10% chance to be replaced by a Kwama Grubber
+
+Kwama Worker:
+-10% chance to be replaced by a Kwama Grubber
+
+
+OAAB Gem Integration:
+Pearl:
+-10% chance to be replaced by a Golden Pearl
+-5% chance to be replaced by a Black Pearl
+
+Diamond:
+-15% chance to be replaced by a Blue Diamond
+-15% chance to be replaced by a Red Diamond
+
+Ruby:
+-10% chance to be replaced by an Amethyst
+-5% chance to be replaced by a Star Diopside
+-10% chance to be replaced by a Sapphire
+-10% chance to be replaced by a Firejade
+-5% chance to be replaced by an Amber
+
+Emerald:
+-10% chance to be replaced by a Black Tourmaline
+-10% chance to be replaced by a Tourmaline
+-10% chance to be replaced by a Topaz
+-7% chance to be replaced by a Peridot
+-7% chance to be replaced by a Garnet
