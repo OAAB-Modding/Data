@@ -8,11 +8,12 @@
 --7. Ashfall Interop: add new objects to the interop
 --8. CSO Interop: add new objects and textures to the interop
 --9. Push any updates required to master branch
---10. Update release branch from master
---11. Document change log
---12. Publish dev blog update
---13. Push version tag. Format is `x.x.x`
---14. Verify the publish-release-archive action worked
+--10. Update readme and metadata versions
+--11. Update release branch from master
+--12. Document change log
+--13. Publish dev blog update
+--14. Push version tag. Format is `x.x.x`
+--15. Verify the publish-release-archive action worked
 
 #OAAB Integrations Postrelease Instructions (when applicable)
 --1. OAAB Creature Loot: add new ingredients to vanilla creatures
