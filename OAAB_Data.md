@@ -108,6 +108,7 @@ Morovir - rock cluster meshes 01 and 04
 Morrowind Modding Community Discord for assistance, feedback, and critique  
 Mr_Siika - bat creature  
 mwgek - middle class dunmer furniture
+Phaedrus - skull candles
 Phitt - midsized emperor parasols
 Project Tamriel - cliff meshes  
 Qarl - blood splatter texture  
