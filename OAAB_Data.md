@@ -91,7 +91,7 @@ Heinrich - iron and steel armor stands
 Hemaris - square Imperial stairs, common cards textures
 Joanasc - land dreugh animations
 jojjo - iron atronach armor
-Kiteflyer61 - Archery target original models  
+Kiteflyer61 - Archery target original models, shovel, hoe, draw knife
 Korana - fern model  
 Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contributions to special effects  
 Lady Eternity - drip model and texture source
