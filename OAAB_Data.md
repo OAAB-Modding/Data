@@ -133,7 +133,8 @@ Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, ori
 Textures.com - for various texture sources  
 The Wanderer - original Book models, wooden hourglass, dock hoist
 Tyddy - dunmer market stands  
-UIX Redemption - Water reflection map  
+UIX Redemption - Water reflection map
+Vegetto - The Carpet Pack  
 Westly - mindcleaver model and texture  
 Wollibeebee - mountain meshes, cliff meshes
 WulfShaman - wide Vivec bridge gap  
