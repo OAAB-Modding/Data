@@ -146,3 +146,7 @@
 "AB_sc_AncestralGuidance" = { version = "2.0.0", replacement = "AB_ScEn_AncestralGuidance" }
 "AB_Misc_AshlFlute" = { version = "2.0.0", replacement = "AB_Mus_AshlFlute" }
 "AB_IngCrea_SpiderVenom" = { version = "2.1.0", replacement = "AB_IngCrea_SpiderMilk" }
+"AB_o_TelChestLargeUni1" = { version = "2.1.0", replacement = "AB_o_TelChestLarge" }
+"AB_o_TelChestLargeUni2" = { version = "2.1.0", replacement = "AB_o_TelChestLarge" }
+"AB_o_TelChestLargeUni3" = { version = "2.1.0", replacement = "AB_o_TelChestLarge" }
+"AB_o_TelChestLargeUni4" = { version = "2.1.0", replacement = "AB_o_TelChestLarge" }
