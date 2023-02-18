@@ -100,6 +100,7 @@ Leyawynn - Redoran house affiliation pillar
 lidicus - spider creature  
 LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, Telvanni assets, and bandages  
 Lougian - dust motes particles, rock meshes, and vine meshes  
+Lukkar - rug textures
 ManaUser - Tomb leveled lists from Grave Goods  
 Merlord - Wood Axe, Hammer
 mikhog - for acid burn sound effect  
