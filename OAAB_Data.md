@@ -44,6 +44,7 @@
 Anroha
 Axeljk
 Corsair
+Dallara
 Endoran
 Greatness7
 Hemaris
