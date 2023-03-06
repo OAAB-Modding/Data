@@ -106,7 +106,6 @@
 "AB_sc_AlchemyRecipe06" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
 "AB_sc_AlchemyRecipe07" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
 "AB_sc_AlchemyRecipe08" = { version = "2.0.0", replacement = "AB_sc_Blank", rotation = [ 0, 0, 90], scale = 0.7 }
-"AB_bk_AlchemistFloraBloat" = { version = "2.0.0", replacement = "bk_6thhouseravings" }
 "AB_bk_AlchemistFloraSolstheim" = { version = "2.0.0", replacement = "AB_bk_NativeFloraOfSolstheim" }
 "AB_bk_MarasTear" = { version = "2.0.0", replacement = "AB_bk_MarasTear_sko" }
 "AB_bk_WhiteGuar" = { version = "2.0.0", replacement = "AB_bk_WhiteGuar_sk" }
