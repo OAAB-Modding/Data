@@ -24,8 +24,5 @@ authors = [
 	"XeroFox",
 ]
 
-[dependencies.mods]
-OAAB_Data = { plugin = "OAAB_Data.esm" }
-
 [dependencies.mwse]
 buildnumber = 3074
