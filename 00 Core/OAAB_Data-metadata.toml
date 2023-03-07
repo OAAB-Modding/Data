@@ -1,6 +1,6 @@
 [package]
 name = "OAAB_Data"
-version = "2.0.3"
+version = "2.1.0"
 description = "A free-to-use asset repository for the Morrowind Community."
 homepage = "https://www.nexusmods.com/morrowind/mods/49042"
 repository = "https://github.com/Of-Ash-And-Blight/OAAB-Data"
@@ -23,3 +23,6 @@ authors = [
 	"Wolli",
 	"XeroFox",
 ]
+
+[dependencies.mwse]
+buildnumber = 3074
