@@ -7,7 +7,7 @@ Grazelands -> Herne, Dark Seducer
 Sheogorad -> Dark Seducer
 Shore -> Land Dreugh
 Water -> Sturgeon
-Cave -> Bats
+Cave -> Bats and Black Spiders
 Daedric -> Herne, Dark Seducer
 Dwemer -> Female Dwarven Spectre, Weapon-wielding Dwarven Spectres
 Egg Mine -> Kwama Grubber
@@ -20,3 +20,4 @@ Version 1.2 - added female dwarven spectres to dwe leveled lists
 Version 1.3 - added weaponized dwarven spectres to dwe leveled lists
 Version 1.4 - added land dreugh to shore leveled lists
 Version 1.5 - added iron atronach to atronach leveled lists
+Version 1.6 - added black spiders to cave leveled lists
