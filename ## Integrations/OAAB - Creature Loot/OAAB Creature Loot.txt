@@ -12,9 +12,12 @@ Scrib Shell -> Scrib
 Slaughterfish Meat -> Slaughterfish
 Winged Twilight Membrane -> Winged Twilight
 Grim Lard -> Ogrim
+Saint's Hair -> Golden Saint
+Spriggan's Ear - Spriggan
 
 This mod MUST be used with an object merger. tes3merge is the recommended tool to use for this (https://www.nexusmods.com/morrowind/mods/46870).
 
 1.0 - initial release
 1.1 - included PfP fixes to avoid conflict
 1.2 - added Grim Lard to Ogrim
+1.3 - added Spriggan's Ear to Spriggans and Saint's Hair to Golden Saints
