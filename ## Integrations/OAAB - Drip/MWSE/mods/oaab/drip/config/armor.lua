@@ -72,6 +72,7 @@ return {
     "ab_a_moragtonghelm04",
     "ab_a_netchboilpldleft",
     "ab_a_netchboilpldright",
+	"ab_a_netchimancap",
 	"ab_a_orchelmopen",
     "ab_a_steelboots",
     "ab_a_steelcuirass",
