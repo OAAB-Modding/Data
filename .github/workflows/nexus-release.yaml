@@ -18,24 +18,11 @@ jobs:
 
       - name: create release archive
         shell: bash
-        run: 7z a OAAB_Data.7z . '-xr!*.git*' '-x!## *' '-xr!workflow'
+        run: 7z a OAAB_Data.7z . '-xr!*.git*' '-x!## *' '-xr!workflow' '-xr!Developer Tools' '-xr!OAAB_Data-HD'
 
-      - name: publish to nexusmods
-        uses: greatness7/nexusmods_file_updater@v2
+      - name: upload release archive
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
-          username: ${{secrets.NEXUS_USERNAME}}
-          password: ${{secrets.NEXUS_PASSWORD}}
-          game_domain_name: "morrowind"
-          mod_id: "49042"
-          file_name: "OAAB_Data"
-          file_version: ${{github.ref_name}}
-          update_version: true
-          file_category: "Main Files"
-          new_existing_version: true
-          original_file: "^OAAB_Data .*"
-          remove_old_version: true
-          file_description: "[url=https://github.com/of-ash-and-blight/oaab-data/discussions/categories/announcements]dev blog[/url]"
-          remove_nmm_button: false
-          set_as_main_nmm: true
-          requirements_pop_up: true
-          file_path: "./OAAB_Data.7z"
+          files: OAAB_Data.7z
