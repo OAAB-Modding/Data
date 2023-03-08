@@ -8,7 +8,7 @@
 --7. Ashfall Interop: add new objects to the interop
 --8. CSO Interop: add new objects and textures to the interop
 --9. Push any updates required to master branch
---10. Update readme and metadata versions
+--10. Update readme, metadata, and fomod versions
 --11. Document change log
 --12. Publish dev blog update
 --13. Push version tag. Format is `x.x.x`
