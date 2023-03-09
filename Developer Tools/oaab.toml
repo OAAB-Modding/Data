@@ -150,3 +150,5 @@
 "AB_o_TelChestLargeUni3" = { version = "2.1.0", replacement = "AB_o_TelChestLarge" }
 "AB_o_TelChestLargeUni4" = { version = "2.1.0", replacement = "AB_o_TelChestLarge" }
 "AB_In_CaveMoldFloorMushroom" = { version = "2.1.0", replacement = "AB_In_CaveMoldFloor04" }
+"AB_lvl_SpiderVenom" = { version = "2.1.0" }
+"AB_Spider_s" = { version = "2.1.0" }
