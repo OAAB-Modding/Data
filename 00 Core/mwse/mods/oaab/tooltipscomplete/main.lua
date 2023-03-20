@@ -10,6 +10,16 @@ local tooltipData = {
 	{ id = "ab_c_dwemeramuletclock", description = "A small ornate device of Dwemer make. The intricate mechanisms inside seem to still move in the same rhythm even after millenia.", itemType = "clothing" },
 	
 	-- Miscellaneous:
+	{ id = "ab_misc_scalesbrass", description = "An unassuming, robust pair of weighing scales made of matte brass, with slight metal sheen. In Tamriel, scales like these are commonly seen as a symbol of both justice and commerce.", itemType = "miscItem" },
+	{ id = "ab_misc_scalesbrassskew", description = "An unassuming, robust pair of weighing scales made of matte brass, with slight metal sheen. In Tamriel, scales like these are commonly seen as a symbol of both justice and commerce.", itemType = "miscItem" },
+	{ id = "ab_misc_scalesbrasswght", description = "A tiny brass weight made to be used with weighing scales.", itemType = "miscItem" },
+	{ id = "ab_misc_scalesbrasswghtbig", description = "A small brass weight made to be used with weighing scales.", itemType = "miscItem" },	
+	
+	{ id = "ab_misc_scalessilver", description = "An elegant pair of small weighing scales crafted from silver and polished to a shine. In Tamriel, scales like these are commonly seen as a symbol of both justice and commerce.", itemType = "miscItem" },
+	{ id = "ab_misc_scalessilverskew", description = "An elegant pair of small weighing scales crafted from silver and polished to a shine. In Tamriel, scales like these are commonly seen as a symbol of both justice and commerce.", itemType = "miscItem" },
+	{ id = "ab_misc_scalessilverwght", description = "A tiny silver weight made to be used with weighing scales.", itemType = "miscItem" },
+	{ id = "ab_misc_scalessilverwghtbig", description = "A small silver weight made to be used with weighing scales.", itemType = "miscItem" },
+	
 	{ id = "ab_misc_sfishhead", description = "A severed slaughterfish head. Frequently used as chum to attract other slaughterfish.", itemType = "miscItem" },
 	{ id = "ab_misc_shackles", description = "A simple, cheap, yet quite effective type of restraint, all too familiar to both criminal and slave.", itemType = "miscItem" },
 	
