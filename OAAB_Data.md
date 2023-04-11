@@ -13,7 +13,7 @@
 
 
 **Wrye Mash / MO2**  
-1. Archive format is Mash installers compatible
+- Archive format is Mash installers compatible
 
 ### Mod Repo Instructions - ADVANCED USERS AND MODDERS
 **Downloading the repo**
@@ -26,7 +26,7 @@
 2. Copy the files to your Morrowind Data folder.  
 
 **Wrye Mash / MO2**  
-1. Set up the local repo path in your Mash mod folder.  
+- Set up the local repo path in your Mash mod folder.  
 
 ### Asset guidelines
 1. Style of new assets should be vanilla-compatible.  
