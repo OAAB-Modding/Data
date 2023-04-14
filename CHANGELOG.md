@@ -1,5 +1,6 @@
 # Changelog
-
+## Version 2.1.7
+- Fix creatures that unintentionally got set to 0.5 scale.
 ## Version 2.1.6
 - Fixed developer ESM having different file size than the player ESM.
 ## Version 2.1.5
