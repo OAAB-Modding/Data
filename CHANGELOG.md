@@ -1,4 +1,6 @@
 # Changelog
+## Version 2.1.8
+- Fix water layer sound script which could cause lag
 ## Version 2.1.7
 - Fix creatures that unintentionally got set to 0.5 scale.
 ## Version 2.1.6
