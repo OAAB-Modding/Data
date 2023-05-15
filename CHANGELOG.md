@@ -1,10 +1,12 @@
 # Changelog
 ## Version 2.1.8
+- Optimize `skelPile` assets to make use of new MWSE feature
+## Version 2.1.8
 - Fix water layer sound script which could cause lag
 ## Version 2.1.7
-- Fix creatures that unintentionally got set to 0.5 scale.
+- Fix creatures that unintentionally got set to 0.5 scale
 ## Version 2.1.6
-- Fixed developer ESM having different file size than the player ESM.
+- Fixed developer ESM having different file size than the player ESM
 ## Version 2.1.5
 - Fixed several MWscript errors
 ## Version 2.1.4
