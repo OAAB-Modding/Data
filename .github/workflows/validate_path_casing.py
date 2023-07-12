@@ -19,7 +19,7 @@ def collect_paths(repo: Repository, commit: Commit) -> dict[str, list[str]]:
 def parents_recursive(child: Commit):
     for commit in child.parents:
         yield commit
-        yield from commit.parents
+        yield from parents_recursive(commit)
 
 
 def get_last_successful_parent_commit(child: Commit) -> Commit:
