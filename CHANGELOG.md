@@ -1,5 +1,5 @@
 # Changelog
-## Version 2.1.8
+## Version 2.1.9
 - Optimize `skelPile` assets to make use of new MWSE feature
 ## Version 2.1.8
 - Fix water layer sound script which could cause lag
