@@ -1,0 +1,19 @@
+name: validate_path_casing
+on: push
+
+jobs:
+  validate_path_casing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          sparse-checkout: .github
+
+      - name: Install dependencies
+        run: pip install PyGithub
+
+      - name: Validate path casing
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python ".github/workflows/validate_path_casing.py"
