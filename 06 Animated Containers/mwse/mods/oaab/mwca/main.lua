@@ -26,9 +26,9 @@ if mwca then
 	mwca["oaab\\o\\comrchdesk.nif"] = {"OAAB\\o\\comrchdeskac.nif", 1, 2, 0.5, 0.5, "AC_drawer_de_open", "AC_drawer_de_close", 0};
 	mwca["oaab\\o\\comrchdesk2.nif"] = {"OAAB\\o\\comrchdesk2ac.nif", 1, 2, 0.5, 0.5, "AC_drawer_de_open", "AC_drawer_de_close", 0};
 	mwca["oaab\\o\\comdrawers.nif"] = {"OAAB\\o\\comdrawersac.nif", 1, 2, 0.5, 0.5, "AC_drawer_open", "AC_drawer_close", 0};
-	mwca["oaab\\o\\comhutch.nif"] = {"OAAB\\o\\comhutchac.nif", 1, 2, 0.5, 0.5, "AC_closet_open", "AC_closet_close", 0};
-	mwca["oaab\\o\\comhutchopen.nif"] = {"OAAB\\o\\comhutchopenac.nif", 1, 2, 0.5, 0.5, "AC_closet_open", "AC_closet_close", 0}	;
-	mwca["oaab\\o\\comtablekitchen.nif"] = {"oaab\\o\\comtablekitchenac.nif", 1, 2, 0.5, 0.5, "AC_drawer_open", "AC_drawer_close", 0}
+	mwca["oaab\\o\\comcookhutch.nif"] = {"OAAB\\o\\comcookhutchac.nif", 1, 2, 0.5, 0.5, "AC_closet_open", "AC_closet_close", 0};
+	mwca["oaab\\o\\comcookhutchopen.nif"] = {"OAAB\\o\\comcookhutchopenac.nif", 1, 2, 0.5, 0.5, "AC_closet_open", "AC_closet_close", 0}	;
+	mwca["oaab\\o\\comcooktable.nif"] = {"oaab\\o\\comcooktableac.nif", 1, 2, 0.5, 0.5, "AC_drawer_open", "AC_drawer_close", 0}
 	
 	
 end
