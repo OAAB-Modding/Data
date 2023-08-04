@@ -26,6 +26,8 @@
 - Added de shack doorjams (MD)
 - Added de ex workbench (MD)
 - Added de ex shack windows (MD)
+- Added Argonian skeleton tail (MD)
+- Added Added missing dunmer banner options (MD)
 - Added Velothi alcove doorway (R0)
 - Added more balance scale items (R0)
 - Added dwemer cutting globe tool (R0)
