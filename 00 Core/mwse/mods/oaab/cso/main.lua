@@ -14,6 +14,7 @@ local function initialized()
         -- Land, Carpet:
         { id = "oaab\\ab_rug_small_06", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\canvaswrapseamless", category = cso.landTypes.carpet, soundType = "land" },
+		{ id = "oaab\\canvaswrap_dk", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\fabric_burgundy_01", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\fabricDeskGreen", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\rr_fishingnet_01", category = cso.landTypes.carpet, soundType = "land" },
@@ -127,6 +128,7 @@ local function initialized()
         -- Land, Mud:
         { id = "oaab\\corpsefreshatlas", category = cso.landTypes.mud, soundType = "land" },
         { id = "oaab\\tx_kwama_web_01", category = cso.landTypes.mud, soundType = "land" },
+		{ id = "oaab\\ab_flora_scumalpha", category = cso.landTypes.mud, soundType = "land" },
 
         -- Land, Stone:
         { id = "oaab\\rem\\mv\\tx_mv_ground_01", category = cso.landTypes.stone, soundType = "land" },
@@ -155,6 +157,7 @@ local function initialized()
 		{ id = "oaab\\ab_mold_stalagmite_overlay_01", category = cso.landTypes.stone, soundType = "land" },
 		{ id = "oaab\\ab_mold_wall_01", category = cso.landTypes.stone, soundType = "land" },
 		{ id = "oaab\\ab_mold_stalagmite_01", category = cso.landTypes.stone, soundType = "land" },
+		{ id = "oaab\\ab_mold_gravel_decal", category = cso.landTypes.stone, soundType = "land" },
 
         -- Land, Water:
         { id = "oaab\\dr_tx_blood_512x", category = cso.landTypes.water, soundType = "land" },
