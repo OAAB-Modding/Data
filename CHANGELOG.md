@@ -5,6 +5,7 @@
 - Added common kitchen furniture pieces (table, bench, and hutch) (R0)
 - Added common middle class chairs (R0)
 - Added rich common canopy beds (R0)
+- Added rich common chests (R0)
 - Added blotter and seal stamp misc items (R0)
 - Added dwemer windows (R0)
 - Added wheelbarrow fillers (R0)
