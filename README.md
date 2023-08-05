@@ -8,6 +8,7 @@
 - 02 **SM_Bitter Coast Trees Patch** -- install if you use [SM_Bitter Coast trees](https://www.nexusmods.com/morrowind/mods/49883)
 - 03 **Breton Knife-Ears Patch** -- install if you use [Knife-Ears](https://www.nexusmods.com/morrowind/mods/49584)
 - 04 **Better Telvanni Crystal Patch** -- install if you use [Better Telvanni Crystals](https://www.nexusmods.com/morrowind/mods/50818)
+- 04 **RR Better Crystals Patch** -- install if you use [RR Better Crystals](https://www.nexusmods.com/morrowind/mods/43266)
 - 05 **Glass Glowset Patch** -- install if you use [Glass Glowset](https://www.nexusmods.com/morrowind/mods/42762)
 - 06 **Animated Containers** -- install if you use [Animated Containers](https://www.nexusmods.com/morrowind/mods/42238)
 
