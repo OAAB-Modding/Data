@@ -8,9 +8,10 @@
 --7. Ashfall Interop: add new objects to the interop
 --8. CSO Interop: add new objects and textures to the interop
 --9. Update readme, metadata, and fomod versions
---10. Document change log
---11. Publish dev blog update
---12. Publish to Nexus
+--10. Confirm ESM dates
+--11. Document change log
+--12. Publish dev blog update
+--13. Publish to Nexus
 
 #OAAB Integrations Postrelease Instructions (when applicable)
 --1. OAAB Creature Loot: add new ingredients to vanilla creatures
