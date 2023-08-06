@@ -1,4 +1,6 @@
 # Changelog
+## Version 2.2.1
+- Fixed Telvanni crystal option in fomod installer
 ## Version 2.2.0
 - Added silver box (mentioned in 2.1.0 changelog, but missed in the release) (Anroha)
 - Added animated Imperial Gatehouse mesh (see OAAB_Cells example) (R0)
