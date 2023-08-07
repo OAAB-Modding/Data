@@ -1,4 +1,7 @@
 # Changelog
+## Version 2.2.2
+- Added dunmer middle class bar stool and table variant
+- Added Telvanni crystal light variant
 ## Version 2.2.1
 - Fixed Telvanni crystal option in fomod installer
 ## Version 2.2.0
