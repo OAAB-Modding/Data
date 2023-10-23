@@ -106,6 +106,7 @@ Then you are free to copy and redistribute the material in its entirety for use 
 - Hemaris - square Imperial stairs, common cards textures
 - Joanasc - land dreugh animations
 - jojjo - iron atronach armor
+- KasChei - Ebony open helmet model
 - Kiteflyer61 - Archery target original models, shovel, hoe, draw knife
 - Korana - fern model  
 - Kurpolio - egg explosion effect, lava spout effect, other miscellaneous contributions to special effects  
