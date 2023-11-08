@@ -11,6 +11,7 @@
 - 04 **RR Better Crystals Patch** -- install if you use [RR Better Crystals](https://www.nexusmods.com/morrowind/mods/43266)
 - 05 **Glass Glowset Patch** -- install if you use [Glass Glowset](https://www.nexusmods.com/morrowind/mods/42762)
 - 06 **Animated Containers** -- install if you use [Animated Containers](https://www.nexusmods.com/morrowind/mods/42238)
+- 07 **Improved Kwama Eggs** -- install if you use [Improved Kwama Eggs and Egg Sacs](https://www.nexusmods.com/morrowind/mods/43555)
 
 
 **Wrye Mash / MO2**  
