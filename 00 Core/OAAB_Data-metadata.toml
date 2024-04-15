@@ -187,4 +187,10 @@ deprecated = [
 	"AB_Spider_s",
 	AB_In_VelSmallRampLong01",
 	"AB_Misc_PaperCrumpled",
+	"AB_o_ComClosetThin",
+	"AB_o_ComRchCabinet",
+	"AB_Furn_ComRchFootstool",
+	"AB_Furn_ComRchShelfSmall",
+	"AB_Furn_ComRchTableTall",
+	"AB_Furn_ComBarShelf",
 ]
