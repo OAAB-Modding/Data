@@ -17,6 +17,7 @@ local function initialized()
 		{ id = "oaab\\canvaswrap_dk", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\fabric_burgundy_01", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\fabricDeskGreen", category = cso.landTypes.carpet, soundType = "land" },
+		{ id = "oaab\\fabric_desk_green_clean", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\rr_fishingnet_01", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\rr_rug00", category = cso.landTypes.carpet, soundType = "land" },
         { id = "oaab\\rr_rug01", category = cso.landTypes.carpet, soundType = "land" },
