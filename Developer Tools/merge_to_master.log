@@ -1,10 +1,5 @@
 Merging plugins...
-Copying object to master: CONT AB_o_ComMidCabinet
-Copying object to master: STAT AB_Furn_ComMidShelfSmall
-Copying object to master: STAT AB_Furn_ComMidBarShelf
-Copying object to master: CONT AB_o_ComMidClosetThin
-Copying object to master: STAT AB_Furn_ComMidFootstool
-Copying object to master: STAT AB_Furn_ComMidTableTall
+Merging object to master: DOOR AB_Door_DarknessFlat
 Creating backup...
 Saving results...
 Finished!
