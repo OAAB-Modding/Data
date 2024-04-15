@@ -1,17 +1,10 @@
 Merging plugins...
-Copying object to master: MISC AB_Misc_BallLeather
-Copying object to master: MISC AB_Misc_BallWoodRed
-Copying object to master: STAT AB_Fx_DecalChalkTally1
-Copying object to master: STAT AB_Fx_DecalChalkTally4
-Copying object to master: STAT AB_Fx_DecalChalkTally5
-Copying object to master: STAT AB_Fx_DecalChalkTally3
-Copying object to master: INGR AB_IngMine_ChalkWhite
-Copying object to master: STAT AB_Fx_DecalChalkTally2
-Copying object to master: WEAP AB_w_ToolFireplaceShovel
-Copying object to master: WEAP AB_w_ToolFireplacePoker
-Copying object to master: WEAP AB_w_ToolFireplaceBrush
-Copying object to master: STAT AB_Furn_ComRchTablePool
-Copying object to master: MISC AB_Misc_BallWoodBrown
+Copying object to master: WEAP AB_w_AshlStaffAzura
+Copying object to master: ENCH AB_w_AshlStaffMephala_en
+Copying object to master: ENCH AB_w_AshlStaffBoethiah_en
+Copying object to master: WEAP AB_w_AshlStaffMephala
+Copying object to master: WEAP AB_w_AshlStaffBoethiah
+Copying object to master: ENCH AB_w_AshlStaffAzura_en
 Creating backup...
 Saving results...
 Finished!
