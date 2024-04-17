@@ -1,4 +1,29 @@
 # Changelog
+## Version 2.3.0
+- Added ashlander staves (Anroha)
+- Added pool (billiard) assets (R0)
+- Added fireplace tools (R0)
+- Added limeware lamp (R0)
+- Added ebony open helm (R0)
+- Added patch for Improved Kwama Egg Sacs (MD)
+- Updated OAAB_Cells (Hurdrax Custos)
+- Eliminated developer version of OAAB_Data.esm
+- Fixed mesh seam on `ac_mtpeak_02.nif`
+- Fixed collision on `hla_stair_mid_01.nif`
+- Fixed texture path of `t_crystal_00.nif` in RR Better Crystals Patch
+- Added missing textures and NiAlphaAccumulator to glowbug jar lights
+- Added missing ingredient properites to the Scypha Mycena Caps
+- Fixed collision on `impS_stair_sq02.nif`
+- Fixed collision on Redoran hut interiors (with holes in the floor)
+- Fixed and optimized `ex_dwrv_ruin65.nif`
+- Improved UV on `mold_form_lrg_04.nif`
+- Fixed gaps in deShipWall meshes
+- Added collision to `AB_Door_DarknessFlat` object
+- Optimized bug cuirasses
+- Fixed floating post in `imp_gall_decks_in.nif`
+- Reduced transparency on t_crystal meshes to be similar to vanilla
+- Changed the crumpled paper asset from MISC to BOOK type
+- Fixed several meshes with nested RootCollisionNodes
 ## Version 2.2.2
 - Added dunmer middle class bar stool and table variant
 - Added Telvanni crystal light variant

@@ -8,7 +8,7 @@
 --7. Ashfall Interop: add new objects to the interop
 --8. CSO Interop: add new objects and textures to the interop
 --9. Update readme, metadata, and fomod versions
---10. Confirm ESM dates
+--10. Confirm ESM date
 --11. Document change log
 --12. Publish dev blog update
 --13. Publish to Nexus
