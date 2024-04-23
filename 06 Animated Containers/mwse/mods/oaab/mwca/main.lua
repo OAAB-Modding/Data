@@ -30,7 +30,8 @@ if mwca then
 	mwca["oaab\\o\\comcookhutchopen.nif"] = {"OAAB\\o\\comcookhutchopenac.nif", 1, 2, 0.5, 0.5, "AC_closet_open", "AC_closet_close", 0};
 	mwca["oaab\\o\\comcooktable.nif"] = {"oaab\\o\\comcooktableac.nif", 1, 2, 0.5, 0.5, "AC_drawer_open", "AC_drawer_close", 0};
 	mwca["oaab\\o\\comrchchest.nif"] = {"oaab\\o\\comrchchestac.nif", 1, 2, 0.5, 0.5, "AC_chest_open", "AC_chest_close", 0};
-	mwca["oaab\\o\\deplndesk2.nif"] = {"oaab\\o\\deplndesk2ac.nif", 1, 2, 0.5, 0.5, "AC_drawer_open", "AC_drawer_close", 0}
+	mwca["oaab\\o\\deplndesk2.nif"] = {"oaab\\o\\deplndesk2ac.nif", 1, 2, 0.5, 0.5, "AC_drawer_open", "AC_drawer_close", 0};
+	mwca["oaab\\o\\commiddesk.nif"] = {"oaab\\o\\commiddeskac.nif", 1, 2, 0.5, 0.5, "AC_drawer_open", "AC_drawer_close", 0}
 	
 	
 end
