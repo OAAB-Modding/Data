@@ -1,4 +1,7 @@
 # Changelog
+## Version 2.3.1
+- Fixed AB_In_RedHut02b using the wrong models
+- Updated streamGravelLong.nif to have smooth normals
 ## Version 2.3.0
 - Added ashlander staves (Anroha)
 - Added pool (billiard) assets (R0)
