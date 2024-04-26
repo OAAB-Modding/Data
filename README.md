@@ -1,5 +1,5 @@
 # OAAB-Data
-## Version 2.3.0
+## Version 2.3.1
 
 ### Nexus Download Instructions
 **Manual Installation**
@@ -48,6 +48,7 @@
 - Axeljk
 - Corsair
 - Dallara
+- DimNussens
 - Endoran
 - Greatness7
 - Hemaris
