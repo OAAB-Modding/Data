@@ -67,6 +67,12 @@
 - XeroFoxx
 
 
+### Patrons
+- Cyprinus
+- Lucevar
+- OperatorJack
+
+
 ### Permissions
 You are free to:
 Adapt - remix, transform, and build upon the material for use in The Elder Scrolls III: Morrowind
