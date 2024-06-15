@@ -1,0 +1,2 @@
+GLOBAL: scripts/oaab/global.lua
+NPC: scripts/oaab/npc.lua
