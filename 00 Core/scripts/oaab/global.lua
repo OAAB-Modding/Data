@@ -11,7 +11,6 @@ local function onStartGlobalScript(id, target)
     if target == nil then
         print("[OAAB] Error: animation script '%s' called without a valid target.", id)
     else
-        print("Sending Event!")
         target:sendEvent("oaab_play_animation", animation.groupName)
     end
 end
