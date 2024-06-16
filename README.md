@@ -105,7 +105,8 @@ Then you are free to copy and redistribute the material in its entirety for use 
 - DanielCoffey and doccdr - Book textures
 - Danke - Cephalopod pauldrons  
 - David Gurrea - Infernace architectural textures  
-- Dongle - water meshes  
+- Dongle - water meshes
+- DonnerGott - inverted Velothi rooms
 - Draconik - glass light, pomegranate
 - EJ-12 - Various textures and effects and lots of technical assistance
 - elucidace - Breton male hairstyles  
