@@ -157,7 +157,7 @@ Then you are free to copy and redistribute the material in its entirety for use 
 - Stuporstar - smith and crafting resource, Uvirith's Legacy resource
 - Stuporstar and Books of Vvardenfell team (see Docs folder for full credits) - I have edited several books for consistenc with my project  
 - Taddeus - rock meshes and AO map, grill
-- Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes, land dreugh animation, rich common furniture, common cards, nine-holes, dice  
+- Tamriel_Data- blood decal texture, rich dunmer desk, some models for knives, original scythe model, coiled rope, water textures, sailor dialogue, cranes, land dreugh animation, rich common furniture, common cards, nine-holes, dice, guar skull
 - Textures.com - for various texture sources  
 - The Wanderer - original Book models, wooden hourglass, dock hoist
 - Tyddy - dunmer market stands  
