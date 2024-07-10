@@ -94,7 +94,8 @@ Then you are free to copy and redistribute the material in its entirety for use 
 - AnOldFriend - wax texture
 - Anroha - chitin weapons, dreugh weapons, ashlander ebony and glass arrows, stalhrim battle axe, iron box, common desk with shelf
 - Anumaril - Imperial and Glass Tanto and Wakizashi edits from T_D  
-- Archipel de Pertevue - Dungeon grate, archery target  
+- Archipel de Pertevue - Dungeon grate, archery target
+- Asylum - Alit skeleton
 - Autoclock - Telvanni spear  
 - Axeljk - Cloth helm  
 - B00ze - daylight script  
