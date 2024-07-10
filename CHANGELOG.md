@@ -1,7 +1,7 @@
 # Changelog
 ## Version 2.4.0
-- Alternative DePln desk (R0)
-- ComMid desk (R0)
+- Alternative DePln desk (MD and R0)
+- ComMid desk (Dim and R0)
 - Com Curtains (Dim and MD)
 - Inverted Velothi rooms (DonnerGott)
 - ComPln loft bed (Dim)
