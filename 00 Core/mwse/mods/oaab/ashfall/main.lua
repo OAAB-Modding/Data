@@ -73,6 +73,7 @@ if ashfall then
         ab_misc_compewtercup01 = "cup",
         ab_misc_compewterpot_01 = "pot",
         ab_misc_comsilverpot_01 = "pot",
+		AB_Misc_ComSilverTeapot = "pot",
         ab_misc_comsilvertank_01 = "tankard",
         ab_misc_comwoodtankard = "tankard",
 		ab_misc_daegoblet_01 = "goblet",
