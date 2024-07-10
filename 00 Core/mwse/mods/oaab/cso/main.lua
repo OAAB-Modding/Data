@@ -96,6 +96,11 @@ local function initialized()
 		{ id = "oaab\\ab_rug_6th_02_big", category = cso.landTypes.carpet, soundType = "land" },
 		{ id = "oaab\\ab_galleon_sail", category = cso.landTypes.carpet, soundType = "land" },
 		{ id = "oaab\\ab_fabric_com_bedroll_01", category = cso.landTypes.carpet, soundType = "land" },
+        { id = "oaab\\ab_com_towels", category = cso.landTypes.carpet, soundType = "land" },
+        { id = "oaab\\ab_fabric_com_brocade_01", category = cso.landTypes.carpet, soundType = "land" },
+        { id = "oaab\\ab_fabric_com_brocade_02", category = cso.landTypes.carpet, soundType = "land" },
+        { id = "oaab\\ab_fabric_com_brocade_03", category = cso.landTypes.carpet, soundType = "land" },
+        { id = "oaab\\ab_fabric_com_brocade_04", category = cso.landTypes.carpet, soundType = "land" },
 
         -- Land, Dirt:
         { id = "oaab\\corpseburnedatlas", category = cso.landTypes.dirt, soundType = "land" },
