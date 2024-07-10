@@ -1,4 +1,26 @@
 # Changelog
+## Version 2.4.0
+- Alternative DePln desk (R0)
+- ComMid desk (R0)
+- Com Curtains (Dim and MD)
+- Inverted Velothi rooms (DonnerGott)
+- ComPln loft bed (Dim)
+- Bamboo cage (Dim)
+- Bag containers (Dim and MD)
+- Lace spools (Dim and MD)
+- Com cot and sling chair (Dim)
+- Khajiit male hairs (Dim)
+- Hanging hammocks with rugs (Dim)
+- Towels (Dim and MD)
+- ComMid pew (Dim)
+- Silver teapot (Dim)
+- Beast skeleton bones (Revenant)
+- Guar skull (TD)
+- Imperial exterior half wall (R0)
+- Bone alit creature and clutter assets (Asylum and MD)
+- Improved glowbug visual quality near other alpha-enabled objects
+- Fixed Redoran interior building collision
+- Fixed harrada graphic herbalism function and collision
 ## Version 2.3.1
 - Fixed AB_In_RedHut02b using the wrong models
 - Updated streamGravelLong.nif to have smooth normals
