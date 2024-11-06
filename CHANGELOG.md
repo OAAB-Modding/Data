@@ -1,4 +1,6 @@
 # Changelog
+## Version 2.4.1
+- Fixed broken creature sound gen
 ## Version 2.4.0
 - Alternative DePln desk (MD and R0)
 - ComMid desk (Dim and R0)
