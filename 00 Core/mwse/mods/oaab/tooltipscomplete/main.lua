@@ -30,24 +30,24 @@ local tooltipData = {
 	{ id = "ab_w_dwrvtoolcrowbar", description = "An old rusty crow bar made by the Dwemer. Hefty and sturdy, it might come in handy when trying to operate, or break down, their ancient machines.", itemType = "weapon" },
 	
 	-- Arrow quivers:
-	{ id = "AB_w_AshlEbonyArrow10x", description = "Attack: 3 - 5", itemType = "miscItem" },
-	{ id = "AB_w_AshlGlassArrow10x", description = "Attack: 1 - 5", itemType = "miscItem" },
-	{ id = "AB_w_BoneArrow10x", description = "Attack: 2 - 3", itemType = "miscItem" },
-	{ id = "AB_w_BonemoldArrow10x", description = "Attack: 1 - 4", itemType = "miscItem" },
-	{ id = "AB_w_ChitinArrow10x", description = "Attack: 1 - 2", itemType = "miscItem" },
-	{ id = "AB_w_CorkbulbArrow10x", description = "Attack: 1 - 1", itemType = "miscItem" },
-	{ id = "AB_w_DaedricArrow10x", description = "Attack: 10 - 15", itemType = "miscItem" },
-	{ id = "AB_w_DreughArrow10x", description = "Attack: 1 - 5", itemType = "miscItem" },
-	{ id = "AB_w_EbonyArrow10x", description = "Attack: 5 - 10", itemType = "miscItem" },
-	{ id = "AB_w_FlintArrow10x", description = "Attack: 1 - 2", itemType = "miscItem" },
-	{ id = "AB_w_GlassArrow10x", description = "Attack: 1 - 6", itemType = "miscItem" },
-	{ id = "AB_w_GoblinArrow10x", description = "Attack: 6 - 12", itemType = "miscItem" },
-	{ id = "AB_w_HuntsArrow10x", description = "Attack: 1 - 5", itemType = "miscItem" },
-	{ id = "AB_w_IronArrow10x", description = "Attack: 1 - 3", itemType = "miscItem" },
-	{ id = "AB_w_OrcishArrow10x", description = "Attack: 3 - 5", itemType = "miscItem" },
-	{ id = "AB_w_SilverArrow10x", description = "Attack: 1 - 3", itemType = "miscItem" },
-	{ id = "AB_w_StalhrimArrow10x", description = "Attack: 9 - 16", itemType = "miscItem" },
-	{ id = "AB_w_SteelArrow10x", description = "Attack: 1 - 4", itemType = "miscItem" }
+	{ id = "ab_w_ashlebonyarrow10x", description = "Attack: 3 - 5", itemType = "miscItem" },
+	{ id = "ab_w_ashlglassarrow10x", description = "Attack: 1 - 5", itemType = "miscItem" },
+	{ id = "ab_w_bonearrow10x", description = "Attack: 2 - 3", itemType = "miscItem" },
+	{ id = "ab_w_bonemoldarrow10x", description = "Attack: 1 - 4", itemType = "miscItem" },
+	{ id = "ab_w_chitinarrow10x", description = "Attack: 1 - 2", itemType = "miscItem" },
+	{ id = "ab_w_corkbulbarrow10x", description = "Attack: 1 - 1", itemType = "miscItem" },
+	{ id = "ab_w_daedricarrow10x", description = "Attack: 10 - 15", itemType = "miscItem" },
+	{ id = "ab_w_dreugharrow10x", description = "Attack: 1 - 5", itemType = "miscItem" },
+	{ id = "ab_w_ebonyarrow10x", description = "Attack: 5 - 10", itemType = "miscItem" },
+	{ id = "ab_w_flintarrow10x", description = "Attack: 1 - 2", itemType = "miscItem" },
+	{ id = "ab_w_glassarrow10x", description = "Attack: 1 - 6", itemType = "miscItem" },
+	{ id = "ab_w_goblinarrow10x", description = "Attack: 6 - 12", itemType = "miscItem" },
+	{ id = "ab_w_huntsarrow10x", description = "Attack: 1 - 5", itemType = "miscItem" },
+	{ id = "ab_w_ironarrow10x", description = "Attack: 1 - 3", itemType = "miscItem" },
+	{ id = "ab_w_orcisharrow10x", description = "Attack: 3 - 5", itemType = "miscItem" },
+	{ id = "ab_w_silverarrow10x", description = "Attack: 1 - 3", itemType = "miscItem" },
+	{ id = "ab_w_stalhrimarrow10x", description = "Attack: 9 - 16", itemType = "miscItem" },
+	{ id = "ab_w_steelarrow10x", description = "Attack: 1 - 4", itemType = "miscItem" }
 }
 local function initialized()
     if tooltipsComplete then
