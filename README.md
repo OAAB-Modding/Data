@@ -125,7 +125,7 @@ Then you are free to copy and redistribute the material in its entirety for use 
 - Lamb Shark - Land Dreugh head model and texture  
 - Leyawynn - Redoran house affiliation pillar
 - lidicus - spider creature  
-- LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, Telvanni assets, and bandages  
+- LondonRook - blood pool texture, staff table, velothi tower, ashcliff models, Telvanni assets, measuring spoons, and bandages  
 - Lougian - dust motes particles, rock meshes, and vine meshes  
 - Lukkar - rug textures
 - ManaUser - Tomb leveled lists from Grave Goods  
