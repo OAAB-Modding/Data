@@ -195,4 +195,7 @@ deprecated = [
 	"AB_Furn_ComRchTableTall",
 	"AB_Furn_ComBarShelf",
 	"AB_Ex_AshlTentSmall",
+	"AB_Furn_ComMidLecturn",
+	"AB_Furn_ComRchLecturn",
+	"AB_Furn_TelLecturn01",
 ]
