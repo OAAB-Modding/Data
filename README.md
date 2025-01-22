@@ -52,6 +52,7 @@
 - Endoran
 - Greatness7
 - Hemaris
+- Lord Zircon
 - Melchior Dahrk
 - Merlord
 - MwGek
