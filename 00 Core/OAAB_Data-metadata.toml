@@ -198,4 +198,7 @@ deprecated = [
 	"AB_Furn_ComMidLecturn",
 	"AB_Furn_ComRchLecturn",
 	"AB_Furn_TelLecturn01",
+	"AB_Furn_SackGrain01",
+	"AB_Furn_SackGrain02",
+	"AB_Furn_SackHugeClosed",
 ]
