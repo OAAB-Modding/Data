@@ -1,4 +1,78 @@
 # Changelog
+## Version 2.5.0
+- Added com crypt set and grave assets (R0)
+- Added chitin weapons (greatmace, longbow, longspear, longsword, staff, and dart) (Anroha)
+- Added daedric weapons (shortbow and throwing star) (Anroha and MD)
+- Added dwemer weapons (bolt, longsword, and dagger) (Anroha)
+- Added ebony weapons (dai-katana, katana, throwing knife, tanto, wakizashi, and warhammer) (Anroha)
+- Added glass weapons (mace, saber, battle axe, and shortbow)
+- Added imperial weapons (arrow, club, dart, longsword, mace, staff, and waraxe) (Anroha)
+- Added silver weapons (dai-katana, katana, longbow, shortbow, tanto, wakizashi, and warhammer) (Anroha)
+- Added book "Dark Elves of the West" (R0)
+- Added blue kanet ingredient bundle (MwGek)
+- Added "Blank Journals" (were previously included as examples in OAAB_Cells)
+- Added measuring spoons (LondonRook)
+- Added bone rat creature and skull (Asylum)
+- Added com mid lectern, bookshelf, and scroll rack (Dim)
+- Added com rich side table and short drawers (TD)
+- Added de plain loft bed (Dim)
+- Added de rich scroll racks (Dim)
+- Added interior and exterior Telvanni dormers (GitD)
+- Added triune (100) model (Endoran)
+- Added two Redoran building variants (Shivatheo)
+- Added clothespin (Dim)
+- Added corkscrew (Hemaris)
+- Added barrel sling attachment for crane kit (MD)
+- Added picnic basket (MD)
+- Added dwemer cell door (Team Sixth-and-a-Half House)
+- Added dwemer terrarium (Dim)
+- Added dwemer spotlight (MwGek)
+- Added new classes (Author, Beggar, Butcher, Clerk, Foreman, Grocer, Painter, Sailor, Sculptor, Surgeon, and Weaver)
+- Added empty alchemy jars (Zircon and MD)
+- Added grain sack containers (Dim and MD)
+- Added de ex chair (Dim and MD)
+- Added potter's wheels (MD)
+- Added pottery clay assets (MD)
+- Added de ex leantos (MwGek)
+- Added functional levitation and teleportation disabled markers (R0)
+- Added wooden practice sword (R0)
+- Added Raven Rock windows with GitD functionality (MD)
+- Added toolbox (Dim)
+- Added large Velothi wall set (MD)
+- Added foghorn
+- Added Velothi large bridge set pieces (MD)
+- Improved water skin model (Ruffin)
+- Improved parasol spider model (Ruffin)
+- Improved spider milk model (Ruffin)
+- Improved the small velothi hearth to have more flexible usage (MD)
+- Improved wide waterfall animation speed (MD)
+- Updated ebony bolt and halberd (MD and Remiros)
+- Updated ebony claymore and longbow (Anroha)
+- Updated glass Akaviri weapons, spear, and dart (Anroha and MD)
+- Updated reinforced crossbow to use the unused vanilla model
+- Updated Ashlander tent to be a usable bed
+- Updated lava bubbles to use vanilla textures (MD)
+- Updated leather hat fit on heads (MD)
+- Updated velothi towers to have GitD functionality (MD)
+- Updated dust merchant boots to properly cover gaps when used with other armor (MD)
+- Updated shacks to have GitD functionality (MD)
+- Optimized parasol models (MD)
+- Optimized mold cave assets with root details (MD)
+- Fixed improperly assigned sound gens
+- Fixed enchanted weapons not ignoring weapon resist effect
+- Fixed com rich canopy beds having unapplied transforms
+- Fixed graphic herbalism functionality on bundled ingredients (MwGek)
+- Fixed normals on dwemer machine kit and grate room models
+- Fixed UV on Dunmer thug helm
+- Fixed weight capacity on dwemer cabinets
+- Fixed visible holes in velothi stairs
+- Fixed UV seams on rooted menhirs
+- Fixed triunes which were missing a script
+- Fixed holes in shipwreck rib pieces
+- Fixed defective jump enchantment to have negative effect
+- Fixed inverted collision on strong_balc01
+- Fixed crystal particle effects to look correct in OpenMW
+- Fixed 1st person meshes on light steel armor
 ## Version 2.4.1
 - Fixed broken creature sound gen
 ## Version 2.4.0
