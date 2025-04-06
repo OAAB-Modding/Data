@@ -1,0 +1,4 @@
+OAAB Classes
+by Melchior Dahrk
+
+This mod makes the new classes added by OAAB_Data playable.
