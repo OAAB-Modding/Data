@@ -1,5 +1,5 @@
 # OAAB-Data
-## Version 2.4.0
+## Version 2.5.0
 
 ### Nexus Download Instructions
 **Manual Installation**
@@ -12,6 +12,7 @@
 - 05 **Glass Glowset Patch** -- install if you use [Glass Glowset](https://www.nexusmods.com/morrowind/mods/42762)
 - 06 **Animated Containers** -- install if you use [Animated Containers](https://www.nexusmods.com/morrowind/mods/42238)
 - 07 **Improved Kwama Eggs** -- install if you use [Improved Kwama Eggs and Egg Sacs](https://www.nexusmods.com/morrowind/mods/43555)
+- 08 **GitD Shacks Patch** -- install if you use [Glow in the Dakrk](https://www.nexusmods.com/morrowind/mods/45886)
 
 
 **Wrye Mash / MO2**  
@@ -58,12 +59,12 @@
 - MwGek
 - Olaf
 - OperatorJack
-- Pika
+- PikachunoTM
 - R-Zero
 - RedFurryDemon 
 - Remiros
-- revenorror
-- tewlwolow
+- Revenorror
+- Tewlwolow
 - Wolli
 - XeroFoxx
 
@@ -72,7 +73,10 @@
 - Cyprinus
 - Ember2528
 - Lucevar
-- OperatorJack
+- 3deadgods
+- Gimme dat cockmeat sammich with the marinara..
+- mercurybard
+- Nick Rowell
 
 
 ### Permissions
