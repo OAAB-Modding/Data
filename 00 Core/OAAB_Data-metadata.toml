@@ -201,4 +201,5 @@ deprecated = [
 	"AB_Furn_SackGrain01",
 	"AB_Furn_SackGrain02",
 	"AB_Furn_SackHugeClosed",
+	"AB_w_ReCrossbow",
 ]
