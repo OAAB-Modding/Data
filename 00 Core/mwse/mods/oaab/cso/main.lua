@@ -258,6 +258,7 @@ local function initialized()
 		{ id = "oaab\\m\\dram_100.nif", category = cso.itemTypes.gold, soundType = "item" },
 		{ id = "oaab\\m\\coin_triune.nif", category = cso.itemTypes.gold, soundType = "item" },
         { id = "oaab\\m\\coin_triune_02.nif", category = cso.itemTypes.gold, soundType = "item" },
+        { id = "oaab\\m\\coin_triune_03.nif", category = cso.itemTypes.gold, soundType = "item" },
         { id = "oaab\\m\\dr_misc_purse_01.nif", category = cso.itemTypes.gold, soundType = "item" },
 
         -- Items, Gems:
