@@ -5,7 +5,14 @@ This mod adds OAAB items to vanilla leveled lists so that you will find these it
 
 This mod MUST be used with a leveled lists merger if you use any other mods which modify leveled lists.
 
-v2 Fixed infinite recursion on leveled lists
-v3 Fixed some more infinite recursion that I missed
-v4 Added ebony alchemy apparatus to leveled lists
-v5 Added OAAB weapons to more leveled lists
+v2 	Fixed infinite recursion on leveled lists
+
+v3 	Fixed some more infinite recursion that I missed
+
+v4 	Added ebony alchemy apparatus to leveled lists
+
+v5 	Added OAAB weapons to more leveled lists
+
+v6	Updated `random_Golden_saint_weapon` to use some OAAB glass, ebony, and daedric weapons
+	Updated `bm_randomwpn_smugglers` to use OAAB Nordic silver spear
+	Updated `random excellent melee weapon` to include OAAB weapons (used by Dremora)
