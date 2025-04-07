@@ -12,8 +12,9 @@
 --11. Push x.x.x version tag to GitHub
 --12. Download OAAB_Data.7z file from https://github.com/OAAB-Modding/Data/releases/
 --13. Publish dev blog update
---14. Upload OAAB_Data.7z file to Nexus
---15. Update HD textures and developer tools
+--14. Update pinned GitHub Discussion
+--15. Upload OAAB_Data.7z file to Nexus
+--16. Update HD textures and developer tools
 
 #OAAB Integrations Postrelease Instructions (when applicable)
 --1. OAAB Creature Loot: add new ingredients to vanilla creatures
