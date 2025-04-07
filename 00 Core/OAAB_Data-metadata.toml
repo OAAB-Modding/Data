@@ -204,6 +204,6 @@ deprecated = [
 	"AB_Furn_SackHugeClosed",
 	"AB_w_ReCrossbow",
 	"AB_Misc_6thFlute",
-	"AB_Misc_ComPewterCup_01",
+	"AB_Misc_ComPewterCup\u001f_01",
 	"AB_IngCrea_SpiderVenom",
 ]
