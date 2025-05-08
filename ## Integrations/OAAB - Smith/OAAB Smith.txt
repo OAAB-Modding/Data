@@ -1,0 +1,8 @@
+OAAB Smith
+
+Smith is a framework for splitting and forging new weapons. This mod splits up OAAB_Data weapon models and adds them to the Smith crafting tables.
+
+https://www.nexusmods.com/morrowind/mods/56443
+
+Changelog
+1.0 - initial release
