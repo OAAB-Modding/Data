@@ -145,6 +145,7 @@ Then you are free to copy and redistribute the material in its entirety for use 
 - Phitt - midsized emperor parasols
 - Project Tamriel - cliff meshes  
 - Qarl - blood splatter texture  
+- qqqbbb - Animated Container sounds
 - ramccoid - web textures
 - Rats - smudged/dripping blood decal textures from TR
 - Resdayn Revival Team (Cernon, Scarab-Phoenix, SiberianCrab, Zobator) - various resources from RR_Data
