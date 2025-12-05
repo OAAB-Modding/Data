@@ -1,4 +1,24 @@
 # Changelog
+## Version 2.5.1
+- Added ice waterfalls
+- Added Bitter Coast cliffs
+- Added Animated Containers sounds
+- Added Vivec canton ramp
+- Added guar cart with kegs
+- Added flames to velothi_brazier00
+- Fixed light steel gauntlet 1st person visibility
+- Fixed teleport disabler script
+- Fixed bugged LOD on cave_mold_telv_01 and 03 which could cause CTDs
+- Unflipped UVs on dae_column_01 and 02 for OMW normals compatibility
+- Fixed harrada graphics herbalism switch node
+- Added silver weapon flag to all silver weapons
+- Fixed some book typos
+- Fixed red_hut03 not aligning properly to grid
+- Fixed gap on v_l_bridge_brk01
+- Fixed UV on a few meshes
+- Added collision to comcooktable
+- Fixed materials and removed collision from black markers
+- Added glass saber to the glowset patch
 ## Version 2.5.0
 - Added com crypt set and grave assets (R0)
 - Added chitin weapons (greatmace, longbow, longspear, longsword, staff, and dart) (Anroha)
