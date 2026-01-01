@@ -53,7 +53,9 @@
 - Endoran
 - Greatness7
 - Hemaris
+- Juidius
 - Lord Zircon
+- MassiveJuice
 - Melchior Dahrk
 - Merlord
 - MwGek
@@ -64,7 +66,9 @@
 - RedFurryDemon 
 - Remiros
 - Revenorror
+- Ruffin Vangarr
 - Tewlwolow
+- Vidi_Aquam
 - Wolli
 - XeroFoxx
 
