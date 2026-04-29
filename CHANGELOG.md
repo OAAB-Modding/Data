@@ -1,4 +1,33 @@
 # Changelog
+## Version 2.6.0
+- DE rich weapon rack (DimNussens)
+- DE circle rugs (Vidi_Aquam)
+- Com display posts (EnclaveKiller)
+- Prayer stools DE and Com_R (Vidi_Aquam)
+- Telvanni exterior set - path kit (Vidi_Aquam)
+- Telvanni interior set - large room kit (Vidi_Aquam)
+- Redoran interior set - hut bottom floors (Vidi_Aquam)
+- Redoran interior set - platform kit (Vidi_Aquam)
+- Redoran jail door (Vidi_Aquam)
+- Daedric interior set - tall stairs (Vidi_Aquam)
+- Dwemer interior set - 4-way corridor with two columns (Lucevar)
+- BC rock clusters (Lord Zircon)
+- Summon magic VFX (MD)
+- Dreugh dagger and shortsword sheaths (Anroha)
+- Iron keys (DimNussens)
+- Forwarded MOP fixes (thanks, Hemaris!)
+- Fix comGravePit.nif stencil mask blocking raycasts
+- Fixed resolution of py cave textures
+- Fixed collision and material properties on net partitions
+- Fixed vcol and UV seams on hla_fireplace_01.nif
+- Applied LOD from mold telv 01 to gravel 01
+- Added collision to mv_cave_arch_01.nif
+- Removed empty shapes from some meshes
+- Fixed cave rocks_01 UV issue
+- Fixed ebony longbow animation
+- Fixed ebony knife and glass dart positions
+- Slowed tall and wide waterfall animation
+- Made Telvanni crystals match vanilla
 ## Version 2.5.1
 - Added ice waterfalls
 - Added Bitter Coast cliffs
