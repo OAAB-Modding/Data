@@ -280,6 +280,9 @@ local function initialized()
 
         -- Lockpicks/Keys
         { id = "oaab\\m\\misc_keyring.nif", category = cso.itemTypes.lockpick, soundType = "item" },
+        { id = "oaab\\m\\key_ruin_01.nif", category = cso.itemTypes.lockpick, soundType = "item" },
+        { id = "oaab\\m\\key_ruin_02.nif", category = cso.itemTypes.lockpick, soundType = "item" },
+        { id = "oaab\\m\\key_ruin_03.nif", category = cso.itemTypes.lockpick, soundType = "item" },
 
         -- Items, Repair:
         { id = "oaab\\m\\dwrvtoolclamp.nif", category = cso.itemTypes.repair, soundType = "item" },
