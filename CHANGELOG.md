@@ -1,4 +1,6 @@
 # Changelog
+## Version 2.6.2
+- Made glowbugs OpenMW compatible
 ## Version 2.6.1
 - Swapped `cave_py_gnd_rock_01.nif` back to original model
 ## Version 2.6.0
