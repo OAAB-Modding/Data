@@ -1,8 +1,9 @@
 # Changelog
 ## Version 2.6.2
 - Made glowbugs OpenMW compatible
-- Reverted `mv_cliff_05.nif` to its old model
+- Reverted `mv_cliff_05.nif` to its old model (MS)
 - Fixed unapplied transforms on wood tankard
+- Added mipmaps to map bookart (Papill6n)
 ## Version 2.6.1
 - Swapped `cave_py_gnd_rock_01.nif` back to original model
 ## Version 2.6.0
