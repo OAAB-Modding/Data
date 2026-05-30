@@ -2,6 +2,7 @@
 ## Version 2.6.2
 - Made glowbugs OpenMW compatible
 - Reverted `mv_cliff_05.nif` to its old model
+- Fixed unapplied transforms on wood tankard
 ## Version 2.6.1
 - Swapped `cave_py_gnd_rock_01.nif` back to original model
 ## Version 2.6.0
