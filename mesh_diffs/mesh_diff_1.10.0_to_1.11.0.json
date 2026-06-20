@@ -1,0 +1,484 @@
+﻿{
+    "from":  "1.10.0",
+    "to":  "1.11.0",
+    "range":  "1.10.0..1.11.0",
+    "count":  119,
+    "meshes":  [
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/c/sfishAmulet.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/OAAB/e/steamLeak.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/e/web_dinnerBall.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/e/web_dinnerRats.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingAC01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingAC02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingAC03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingAC04.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingAI01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingAI02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingAI03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingAI04.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingBC01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingBC02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingBC03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingGL01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingGL02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingWG01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingWG02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingWG03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/f/ABsaplingWG04.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/h/avoidNodeCylinder.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedge256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedge256L.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedge256Lbroke1.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedge256Lbroke2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedge256broke1.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedge512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedge512broke1.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedgePlug.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvLedgeRubble.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvRoomWallCave.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/i/dwrvRubble01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/kagoutiHorn.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/misc_cr_glass_bowl.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/misc_cr_glass_cup.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/misc_cr_glass_flask.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/misc_cr_glass_pot.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/OAAB/m/misc_pewter_cup_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/OAAB/m/misc_pewter_pot_01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/misc_red_glass_bowl.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/misc_red_glass_cup.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/misc_red_glass_flask.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/misc_red_glass_pot.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/OAAB/m/pewter_bowl_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/OAAB/m/pewter_bowl_02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/m/sfishDeadLayHead.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/OAAB/m/yy_grinder.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/OAAB/n/food_scuttle_pie_01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/n/sturgeonMeat01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/n/sturgeonMeat02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/n/sturgeonMeat03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/n/sturgeonRoe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/barrelFillSturgeon.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/bucketFillSfish.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/bucketFillSturgeon.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sfishDeadHang.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sfishDeadLay.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sfishDeadLayBody.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sfishSmallHang.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sfishSmallLay.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sturgeonAncHang.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sturgeonAncLay.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sturgeonAncLayCut.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sturgeonHang.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sturgeonLay.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/sturgeonLayCut.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/o/web_dinnerCorpse.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/r/sturgeon.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/r/sturgeonAncient.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/r/xsturgeon.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/r/xsturgeonAncient.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/WashBasin.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/WashBoard.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/WashTrough.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/WashTroughBrk.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/WashTroughLog.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/comRchWashBoard.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/comRchWashTrough.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/mudcrabShell.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/plaqueSturgeon.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/u/plaqueSturgeonAnc.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/w/glass_tanto.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/w/glass_wakizashi.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/w/imp_tanto.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/w/imp_wakizashi.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/deExRack01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/deExRack02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/dwrvBridgeBrokeBott.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/dwrvBridgeBrokeSide1.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/dwrvBridgeBrokeSide2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/dwrvBridgeBrokeTop.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/dwrvBridgeCenter.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/dwrvBridgeEndBroke.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/dwrvBridgeRailing.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrBackFull.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrBackRibs.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFloorCorner.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFloorLarge.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFloorLargeTrap.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFloorSide.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFlotsam01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFlotsam02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFlotsam03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFrontFull.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrFrontSide.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrMast01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrMast02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrMast03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrMastYard.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrRamp01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrRamp02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrRibL.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrRibR.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrSailFull.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrSailTorn01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrSailTorn02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrSailTorn03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/OAAB/x/shipwrSailTorn03b.nif"
+                   }
+               ]
+}

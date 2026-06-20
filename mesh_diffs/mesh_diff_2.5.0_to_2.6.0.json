@@ -1,0 +1,1516 @@
+﻿{
+    "from":  "2.5.0",
+    "to":  "2.6.0",
+    "range":  "2.5.0..2.6.0",
+    "count":  377,
+    "meshes":  [
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/6th_spear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/GoldSt_Claymore.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ashglass_club.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ashglass_spear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ashglass_staff.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ashglass_waxe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ashstaffchitin01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ashstaffdaedric01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ashstaffobsidian01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/bone_scepter.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/chitin_greatmace.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/chitin_halberd.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/chitin_longspear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/chitin_mace.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/chitin_sickle.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/climbing_pick.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dae_scepter.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_battleaxe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_claymore.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_dagger.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_greatmace.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_halberd.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_longsword.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_mace.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_shortsword.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_spear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dreugh_waraxe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dwemer_dagger.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dwemer_longsword.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dwrvCrowbar.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dwrvSpectreHammer.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dwrvSpectreSword.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/dwrv_scepter.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ebony_dagger.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ebony_pickaxe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ebony_scepter.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/ebony_warhammer.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/fireplace_brush.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/fireplace_poker.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/fireplace_shovel.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/fishing_net.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/flint_axe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/flint_pick.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/flint_spear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/glass_battleaxe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/glass_scepter.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/glass_tanto.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/glass_wakizashi.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/glasswarhammer.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/hammer.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/hand_scythe00.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/hand_scythe01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/imperial_longsword.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/imperial_mace.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/imperial_staff.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/imperial_waraxe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/nordic_longaxe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/rem_ebony_halberd.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/rem_glass_spear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/rem_imp_spear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/rem_silver_halberd.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/resin_staff.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/silver_daikatana.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/silver_katana.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/silver_scepter.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/silver_tanto.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/silver_wakizashi.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/silver_warhammer.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/tool_rake.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_daedric_halberd.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_dwemer_longspear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_ebony_claymore.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_glass_dkatana.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_glass_katana.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_ice_battleaxe.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_ice_shortsword.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_ice_spear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_legion_etool.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_nord_mace.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_nord_spear.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_orcish_mace.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_rapier_adam.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_rapier_daedric.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_rapier_glass.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_rapier_iron.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_rapier_silver.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_rapier_steel.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/w_stake_wood.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/woodClub.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "## Integrations/OAAB - Smith/Data Files/Meshes/OAAB/w/woodsword.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/a_steel_armor.1st.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_bl_Hands.1st.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_bl_cuir_02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_bl_cuir_GND.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_bl_gaun_GND.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_bl_grea_GND.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_gr_Hands.1st.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_gr_cuir_02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_gr_cuir_GND.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_gr_gaun_GND.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/bug_gr_grea_GND.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/a/glassAssaPaulFA.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/d/red_jaildoor.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/e/cave_py_spout_fire.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/e/magic_summon.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/e/waterfallWideTall.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/e/xmagic_summon.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/flora_chartree_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/flora_chartree_02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/flora_chartree_03.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/flora_chartree_04.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/flora_chartree_05.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/flora_chartree_06.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/flora_chartree_07.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/mv_harrada_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/f/mv_harrada_01b.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/h/blackCircle01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/h/blackCircle02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/h/blackCurve01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/h/blackCurve02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/h/blackSquare01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/h/blackTriangle.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/c_richDJSquare.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/cave_mold_gravel_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/cave_mold_rocks_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/cave_mold_telv_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/cave_mold_telv_03.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/cave_py_gnd_rock_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/cave_py_lavapool00.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/dae_brazier_out.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/dae_column_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/dae_column_02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/dae_hall_stairs_tall.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/dwrvCorr4_06.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/kwama_rocks_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/kwama_stal_00.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/kwama_stal_10.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/kwama_stal_20.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/kwama_stal_30.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/kwama_stal_40.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/kwama_stal_50.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/lavacave_lavapool00.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/mv_cave_arch_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/mv_cave_lavapool00.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/mv_cave_rocks_01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/r_plat.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/r_platcorn.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/r_platcornstairs.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/r_platstairs.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/red_Build02_in.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/red_Hut03_in_B.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/red_Hut03_in_C.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/red_hut_bfloor_03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/red_hut_bfloor_04.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/red_hut_bfloor_05.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/red_hut_bfloor_06.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/red_s_room3small.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_00.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_00sm.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_01sm.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_02sm.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_03.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_03sm.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_04.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_04sm.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_05.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_05sm.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_06.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_crystal_06sm.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_l_corner2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_l_corner3.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_l_corner3_bot.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_l_corner3_top.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_l_heighttransl.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_l_heighttransr.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_lbot_corner.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_lbot_corner2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_lbot_corner3.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_lbot_endl.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_lbot_endr.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_lbot_entrance.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_lbot_side.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_lcolumn.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_ltop_corner.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_ltop_corner2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_ltop_corner3.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_ltop_endl.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_ltop_endr.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_ltop_entrance.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/i/t_ltop_side.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/t_plat_circ_lg_in.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/v_l_bridge_brk01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/i/v_l_bridge_stairsbrk.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/l/velothi_brazier00.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/m/key_ruin_01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/m/key_ruin_02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/m/key_ruin_03.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/m/misc_cloth_01a.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/m/misc_cloth_01b.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/m/misc_cloth_02a.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/m/misc_cloth_02b.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/m/soap01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/n/gem_diamond_blue_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/n/gem_diamond_red_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/o/ComCookTable.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/LavaRock01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/LavaRock02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/t/bc_cliff01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/t/bc_cliff02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/t/bc_cliff03.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/mv_cliff_05.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/mv_rock_06.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/mv_rock_07.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/mv_rock_08.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/mv_rock_09.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/mv_rock_10.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/mv_rocks_05.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/rmRocks04.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/t/terrain_rocks_ac_02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/t/terrain_rocks_bc_01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/t/terrain_rocks_bc_02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/t/terrain_rocks_bc_03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/t/terrain_rocks_bc_04.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/CrateBrokenWood01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/com_displaypost.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/com_displaypost2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/com_displayrope.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/com_r_prayerstool.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/de_planter_01_ash.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/de_planter_02_ash.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/de_r_prayerstool.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/de_r_weap_rack.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/de_rugcircle_b.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/de_rugcircle_g.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/de_rugcircle_p.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/de_rugcircle_r.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/de_rugcircle_t.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/dk_banner_tall_torn3.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/dk_banner_tall_torn4.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/dk_banner_torn1.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/dk_banner_torn2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/u/guarcart_keg.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/hla_fireplace_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/imp_ashpit_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/papersingle01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/papersingle02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/u/papersingle03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/w/dreugh_dagger_sh.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/w/dreugh_shortsword_sh.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/w/ebony_knife.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/w/w_arrow01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/w/w_bolt01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/w/w_dart_glass.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/w/w_ebony_longbow.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/w/w_ice_shortsword.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/w/w_ice_spear.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/w/w_nord_spear.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/bc_dwrv_alcove1.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/bc_dwrv_alcove2.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/comGravePit.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/gl_dwrv_alcove1.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/gl_dwrv_alcove2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/ice_wfall_huge.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/ice_wfall_mid.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/ice_wfall_narrow.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/ice_wfall_small.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/ice_wfall_wide.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/imp_gall_wreck_02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/imp_wall_05.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/net_partition_00.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/net_partition_01.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/net_partition_02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/net_partition_03.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/rem_cave_rm.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/rm_dwrv_alcove1.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/rm_dwrv_alcove2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SL384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SL384slp.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SL512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SL512slp.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SLslp128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SLslp256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SLslp384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SR384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SR384slp.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SR512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SR512slp.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SRslp128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SRslp256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_SRslp384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_T.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_Tslp01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_Tslp02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_TslpL01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_TslpL02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_TslpL03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_TslpR01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_TslpR02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_TslpR03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_U.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_ULslp256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_URslp256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_Y.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_Yslp01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_Yslp02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_YslpL01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_YslpL02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_YslpL03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_YslpR01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_YslpR02.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_YslpR03.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_c.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_cslpL128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_cslpL256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_cslpR128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_cslpR256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_slp128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_slp256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1024_slp384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_U.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_ULslp256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_ULslp384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_ULslp512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_URslp256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_URslp384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_URslp512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_c.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_cslpL256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_cslpL384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_cslpL512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_cslpR256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_cslpR384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_cslpR512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_1536_slp256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_360Lslp.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_360Rslp.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_450L.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_450R.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_U540L.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_U540R.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_UlpL01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_UlpR01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_c.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_cLslp512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_cRslp512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_cslpL256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_cslpL384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_cslpR256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_cslpR384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_slp384.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_2048_slp512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_256.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_256_slp128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_SL.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_SLslp128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_SR.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_SRslp128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_Y.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_arch.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_archbend.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_c.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_cslpL.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_cslpR.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_512_slp128.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_end01.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/t_pth_end02.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/v_wall_lrg_1024.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/v_wall_lrg_2048.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "00 Core/meshes/oaab/x/velCantRamp.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/wg_dwrv_alcove1.nif"
+                   },
+                   {
+                       "status":  "M",
+                       "path":  "00 Core/meshes/oaab/x/wg_dwrv_alcove2.nif"
+                   },
+                   {
+                       "status":  "A",
+                       "path":  "05 Glass Glowset Patch/meshes/oaab/w/glass_saber.nif"
+                   }
+               ]
+}
