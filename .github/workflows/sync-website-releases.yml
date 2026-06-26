@@ -1,0 +1,52 @@
+name: Sync website release discussions
+
+on:
+  discussion:
+    types: [created, edited, deleted, category_changed, labeled, unlabeled]
+  workflow_dispatch: {}
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.action == 'deleted' ||
+      github.event.discussion.category.slug == 'announcements'
+    steps:
+      - name: Dispatch website release sync
+        env:
+          WEBSITE_DISPATCH_TOKEN: ${{ secrets.WEBSITE_DISPATCH_TOKEN }}
+          WEBSITE_REPO: OAAB-Modding/OAAB-Modding.github.io
+          EVENT_ACTION: ${{ github.event.action || 'manual' }}
+          DISCUSSION_NUMBER: ${{ github.event.discussion.number || '' }}
+          DISCUSSION_URL: ${{ github.event.discussion.html_url || '' }}
+          DISCUSSION_CATEGORY: ${{ github.event.discussion.category.slug || '' }}
+        run: |
+          test -n "$WEBSITE_DISPATCH_TOKEN" || {
+            echo "Missing WEBSITE_DISPATCH_TOKEN secret"
+            exit 1
+          }
+
+          payload=$(jq -n \
+            --arg action "$EVENT_ACTION" \
+            --arg discussion_number "$DISCUSSION_NUMBER" \
+            --arg discussion_url "$DISCUSSION_URL" \
+            --arg discussion_category "$DISCUSSION_CATEGORY" \
+            '{
+              event_type: "sync-releases",
+              client_payload: {
+                source_repo: "OAAB-Modding/Data",
+                action: $action,
+                discussion_number: $discussion_number,
+                discussion_url: $discussion_url,
+                discussion_category: $discussion_category
+              }
+            }')
+
+          curl -fsSL \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $WEBSITE_DISPATCH_TOKEN" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/$WEBSITE_REPO/dispatches" \
+            -d "$payload"
