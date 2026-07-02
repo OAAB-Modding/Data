@@ -1,0 +1,44 @@
+# Copy this file to OAAB-Modding/Data/.github/workflows/sync-website-mesh-diffs.yml
+#
+# It dispatches the website repo's "Sync mesh diffs" workflow when a major Data
+# tag is pushed. Tags named X.Y or X.Y.0 are major releases; X.Y.1 and other
+# patch tags are ignored.
+#
+# Required Data repo secret:
+#   WEBSITE_REPO_TOKEN
+#
+# The token must be allowed to call repository_dispatch on the website repo.
+# For a classic PAT, grant "repo" access. For a fine-grained PAT, grant access
+# to OAAB-Modding/OAAB-Modding.github.io with Actions read/write and Contents
+# read/write.
+name: Notify website mesh diffs
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check tag
+        id: tag
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF_NAME" =~ ^v?[0-9]+\.[0-9]+(\.0)?$ ]]; then
+            echo "major=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Skipping patch/non-release tag: $GITHUB_REF_NAME"
+            echo "major=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Dispatch website workflow
+        if: steps.tag.outputs.major == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.WEBSITE_REPO_TOKEN }}
+        run: |
+          gh api repos/OAAB-Modding/OAAB-Modding.github.io/dispatches \
+            --method POST \
+            --field event_type=sync-mesh-diffs \
+            --field client_payload[tag]="$GITHUB_REF_NAME"
