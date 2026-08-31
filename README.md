@@ -76,11 +76,13 @@
 ### Patrons
 - Cyprinus
 - Ember2528
+- F-man
 - Lucevar
 - 3deadgods
 - Gimme dat cockmeat sammich with the marinara..
 - mercurybard
 - Nick Rowell
+- TiTAN
 
 
 ### Permissions
@@ -122,6 +124,7 @@ Then you are free to copy and redistribute the material in its entirety for use 
 - elucidace - Breton male hairstyles  
 - Foresti - some textures for the bug armor  
 - Greatness7 - Particle motes, scripting help
+- GrumblingVomit - Shade of the Revenant scripting
 - Heinrich - iron and steel armor stands  
 - Hemaris - square Imperial stairs, common cards textures
 - Joanasc - land dreugh animations
