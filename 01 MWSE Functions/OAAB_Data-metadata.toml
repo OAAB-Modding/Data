@@ -1,6 +1,6 @@
 [package]
 name = "OAAB_Data"
-version = "2.6.2"
+version = "2.5.0"
 description = "A free-to-use asset repository for the Morrowind Community."
 homepage = "https://www.nexusmods.com/morrowind/mods/49042"
 repository = "https://github.com/Of-Ash-And-Blight/OAAB-Data"
@@ -13,7 +13,6 @@ authors = [
 	"Endoran",
 	"Greatness7",
 	"Hemaris",
-	"Lord Zircon",
 	"Melchior Dahrk",
 	"Merlord",
 	"MwGek",
@@ -26,7 +25,7 @@ authors = [
 	"Revenorror",
 	"Tewlwolow",
 	"Wolli",
-	"XeroFoxx",
+	"XeroFox",
 ]
 
 [dependencies.mwse]
@@ -202,8 +201,4 @@ deprecated = [
 	"AB_Furn_SackGrain01",
 	"AB_Furn_SackGrain02",
 	"AB_Furn_SackHugeClosed",
-	"AB_w_ReCrossbow",
-	"AB_Misc_6thFlute",
-	"AB_Misc_ComPewterCup\u001f_01",
-	"AB_IngCrea_SpiderVenom",
 ]

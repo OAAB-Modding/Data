@@ -1,0 +1,3 @@
+GLOBAL: scripts/oaab/mannequins/global.lua
+NPC: scripts/oaab/mannequins/npc.lua
+PLAYER: scripts/oaab/mannequins/player.lua
