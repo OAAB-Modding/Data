@@ -1,10 +1,14 @@
 # Changelog
 ## Version 2.7.0
-- Added com rich scroll reader (MD)
+- Added mannequins (MD)
+- Added Shade of the Revenant altar (GrumblingVomit)
+- Added necromancer tapestries (MD)
+- Added com rich scroll reader & generic scrolls (MD)
 - Added com churn (DimNussens)
-- Added version of Com crypt window which is "ON" (GitD-enabled) (MD)
+- Added version of com crypt window which is "ON" (GitD-enabled) (MD)
 - Increased animation speed of some water effects
 - Fixed "My Trade" topic filtering
+- Fixed com crypt entrance collision
 ## Version 2.6.2
 - Made glowbugs OpenMW compatible
 - Reverted `mv_cliff_05.nif` to its old model (MS)
