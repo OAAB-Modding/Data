@@ -1,4 +1,10 @@
 # Changelog
+## Version 2.7.0
+- Added com rich scroll reader (MD)
+- Added com churn (DimNussens)
+- Added version of Com crypt window which is "ON" (GitD-enabled) (MD)
+- Increased animation speed of some water effects
+- Fixed "My Trade" topic filtering
 ## Version 2.6.2
 - Made glowbugs OpenMW compatible
 - Reverted `mv_cliff_05.nif` to its old model (MS)
