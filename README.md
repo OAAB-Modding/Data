@@ -4,7 +4,8 @@
 ### Nexus Download Instructions
 **Manual Installation**
 - 00 **Core**
-- 01 **Epic Plants Patch** -- install if you use [Epic Plants](https://www.nexusmods.com/morrowind/mods/46180)
+- 01 **MWSE Functions** -- install if you use MWSE / MGE XE
+- 01 **OpenMW Functions** -- install if you use OpenMW
 - 02 **SM_Bitter Coast Trees Patch** -- install if you use [SM_Bitter Coast trees](https://www.nexusmods.com/morrowind/mods/49883)
 - 03 **Breton Knife-Ears Patch** -- install if you use [Knife-Ears](https://www.nexusmods.com/morrowind/mods/49584)
 - 04 **Better Telvanni Crystal Patch** -- install if you use [Better Telvanni Crystals](https://www.nexusmods.com/morrowind/mods/50818)
@@ -13,6 +14,7 @@
 - 06 **Animated Containers** -- install if you use [Animated Containers](https://www.nexusmods.com/morrowind/mods/42238)
 - 07 **Improved Kwama Eggs** -- install if you use [Improved Kwama Eggs and Egg Sacs](https://www.nexusmods.com/morrowind/mods/43555)
 - 08 **GitD Shacks Patch** -- install if you use [Glow in the Dakrk](https://www.nexusmods.com/morrowind/mods/45886)
+- 09 **Epic Plants Patch** -- install if you use [Epic Plants](https://www.nexusmods.com/morrowind/mods/46180)
 
 
 **Wrye Mash / MO2**  
