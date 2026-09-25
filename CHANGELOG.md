@@ -7,6 +7,7 @@
 - Added com churn (DimNussens)
 - Added version of com crypt window which is "ON" (GitD-enabled) (MD)
 - Increased animation speed of some water effects
+- Increased brightness of `lava_fall_00.nif`
 - Fixed "My Trade" topic filtering
 - Fixed com crypt entrance collision
 ## Version 2.6.2
