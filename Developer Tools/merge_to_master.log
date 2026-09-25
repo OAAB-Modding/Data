@@ -1,11 +1,4 @@
 Merging plugins...
-Copying object to master: BOOK AB_sc_GenGarrisonRoster
-Copying object to master: BOOK AB_sc_GenTaxAssessment
-Copying object to master: BOOK AB_sc_GenCourtTranscript
-Copying object to master: BOOK AB_sc_GenCensusReport
-Copying object to master: BOOK AB_sc_GenCustomsManifest
-Copying object to master: BOOK AB_sc_GenBillOfSale
-Copying object to master: BOOK AB_sc_GenCurialMinutes
-Copying object to master: BOOK AB_sc_GenWarehouseReceipt
+Merging object to master: SCPT AB_NecroAltarCreature
 Saving results...
 Finished!
