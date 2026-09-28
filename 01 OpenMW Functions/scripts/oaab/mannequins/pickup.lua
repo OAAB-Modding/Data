@@ -141,6 +141,11 @@ local function findPortableState(object, portables)
 	if portables[object.id] then
 		return portables[object.id], object.id
 	end
+	-- Fresh stock/loot uses an ordinary MISC record, without pickup save data.
+	local baseId = discovery.getMannequinId(object)
+	if baseId then
+		return { baseId = baseId, scale = object.scale }, nil
+	end
 	return nil, nil
 end
 
@@ -171,28 +176,42 @@ local function clearSpawnedInventory(mannequin)
 end
 
 function M.place(object, actor, position, rotation, portables)
+	if not isValid(object) or not object.cell or object.count < 1 then
+		return nil
+	end
 	local saved, key = findPortableState(object, portables)
-	if not saved or not saved.baseId or not isValid(object) then
+	if not saved or not saved.baseId then
 		return nil
 	end
 
-	local mannequin = world.createObject(saved.baseId)
-	if not clearSpawnedInventory(mannequin) then
-		mannequin:remove()
+	local mannequins = {}
+	local ok, complete = pcall(function()
+		for _ = 1, object.count do
+			local mannequin = world.createObject(saved.baseId)
+			table.insert(mannequins, mannequin)
+			if not clearSpawnedInventory(mannequin) then return false end
+			if saved.scale and mannequin.setScale then
+				mannequin:setScale(saved.scale)
+			end
+		end
+		-- Finish initialising the whole stack before scheduling world placement.
+		for _, mannequin in ipairs(mannequins) do
+			if rotation then
+				mannequin:teleport(object.cell, position, rotation)
+			else
+				mannequin:teleport(object.cell, position)
+			end
+		end
+		return true
+	end)
+	if not ok or not complete then
+		for _, mannequin in ipairs(mannequins) do mannequin:remove() end
+		if not ok then error(complete) end
 		return nil
 	end
-	if saved.scale and mannequin.setScale then
-		mannequin:setScale(saved.scale)
-	end
-	local cell = object.cell or (actor and actor.cell)
-	if rotation then
-		mannequin:teleport(cell, position, rotation)
-	else
-		mannequin:teleport(cell, position)
-	end
 	object:remove()
-	portables[key] = nil
-	return mannequin, saved.poseId
+	if key then portables[key] = nil end
+	return mannequins, saved.poseId
 end
 
 return M

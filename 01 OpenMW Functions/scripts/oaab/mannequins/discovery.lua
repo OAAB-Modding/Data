@@ -82,9 +82,13 @@ function M.getPortableId(object)
 	return recordId and M.portableIdsByMannequinId[string.lower(recordId)] or nil
 end
 
-function M.isPortable(object)
+function M.getMannequinId(object)
 	return object and object.recordId
-		and mannequinIdsByPortableId[string.lower(object.recordId)] ~= nil or false
+		and mannequinIdsByPortableId[string.lower(object.recordId)] or nil
+end
+
+function M.isPortable(object)
+	return M.getMannequinId(object) ~= nil
 end
 
 return M

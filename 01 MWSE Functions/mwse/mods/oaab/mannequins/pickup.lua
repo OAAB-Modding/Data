@@ -144,11 +144,16 @@ local function clearSpawnedInventory(reference)
 end
 
 function M.place(reference)
-	if not discovery.isPortable(reference) then
+	if not discovery.isPortable(reference) or reference.deleted or not reference.cell then
 		return nil
 	end
 	local state = reference.data and reference.data[namespace]
-	if not state or state.kind ~= portableMarker or not state.baseId then
+	-- Merchant stock and container loot have never been picked up as an NPC,
+	-- so they have no per-instance reconstruction data. Use their authored pair.
+	if not state then
+		state = { kind = portableMarker, baseId = discovery.getMannequinId(reference) }
+	end
+	if state.kind ~= portableMarker or not state.baseId then
 		return nil
 	end
 	local base = tes3.getObject(state.baseId)
@@ -157,27 +162,40 @@ function M.place(reference)
 		return nil
 	end
 
-	local created = tes3.createReference({
-		object = base,
-		position = reference.position,
-		orientation = reference.orientation,
-		cell = reference.cell,
-		scale = reference.scale,
-	})
-	if not created then
+	local count = reference.stackSize or 1
+	if count < 1 then
 		return nil
 	end
-	if not clearSpawnedInventory(created) then
-		created:delete()
+	local created = {}
+	local ok, complete = pcall(function()
+		for _ = 1, count do
+			local mannequin = tes3.createReference({
+				object = base,
+				position = reference.position,
+				orientation = reference.orientation,
+				cell = reference.cell,
+				scale = reference.scale,
+			})
+			if not mannequin then return false end
+			table.insert(created, mannequin)
+			if not clearSpawnedInventory(mannequin) then return false end
+			mannequin.data[namespace] = mannequin.data[namespace] or {}
+			mannequin.data[namespace].poseFile = state.poseFile
+		end
+		return true
+	end)
+	-- Preserve the entire portable stack if any NPC failed to initialise.
+	if not ok or not complete then
+		for _, mannequin in ipairs(created) do mannequin:delete() end
 		return nil
 	end
-	created.data[namespace] = created.data[namespace] or {}
-	created.data[namespace].poseFile = state.poseFile
 	reference:delete()
 	timer.frame.delayOneFrame(function()
-		if not created.deleted then poses.apply(created) end
+		for _, mannequin in ipairs(created) do
+			if not mannequin.deleted then poses.apply(mannequin) end
+		end
 	end)
-	return created
+	return created[1]
 end
 
 return M

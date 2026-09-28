@@ -81,8 +81,12 @@ function M.getPortableId(reference)
 	return M.portableIdsByMannequinId[lowerId(baseObject)]
 end
 
+function M.getMannequinId(reference)
+	return mannequinIdsByPortableId[lowerId(reference and reference.baseObject)]
+end
+
 function M.isPortable(reference)
-	return mannequinIdsByPortableId[lowerId(reference and reference.baseObject)] ~= nil
+	return M.getMannequinId(reference) ~= nil
 end
 
 -- Render-level suppression sets, keyed by tes3.activeBodyPart index.

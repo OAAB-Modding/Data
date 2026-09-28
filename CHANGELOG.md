@@ -1,4 +1,7 @@
 # Changelog
+## Version 2.7.1
+- Fixed mannequin items used in containers
+
 ## Version 2.7.0
 - Added mannequins (MD)
 - Added Shade of the Revenant altar (GrumblingVomit)

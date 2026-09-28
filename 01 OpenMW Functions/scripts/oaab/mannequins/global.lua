@@ -16,6 +16,7 @@ local pairedProxies = {}
 local registeredActivations = {}
 local playerSneaking = {}
 local syncedPoses = {}
+local placedPortables = {}
 
 local function resolveInventory(inventory)
 	-- Resolve leveled-list entries before reading. Global scripts are allowed to
@@ -259,20 +260,28 @@ local function handlePortablePlacement(object, actor, position, rotation)
 	if not object or object.isValid and not object:isValid() then
 		return
 	end
-	if not state.portables[object.recordId] and not state.portables[object.id] then
+	if placedPortables[object.id] or (not discovery.isPortable(object)
+		and not state.portables[object.recordId] and not state.portables[object.id]) then
 		return
 	end
-	local ok, mannequin, poseId = pcall(pickup.place, object, actor, position, rotation, state.portables)
+	local objectId = object.id
+	local ok, mannequins, poseId = pcall(pickup.place, object, actor, position, rotation, state.portables)
 	if not ok then
-		print("[OAAB Mannequins] WARNING: mannequin placement failed: " .. tostring(mannequin))
+		print("[OAAB Mannequins] WARNING: mannequin placement failed: " .. tostring(mannequins))
 		sendMessage(actor, "The mannequin could not be placed.")
 		return
 	end
-	if mannequin then
-		if poses.get(poseId) then
-			state.poses[mannequin.id] = poseId
-			syncedPoses[mannequin.id] = poseId
-			mannequin:sendEvent("OAABMannequins_SetPose", { poseId = poseId })
+	if mannequins then
+		-- Removal/teleport can finish after this handler. Ignore another active
+		-- notification for the same source while those operations are pending.
+		placedPortables[objectId] = true
+		for _, mannequin in ipairs(mannequins) do
+			registerActivation(mannequin)
+			if poses.get(poseId) then
+				state.poses[mannequin.id] = poseId
+				syncedPoses[mannequin.id] = poseId
+				mannequin:sendEvent("OAABMannequins_SetPose", { poseId = poseId })
+			end
 		end
 		sendMessage(actor, "Mannequin placed.")
 	end
@@ -291,6 +300,7 @@ return {
 		onLoad = function(data)
 			state = loadState(data)
 			syncedPoses = {}
+			placedPortables = {}
 		end,
 		onSave = function()
 			return state
