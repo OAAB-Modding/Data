@@ -13,7 +13,7 @@
 --12. Download OAAB_Data.7z file from https://github.com/OAAB-Modding/Data/releases/
 --13. Publish dev blog update
 --14. Update pinned GitHub Discussion
---15. Upload OAAB_Data.7z file to Nexus
+--15. Run [Upload release to Nexus Mods](https://github.com/OAAB-Modding/Data/actions/workflows/nexus-upload.yaml) for the version tag, then verify the Nexus Files tab.
 --16. Update HD textures and developer tools
 
 #OAAB Integrations Postrelease Instructions (when applicable)

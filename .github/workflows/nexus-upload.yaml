@@ -1,0 +1,91 @@
+name: Upload release to Nexus Mods
+run-name: Upload OAAB_Data ${{ inputs.release_tag }} to Nexus Mods
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Published GitHub release tag (for example, 2.7.1)"
+        required: true
+        type: string
+      archive_existing_version:
+        description: Archive the previous Nexus file version
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+# All versions update the same Nexus file; let an active upload finish.
+concurrency:
+  group: nexus-upload
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Validate release tag and Nexus configuration
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          NEXUSMODS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          NEXUSMODS_FILE_ID: ${{ vars.NEXUSMODS_FILE_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! "$RELEASE_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Release tag must use the existing X.Y.Z format, for example 2.7.1."
+            exit 1
+          fi
+          if [[ -z "$NEXUSMODS_API_KEY" ]]; then
+            echo "::error::Set the NEXUSMODS_API_KEY repository secret before uploading."
+            exit 1
+          fi
+          if [[ -z "$NEXUSMODS_FILE_ID" ]]; then
+            echo "::error::Set the NEXUSMODS_FILE_ID repository variable to the existing OAAB_Data main file ID."
+            exit 1
+          fi
+
+      - name: Download and check the published release archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          unpublished=$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
+            --json isDraft,isPrerelease --jq '.isDraft or .isPrerelease')
+          if [[ "$unpublished" != "false" ]]; then
+            echo "::error::Select a published, non-prerelease GitHub release."
+            exit 1
+          fi
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern 'OAAB_Data.7z'
+          test -s OAAB_Data.7z
+          7z t OAAB_Data.7z
+
+      - name: Upload to Nexus Mods
+        id: nexus
+        uses: Nexus-Mods/upload-action@c96019556046053aa26044b44396cd38929daf23 # v1.0.0-beta.10
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ vars.NEXUSMODS_FILE_ID }}
+          filename: OAAB_Data.7z
+          version: ${{ inputs.release_tag }}
+          display_name: OAAB_Data
+          category: main
+          archive_existing_version: ${{ inputs.archive_existing_version }}
+          update_mod_version: 'true'
+
+      - name: Record the Nexus upload
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          NEXUS_VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+        shell: bash
+        run: |
+          {
+            echo "Uploaded OAAB_Data $RELEASE_TAG to Nexus Mods."
+            echo
+            echo "Nexus file version ID: $NEXUS_VERSION_ID"
+          } >> "$GITHUB_STEP_SUMMARY"
