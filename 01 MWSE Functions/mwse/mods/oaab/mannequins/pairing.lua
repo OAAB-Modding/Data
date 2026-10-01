@@ -82,16 +82,30 @@ function M.rebuild(cells)
 
 	for _, cell in pairs(cells) do
 		local mannequins, proxies = discovery.collectCellCandidates(cell)
-		for _, mannequin in ipairs(mannequins) do
-			for _, proxy in ipairs(proxies) do
+		for _, proxy in ipairs(proxies) do
+			local nearest
+			local tied = false
+			for _, mannequin in ipairs(mannequins) do
 				local candidateDistanceSquared = distanceSquared(mannequin.reference, proxy.reference)
 				if candidateDistanceSquared <= radiusSquared then
-					table.insert(candidates, {
-						mannequin = mannequin,
-						proxy = proxy,
-						distanceSquared = candidateDistanceSquared,
-					})
+					if not nearest or candidateDistanceSquared < nearest.distanceSquared - tieEpsilon then
+						nearest = {
+							mannequin = mannequin,
+							proxy = proxy,
+							distanceSquared = candidateDistanceSquared,
+						}
+						tied = false
+					elseif math.abs(candidateDistanceSquared - nearest.distanceSquared) <= tieEpsilon then
+						tied = true
+					end
 				end
+			end
+			-- Each proxy may affect only its closest mannequin. If that mannequin
+			-- is already paired, this proxy never falls back to another NPC.
+			if tied then
+				markAmbiguous(state, proxy.reference, "equally close mannequins")
+			elseif nearest then
+				table.insert(candidates, nearest)
 			end
 		end
 	end

@@ -32,24 +32,18 @@ function M.hasRealItems(mannequin, retailEntry)
 	return false
 end
 
-local function createPortableRecord(mannequin)
+local function getPortableRecord(mannequin)
 	local portableId = discovery.getPortableId(mannequin)
 	if not portableId then
 		return nil, "This mannequin has no matching portable item."
 	end
 
-	local template = types.Miscellaneous.record(portableId)
-	if not template then
+	local record = types.Miscellaneous.record(portableId)
+	if not record then
 		return nil, "The matching portable mannequin item is unavailable."
 	end
 
-	-- Each pickup gets its own generated record. That prevents two mannequins
-	-- from stacking and losing which original NPC base each one must recreate.
-	local draft = types.Miscellaneous.createRecordDraft({
-		template = template,
-		name = template.name,
-	})
-	return world.createRecord(draft), nil
+	return record, nil
 end
 
 function M.portableValue(mannequin)
@@ -102,23 +96,27 @@ function M.pickUp(options)
 		return nil, "Remove all items before picking up the mannequin."
 	end
 
-	local portableRecord, portableError = createPortableRecord(mannequin)
+	local portableRecord, portableError = getPortableRecord(mannequin)
 	if not portableRecord then
 		return nil, portableError
 	end
 	local portable = world.createObject(portableRecord.id)
 	local saved = {
-		baseId = mannequin.recordId,
 		scale = mannequin.scale,
 		poseId = options.poseId,
 	}
-	options.portables[portableRecord.id] = saved
+	-- The record stays the standard OAAB item. Optional instance data must not
+	-- replace the data for every other portable with the same record ID.
+	-- Merging/splitting a regular stack can discard instance data; its standard
+	-- form still comes from the item ID rather than from that optional data.
+	local portableKey = portable.id
+	options.portables[portableKey] = saved
 	ownership.copyOwner(portable, options.owner)
 	portable:moveInto(types.Actor.inventory(player))
 	if options.takeProxyContents
 		and not transferProxyContents(options.proxy, player, options.owner) then
 		portable:remove()
-		options.portables[portableRecord.id] = nil
+		options.portables[portableKey] = nil
 		return nil, "The mannequin's contents could not be transferred."
 	end
 
@@ -133,18 +131,16 @@ local function findPortableState(object, portables)
 	if not object then
 		return nil, nil
 	end
-	if portables[object.recordId] then
-		return portables[object.recordId], object.recordId
-	end
-	-- Compatibility with any early development save that keyed a generic
-	-- portable by object id rather than by its unique generated record.
 	if portables[object.id] then
 		return portables[object.id], object.id
 	end
+	-- Older pickups keyed their data by a unique generated record.
+	if portables[object.recordId] then
+		return portables[object.recordId], object.recordId
+	end
 	-- Fresh stock/loot uses an ordinary MISC record, without pickup save data.
-	local baseId = discovery.getMannequinId(object)
-	if baseId then
-		return { baseId = baseId, scale = object.scale }, nil
+	if discovery.isPortable(object) then
+		return { scale = object.scale }, nil
 	end
 	return nil, nil
 end
@@ -180,14 +176,25 @@ function M.place(object, actor, position, rotation, portables)
 		return nil
 	end
 	local saved, key = findPortableState(object, portables)
-	if not saved or not saved.baseId then
+	if not saved then
+		return nil
+	end
+	-- Standard items always place their authored OAAB NPC, regardless of any
+	-- old custom base ID. Generated portables from old saves use the saved
+	-- mannequin's form to find that same standard pair.
+	local baseId = discovery.getMannequinId(object)
+	if not baseId and saved.baseId then
+		local portableId = discovery.getPortableId(saved.baseId)
+		baseId = discovery.getMannequinId({ recordId = portableId })
+	end
+	if not baseId or not types.NPC.record(baseId) then
 		return nil
 	end
 
 	local mannequins = {}
 	local ok, complete = pcall(function()
 		for _ = 1, object.count do
-			local mannequin = world.createObject(saved.baseId)
+			local mannequin = world.createObject(baseId)
 			table.insert(mannequins, mannequin)
 			if not clearSpawnedInventory(mannequin) then return false end
 			if saved.scale and mannequin.setScale then

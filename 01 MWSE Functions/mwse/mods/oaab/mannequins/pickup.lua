@@ -77,7 +77,6 @@ function M.pickUp(reference, proxy, stolenOwner, takeProxyContents)
 	end
 	itemData.data[namespace] = {
 		kind = portableMarker,
-		baseId = reference.baseObject.id,
 		poseFile = poses.getSelectedFile(reference),
 	}
 	if stolenOwner then
@@ -148,17 +147,18 @@ function M.place(reference)
 		return nil
 	end
 	local state = reference.data and reference.data[namespace]
-	-- Merchant stock and container loot have never been picked up as an NPC,
-	-- so they have no per-instance reconstruction data. Use their authored pair.
+	-- Merchant stock and container loot have no per-instance pose data.
 	if not state then
-		state = { kind = portableMarker, baseId = discovery.getMannequinId(reference) }
+		state = { kind = portableMarker }
 	end
-	if state.kind ~= portableMarker or not state.baseId then
+	if state.kind ~= portableMarker then
 		return nil
 	end
-	local base = tes3.getObject(state.baseId)
+	-- Every portable places its standard OAAB NPC. Ignore custom base IDs saved
+	-- by older pickups rather than recreating a mod's custom mannequin record.
+	local base = tes3.getObject(discovery.getMannequinId(reference))
 	if not base or base.objectType ~= tes3.objectType.npc then
-		tes3.messageBox({ message = "This mannequin's original form is unavailable.", showInDialog = false })
+		tes3.messageBox({ message = "This mannequin's standard form is unavailable.", showInDialog = false })
 		return nil
 	end
 

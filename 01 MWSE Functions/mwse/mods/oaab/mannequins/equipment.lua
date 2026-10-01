@@ -1,4 +1,6 @@
 local discovery = require("OAAB.Mannequins.discovery")
+local ownership = require("OAAB.Mannequins.ownership")
+local pairing = require("OAAB.Mannequins.pairing")
 
 local M = {}
 
@@ -6,7 +8,8 @@ local M = {}
 -- weaponReady is the engine flag that keeps the equipped model in hand without
 -- starting combat AI.
 function M.refreshWeaponState(reference)
-	if not discovery.isMannequin(reference) or not reference.mobile then
+	if not discovery.isMannequin(reference) or not reference.mobile
+		or not ownership.hasOwner(pairing.findLinkedProxy(reference)) then
 		return false
 	end
 	local shouldBeReady = reference.mobile.readiedWeapon ~= nil

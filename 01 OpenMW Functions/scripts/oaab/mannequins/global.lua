@@ -7,6 +7,8 @@ local ownership = require("scripts.oaab.mannequins.ownership")
 local pickup = require("scripts.oaab.mannequins.pickup")
 local poses = require("scripts.oaab.mannequins.poses")
 
+local mannequinScriptPath = "scripts/oaab/mannequins/npc.lua"
+
 local state = {
 	retail = {},
 	portables = {},
@@ -14,7 +16,6 @@ local state = {
 }
 local pairedProxies = {}
 local registeredActivations = {}
-local playerSneaking = {}
 local syncedPoses = {}
 local placedPortables = {}
 
@@ -109,23 +110,17 @@ local function registerActivation(mannequin)
 			return
 		end
 		local proxy = pairedProxies[mannequin.id]
-		if playerSneaking[actor.id] then
-			local profile = discovery.getMannequinProfile(mannequin)
-			actor:sendEvent("OAABMannequins_ShowMenu", {
-				mannequin = mannequin,
-				owned = ownership.hasOwner(proxy),
-				canPose = poses.canPose(profile),
-			})
-			return false
-		end
-		if proxy then
-			if ownership.hasOwner(proxy) then
-				actor:sendEvent("OAABMannequins_Message", "You can't use an owned mannequin.")
-				return false
-			end
+		if proxy and not ownership.hasOwner(proxy) then
 			proxy:activateBy(actor)
 			return false
 		end
+		local profile = discovery.getMannequinProfile(mannequin)
+		actor:sendEvent("OAABMannequins_ShowMenu", {
+			mannequin = mannequin,
+			owned = ownership.hasOwner(proxy),
+			canPose = poses.canPose(profile),
+		})
+		return false
 	end)
 end
 
@@ -295,6 +290,14 @@ local function loadState(saved)
 	return loaded
 end
 
+local function onActorActive(actor)
+	if not types.NPC.objectIsInstance(actor) then return end
+	if types.NPC.record(actor).race ~= "ab_mannequinstand" and types.NPC.record(actor).race ~= "ab_mannequin" then return end
+	if not actor:hasScript(mannequinScriptPath) then
+        actor:addScript(mannequinScriptPath)
+    end
+end
+
 return {
 	engineHandlers = {
 		onLoad = function(data)
@@ -312,13 +315,9 @@ return {
 		onItemActive = function(object)
 			handlePortablePlacement(object, nil, object.position, object.rotation)
 		end,
+		onActorActive = onActorActive
 	},
 	eventHandlers = {
-		OAABMannequins_SneakChanged = function(data)
-			if data and data.player then
-				playerSneaking[data.player.id] = data.sneaking == true
-			end
-		end,
 		OAABMannequins_PoseChanged = function(data)
 			if data and data.mannequin and poses.get(data.poseId)
 				and poses.canPose(discovery.getMannequinProfile(data.mannequin)) then

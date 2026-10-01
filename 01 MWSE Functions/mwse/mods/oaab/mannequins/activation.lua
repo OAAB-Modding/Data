@@ -3,39 +3,38 @@ local ownership = require("OAAB.Mannequins.ownership")
 local pairing = require("OAAB.Mannequins.pairing")
 
 local M = {}
+local inventoryActivation
+
+function M.isInventoryActivation(reference)
+	return inventoryActivation == reference
+end
+
+function M.openInventory(reference)
+	if not reference or reference.deleted or not discovery.isMannequin(reference)
+		or ownership.hasOwner(pairing.findLinkedProxy(reference)) then
+		return false
+	end
+
+	-- Native activation opens the NPC's inventory and lets the engine handle
+	-- equipment. Bypass our menu only for this synchronous activation call.
+	inventoryActivation = reference
+	local ok, err = pcall(function() tes3.player:activate(reference) end)
+	inventoryActivation = nil
+	if not ok then error(err) end
+	return true
+end
 
 function M.redirectRetailActivation(e)
-
 	if e.activator ~= tes3.player or not discovery.isMannequin(e.target) then
 		return
 	end
-	if tes3.mobilePlayer and tes3.mobilePlayer.isSneaking then
-		return
-	end
-
-	local proxy = pairing.findLinkedProxy(e.target)
-	if not proxy then
+	if not ownership.hasOwner(pairing.findLinkedProxy(e.target)) then
 		return
 	end
 
 	e.block = true
 	e.claim = true
-	if ownership.hasOwner(proxy) then
-		tes3.messageBox({
-			message = "You can't use an owned mannequin.",
-			showInDialog = false,
-		})
-		mwse.log("[OAAB Mannequins] refused normal activation of owned mannequin %s",
-			pairing.describeReference(e.target))
-		return
-	end
-
-	-- A paired but unowned proxy is still the authoritative inventory. This is
-	-- not part of the retail contract, but retaining the redirect keeps such a
-	-- placement usable without exposing the mannequin's display copies.
-	local shown = tes3.showContentsMenu({ reference = proxy })
-	mwse.log("[OAAB Mannequins] opened unowned stock %s -> %s (shown=%s)",
-		pairing.describeReference(e.target), pairing.describeReference(proxy), tostring(shown))
+	tes3.messageBox({ message = "You can't use an owned mannequin.", showInDialog = false })
 end
 
 function M.verifyContentsSource(e)
@@ -46,7 +45,8 @@ function M.verifyContentsSource(e)
 	if pairing.getState().byProxy[reference] then
 		mwse.log("[OAAB Mannequins] verified MenuContents source: %s",
 			pairing.describeReference(reference))
-	elseif discovery.isMannequin(reference) and pairing.findLinkedProxy(reference) then
+	elseif discovery.isMannequin(reference)
+		and ownership.hasOwner(pairing.findLinkedProxy(reference)) then
 		mwse.log("[OAAB Mannequins] ERROR: retail MenuContents bound to mannequin instead of proxy: %s",
 			pairing.describeReference(reference))
 	end

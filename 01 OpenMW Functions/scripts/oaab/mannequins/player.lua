@@ -10,8 +10,6 @@ local discovery = require("scripts.oaab.mannequins.discovery")
 local pairing = require("scripts.oaab.mannequins.pairing")
 local poses = require("scripts.oaab.mannequins.poses")
 
-local refreshInterval = 1
-local elapsed = refreshInterval
 local previousCellId = nil
 local previousSneak = nil
 local warned = {}
@@ -108,6 +106,7 @@ local function createMenu(title, choices)
 		-- OpenMW's native interactive messagebox layouts use the Modal layer.
 		layer = "Modal",
 		type = ui.TYPE.Container,
+		template = interfaces.MWUI.templates.padding,
 		props = {
 			relativePosition = util.vector2(0.5, 0.5),
 			anchor = util.vector2(0.5, 0.5),
@@ -127,7 +126,7 @@ local function createMenu(title, choices)
 										template = interfaces.MWUI.templates.textHeader,
 										props = { text = title },
 									},
-									{ template = interfaces.MWUI.templates.interval },
+									{ template = interfaces.MWUI.templates.padding },
 									unpack(choices),
 								}),
 							},
@@ -170,7 +169,7 @@ local function showPoseMenu(data)
 			})
 		end))
 	end
-	table.insert(choices, { template = interfaces.MWUI.templates.interval })
+	table.insert(choices, { template = interfaces.MWUI.templates.padding })
 	table.insert(choices, button("Cancel", closeMenu))
 	createMenu("Mannequin Pose", choices)
 end
@@ -201,42 +200,41 @@ local function showMenu(data)
 				showPoseMenu(data)
 			end))
 		end
+		table.insert(choices, { template = interfaces.MWUI.templates.padding })
 		table.insert(choices, button("Pick Up", function() choose("pickup") end))
 	end
-	table.insert(choices, { template = interfaces.MWUI.templates.interval })
+	if not data.owned then
+		table.insert(choices, { template = interfaces.MWUI.templates.padding })
+		table.insert(choices, button("Inventory", function() closeMenu() interfaces.UI.addMode('Container', {target = data.mannequin}) end))
+	end
+	table.insert(choices, { template = interfaces.MWUI.templates.padding })
 	table.insert(choices, button("Cancel", function() choose(nil) end))
 	createMenu("Mannequin", choices)
 end
 
-local function syncSneak(force)
-	local sneaking = self.controls.sneak == true
-	if force or sneaking ~= previousSneak then
-		previousSneak = sneaking
-		core.sendGlobalEvent("OAABMannequins_SneakChanged", {
-			player = self.object,
-			sneaking = sneaking,
-		})
+local CHECK_INTERVAL = 0.5
+local nextCheck = 0
+
+local function onFrame()
+   local now = core.getRealTime()
+    if now < nextCheck then return end
+    nextCheck = now + CHECK_INTERVAL
+
+	local cellId = self.cell and self.cell.id or nil
+	if cellId ~= previousCellId then
+		local cellChanged = cellId ~= previousCellId
+		previousCellId = cellId
+		rebuildPairings(cellChanged)
 	end
 end
 
 return {
 	engineHandlers = {
 		onActive = function()
-			syncSneak(true)
 			rebuildPairings(true)
 		end,
 		onInactive = closeMenu,
-		onUpdate = function(dt)
-			syncSneak(false)
-			local cellId = self.cell and self.cell.id or nil
-			elapsed = elapsed + dt
-			if cellId ~= previousCellId or elapsed >= refreshInterval then
-				local cellChanged = cellId ~= previousCellId
-				previousCellId = cellId
-				elapsed = 0
-				rebuildPairings(cellChanged)
-			end
-		end,
+		onFrame = onFrame,
 	},
 	eventHandlers = {
 		OAABMannequins_ShowMenu = showMenu,

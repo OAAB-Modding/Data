@@ -78,7 +78,25 @@ end
 function M.getPortableId(reference)
 	local baseObject = type(reference) == "string" and { id = reference }
 		or reference and reference.baseObject
-	return M.portableIdsByMannequinId[lowerId(baseObject)]
+	local portableId = M.portableIdsByMannequinId[lowerId(baseObject)]
+	if portableId then
+		return portableId
+	end
+
+	-- Mods can copy a mannequin to a new NPC ID. Convert its form to one of
+	-- the standard OAAB portable/NPC pairs.
+	if type(reference) == "string" then
+		return nil
+	end
+	local profile = M.getMannequinProfile(reference)
+	if not profile then
+		return nil
+	end
+	local suffix = baseObject.female and "F" or "M"
+	if profile.id == "stand" then
+		return "AB_Furn_Mannequin2" .. suffix
+	end
+	return (M.isEmptyHead(reference) and "AB_Furn_MannequinHeadless" or "AB_Furn_MannequinHead") .. suffix
 end
 
 function M.getMannequinId(reference)

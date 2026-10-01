@@ -1,5 +1,6 @@
 local bodyparts = require("OAAB.Mannequins.bodyparts")
 local equipment = require("OAAB.Mannequins.equipment")
+local ownership = require("OAAB.Mannequins.ownership")
 
 local M = {}
 
@@ -379,6 +380,9 @@ end
 -- The proxy is only observed here. It remains an ordinary owned container, and
 -- vanilla Morrowind alone exposes and transfers its stock during trade.
 function M.refresh(reference, proxy, force, profile, trigger)
+	if not ownership.hasOwner(proxy) then
+		return false
+	end
 	return refreshDisplay(reference, proxy, force, profile, trigger)
 end
 
@@ -462,7 +466,7 @@ function M.handleContainerClosed(e, pairingState, scheduleNextFrame)
 		return false
 	end
 	local pair = pairingState.byMannequin[mannequin]
-	if not pair then
+	if not pair or not ownership.hasOwner(pair.proxy) then
 		return false
 	end
 

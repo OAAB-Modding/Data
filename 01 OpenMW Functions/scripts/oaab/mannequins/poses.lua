@@ -1,3 +1,5 @@
+local discovery = require("scripts.oaab.mannequins.discovery")
+
 local M = {}
 
 -- OpenMW cannot swap an actor's animation source at runtime like MWSE can.
@@ -48,6 +50,9 @@ function M.isPlaying(actor, poseId, animation)
 end
 
 function M.apply(actor, poseId, animation)
+	if not M.canPose(discovery.getMannequinProfile(actor)) then
+		return false, "unsupported"
+	end
 	local pose = M.get(poseId)
 	if not pose then
 		return false, "invalid"

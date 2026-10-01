@@ -196,7 +196,8 @@ end
 return {
 	engineHandlers = {
 		onLoad = function(data)
-			selectedPoseId = poses.get(data and data.poseId) and data.poseId or nil
+			selectedPoseId = poses.canPose(discovery.getMannequinProfile(self))
+				and poses.get(data and data.poseId) and data.poseId or nil
 			poseNeedsApply = selectedPoseId ~= nil
 			poseRetryElapsed = 0
 		end,

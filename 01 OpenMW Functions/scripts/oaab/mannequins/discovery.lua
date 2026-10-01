@@ -79,7 +79,30 @@ end
 
 function M.getPortableId(object)
 	local recordId = type(object) == "string" and object or object and object.recordId
-	return recordId and M.portableIdsByMannequinId[string.lower(recordId)] or nil
+	local portableId = recordId and M.portableIdsByMannequinId[string.lower(recordId)]
+	if portableId then
+		return portableId
+	end
+
+	-- Mods can copy a mannequin to a new NPC ID. Convert its form to one of
+	-- the standard OAAB portable/NPC pairs. Record IDs also support old saves.
+	local record, profile
+	if type(object) == "string" then
+		record = types.NPC.record(object)
+		profile = record and record.class and M.profiles[string.lower(record.class)]
+	else
+		profile = M.getMannequinProfile(object)
+		if profile then record = types.NPC.record(object) end
+	end
+	if not profile then
+		return nil
+	end
+	local suffix = record.isMale and "M" or "F"
+	if profile.id == "stand" then
+		return "AB_Furn_Mannequin2" .. suffix
+	end
+	local emptyHead = record.head and M.emptyHeadIds[string.lower(record.head)]
+	return (emptyHead and "AB_Furn_MannequinHeadless" or "AB_Furn_MannequinHead") .. suffix
 end
 
 function M.getMannequinId(object)
