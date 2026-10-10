@@ -1,4 +1,7 @@
 # Changelog
+## Version 2.7.3
+- Fixed mesh for misc version of dress stands
+- Added API for mannequin pose menu
 ## Version 2.7.2
 - Improved performance of mannequins in OpenMW
 - No longer require sneaking to access mannequin menu

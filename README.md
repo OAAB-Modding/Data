@@ -1,5 +1,5 @@
 # OAAB-Data
-## Version 2.7.2
+## Version 2.7.3
 
 ### Nexus Download Instructions
 **Manual Installation**
