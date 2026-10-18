@@ -14,7 +14,8 @@
 --13. Publish dev blog update
 --14. Update pinned GitHub Discussion
 --15. Run [Upload release to Nexus Mods](https://github.com/OAAB-Modding/Data/actions/workflows/nexus-upload.yaml) for the version tag, then verify the Nexus Files tab.
---16. Update HD textures and developer tools
+--16. Update changelog on Nexus.
+--17. Update HD textures and developer tools
 
 #OAAB Integrations Postrelease Instructions (when applicable)
 --1. OAAB Creature Loot: add new ingredients to vanilla creatures
