@@ -1,6 +1,10 @@
 -- Runtime playback of static prop wrappers embedded in a pose NIF. This module
 -- intentionally has no dependency on the Pose Designer or its editor metadata.
 local M={prefix="OAAB Pose Prop "}
+-- An editor may supply a gated logger without becoming a runtime dependency.
+local function log(format,...)
+    if M.debugLog then M.debugLog(format,...) end
+end
 local function wrappers(root)
     local found={}
     local function visit(node)
@@ -21,7 +25,7 @@ function M.prepare(source,sourceRoot,targetRoot,targetBones)
         local target=sourceParent==sourceRoot.parent and targetRoot.parent or targetBones[name]
         if not target then
             target=targetRoot.parent
-            mwse.log("[OAAB Mannequins Props] Missing parent %s for %s; using root",tostring(name),wrapper.name)
+            log("[OAAB Mannequins Props] Missing parent %s for %s; using root",tostring(name),wrapper.name)
         end
         local clone=assert(wrapper:clone(),"Embedded prop could not be cloned")
         out[#out+1]={node=clone,parent=assert(target,"Mannequin prop root is unavailable")}
@@ -42,6 +46,6 @@ function M.replace(scene,prepared)
         scene:update()
         error(err)
     end
-    if #prepared>0 or #previous>0 then mwse.log("[OAAB Mannequins Props] Applied %d embedded props",#prepared) end
+    if #prepared>0 or #previous>0 then log("[OAAB Mannequins Props] Applied %d embedded props",#prepared) end
 end
 return M

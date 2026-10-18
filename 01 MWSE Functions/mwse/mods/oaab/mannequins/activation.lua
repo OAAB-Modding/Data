@@ -42,10 +42,7 @@ function M.verifyContentsSource(e)
 	if not reference then
 		return
 	end
-	if pairing.getState().byProxy[reference] then
-		mwse.log("[OAAB Mannequins] verified MenuContents source: %s",
-			pairing.describeReference(reference))
-	elseif discovery.isMannequin(reference)
+	if discovery.isMannequin(reference)
 		and ownership.hasOwner(pairing.findLinkedProxy(reference)) then
 		mwse.log("[OAAB Mannequins] ERROR: retail MenuContents bound to mannequin instead of proxy: %s",
 			pairing.describeReference(reference))

@@ -159,10 +159,6 @@ local function refreshRetailMannequin(mannequin, proxy, force)
 	entry.displayObjectIds = displayObjectIds
 	entry.displayRecordIds = displayRecordIds
 	entry.equipmentRefreshRetries = 2
-	local owner = proxy.owner
-	print(string.format("[OAAB Mannequins] mirrored %d display item(s) from %s (owner=%s, faction=%s) to %s",
-		#ids, proxy.recordId or proxy.id, owner and owner.recordId or "none",
-		owner and owner.factionId or "none", mannequin.recordId or mannequin.id))
 	dispatchEquipmentRefresh(mannequin, entry, ids)
 end
 

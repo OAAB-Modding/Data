@@ -59,10 +59,6 @@ local function rebuildPairings(force)
 			proxy = pair.proxy,
 		})
 	end
-	if force then
-		print(string.format("[OAAB Mannequins] found %d paired retail mannequin(s) in %s",
-			#pairedReferences, self.cell and self.cell.displayName or "unknown cell"))
-	end
 	core.sendGlobalEvent("OAABMannequins_PairingsUpdated", {
 		force = force == true,
 		mannequins = mannequins,

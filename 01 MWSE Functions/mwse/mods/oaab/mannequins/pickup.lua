@@ -58,7 +58,7 @@ function M.pickUp(reference, proxy, stolenOwner, takeProxyContents)
 		return false
 	end
 	if retail.hasRealItems(reference) then
-		if proxy then retail.refresh(reference, proxy, true, nil, "pickupRejected") end
+		if proxy then retail.refresh(reference, proxy, true) end
 		tes3.messageBox({
 			message = "Remove all items before picking up the mannequin.",
 			showInDialog = false,
@@ -68,7 +68,7 @@ function M.pickUp(reference, proxy, stolenOwner, takeProxyContents)
 
 	local item, itemData, portableError = createPortableItemData(reference)
 	if not itemData then
-		if proxy then retail.refresh(reference, proxy, true, nil, "pickupRecovery") end
+		if proxy then retail.refresh(reference, proxy, true) end
 		tes3.messageBox({
 			message = portableError or "The mannequin could not be picked up.",
 			showInDialog = false,
@@ -95,7 +95,7 @@ function M.pickUp(reference, proxy, stolenOwner, takeProxyContents)
 				message = "The mannequin's contents could not be transferred.",
 				showInDialog = false,
 			})
-			if proxy then retail.refresh(reference, proxy, true, nil, "pickupTransferRecovery") end
+			if proxy then retail.refresh(reference, proxy, true) end
 			return false
 		end
 	end

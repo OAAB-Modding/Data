@@ -95,15 +95,6 @@ local function displaySignature(entries)
 	return table.concat(ids, "|")
 end
 
-local function countSignature(counts)
-	local entries = {}
-	for _, entry in pairs(counts or {}) do
-		table.insert(entries, string.format("%s=%d", string.lower(entry.id), entry.count))
-	end
-	table.sort(entries)
-	return table.concat(entries, "|")
-end
-
 local function referenceKey(reference)
 	local cell = reference.cell
 	local position = reference.position or { x = 0, y = 0, z = 0 }
@@ -234,16 +225,14 @@ local function removeTaggedCopy(reference, item, itemData)
 		updateGUI = false,
 	})
 	if removed ~= 1 then
-		local itemDataRemoved = false
 		if tes3.removeItemData then
-			local ok, result = pcall(tes3.removeItemData, {
+			pcall(tes3.removeItemData, {
 				from = reference,
 				item = item,
 				itemData = itemData,
 				force = true,
 				updateGUI = false,
 			})
-			itemDataRemoved = ok and result == true
 		end
 		removed = tes3.removeItem({
 			reference = reference,
@@ -253,9 +242,6 @@ local function removeTaggedCopy(reference, item, itemData)
 			playSound = false,
 			updateGUI = false,
 		})
-		log("WARNING: exact display removal for %s returned zero; "
-			.. "fallback itemDataRemoved=%s, countRemoved=%d",
-			item.id, tostring(itemDataRemoved), removed)
 	end
 
 	local after = inventoryCount(reference, item)
@@ -330,7 +316,7 @@ local function displayMatches(reference, entries, proxyKey)
 	return true
 end
 
-local function refreshDisplay(reference, proxy, force, profile, trigger)
+local function refreshDisplay(reference, proxy, force)
 	local state = getState(reference)
 	local counts = getInventoryCounts(proxy, state.retailDisplayIds)
 	local entries = sortedEntries(counts)
@@ -371,24 +357,21 @@ local function refreshDisplay(reference, proxy, force, profile, trigger)
 	state.retailProxyKey = proxyKey
 	state.retailSignature = desiredSignature
 	state.retailDisplayIds = placedIds
-	log("retail display %s [%s] via %s: proxyStock=[%s]",
-		referenceKey(reference), profile and profile.id or "unpaired",
-		trigger or "unspecified", countSignature(counts))
 	return true
 end
 
 -- The proxy is only observed here. It remains an ordinary owned container, and
 -- vanilla Morrowind alone exposes and transfers its stock during trade.
-function M.refresh(reference, proxy, force, profile, trigger)
+function M.refresh(reference, proxy, force)
 	if not ownership.hasOwner(proxy) then
 		return false
 	end
-	return refreshDisplay(reference, proxy, force, profile, trigger)
+	return refreshDisplay(reference, proxy, force)
 end
 
-function M.refreshAll(pairingState, force, trigger)
+function M.refreshAll(pairingState, force)
 	for mannequin, pair in pairs(pairingState.byMannequin) do
-		M.refresh(mannequin, pair.proxy, force, pair.profile, trigger)
+		M.refresh(mannequin, pair.proxy, force)
 	end
 end
 
@@ -471,7 +454,7 @@ function M.handleContainerClosed(e, pairingState, scheduleNextFrame)
 	end
 
 	scheduleNextFrame(function()
-		M.refresh(mannequin, pair.proxy, false, pair.profile, "containerClosed")
+		M.refresh(mannequin, pair.proxy, false)
 	end)
 	return true
 end

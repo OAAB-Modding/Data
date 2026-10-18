@@ -52,6 +52,11 @@ local function boneMap(root)
 end
 
 local function loadDirect(reference, file)
+	-- Resolve both loose and BSA assets before loading, so a deleted assignment
+	-- does not reach the native loader's missing-file warning/error-marker path.
+	if tes3.getFileSource then
+		assert(tes3.getFileSource("meshes\\" .. file:gsub("/", "\\")), "Pose NIF could not be found")
+	end
 	local source = assert(tes3.loadMesh(file, false), "Pose NIF could not be loaded")
 	local sourceRoot = assert(findRoot(source), "Pose NIF has no Bip01 skeleton")
 	local targetRoot = assert(findRoot(reference.sceneNode), "Mannequin has no Bip01 skeleton")
@@ -149,6 +154,22 @@ function M.unregisterPose(id)
 	registeredPoses[id] = nil
 end
 
+-- Snapshot the file-based catalog without needing a mannequin or opening UI.
+function M.listPoses()
+	local entries = {}
+	local function append(pose)
+		local copy = {}
+		for key, value in pairs(pose) do copy[key] = value end
+		table.insert(entries, copy)
+	end
+	for _, pose in ipairs(poses) do append(pose) end
+	local ids = {}
+	for id in pairs(registeredPoses) do table.insert(ids, id) end
+	table.sort(ids)
+	for _, id in ipairs(ids) do append(registeredPoses[id]) end
+	return entries
+end
+
 local function getState(reference)
 	reference.data[namespace] = reference.data[namespace] or {}
 	return reference.data[namespace]
@@ -187,7 +208,7 @@ function M.canPose(reference)
 	return profile ~= nil and profile.id == "full"
 end
 
-function M.apply(reference)
+local function apply(reference, allowFallback)
 	local file = M.getSelectedFile(reference)
 	if not M.canPose(reference) or not reference.sceneNode or not file then
 		return false
@@ -196,6 +217,15 @@ function M.apply(reference)
 	-- Native animation replacement fails even for OAAB's stock alternate poses
 	-- on mannequin references. Apply the static NIF skeleton to the live actor.
 	local ok, root, transforms, props = pcall(loadDirect, reference, file)
+	local fellBack = false
+	local relaxed = poses[1].file
+	if not ok and allowFallback and file:lower():gsub("\\", "/") ~= relaxed then
+		local fallbackOK, fallbackRoot, fallbackTransforms, fallbackProps = pcall(loadDirect, reference, relaxed)
+		if fallbackOK then
+			ok, root, transforms, props = true, fallbackRoot, fallbackTransforms, fallbackProps
+			file, fellBack = relaxed, true
+		end
+	end
 	if not ok then
 		mwse.log("[OAAB Mannequins] Could not load pose %s: %s", file, tostring(root))
 		return false
@@ -211,15 +241,26 @@ function M.apply(reference)
 		return false
 	end
 	directPoses[reference] = entry
+	-- Commit only after the fallback skeleton and prop cleanup have succeeded.
+	-- Persisting Relaxed avoids retrying the missing file on every rebuild/drop.
+	if fellBack then M.setSelectedFile(reference, file) end
 	updateLightingAfterPose(reference)
 	return true
+end
+
+function M.apply(reference)
+	-- Saved assignments may outlive deleted/uninstalled pose files. Reapply a
+	-- usable Relaxed pose without showing a message or logging a handled failure.
+	return apply(reference, true)
 end
 
 function M.select(reference, file)
 	if not M.canPose(reference) or reference.deleted or not reference.sceneNode then return false end
 	local previous = M.getSelectedFile(reference)
 	M.setSelectedFile(reference, file)
-	if M.apply(reference) then return true end
+	-- An explicit selection still reports failure and restores the prior pose;
+	-- it must not claim that the requested file was selected after a fallback.
+	if apply(reference, false) then return true end
 	M.setSelectedFile(reference, previous)
 	if previous then M.apply(reference) end
 	return false
@@ -327,14 +368,7 @@ function M.showMenu(reference, page)
 		return false
 	end
 
-	local entries = {}
-	for _, pose in ipairs(poses) do
-		table.insert(entries, { label = pose.label, file = pose.file })
-	end
-	local ids = {}
-	for id in pairs(registeredPoses) do table.insert(ids, id) end
-	table.sort(ids)
-	for _, id in ipairs(ids) do table.insert(entries, registeredPoses[id]) end
+	local entries = M.listPoses()
 	-- Extensions append {label, file} or {label, callback=function(reference)}.
 	-- Optional deleteCallback(reference, page) adds an X beside that entry.
 	-- Raised only for full mannequins. No listener is required by OAAB_Data.

@@ -1,4 +1,6 @@
 # Changelog
+## Version 2.7.4
+- Removed routine logging for mannequins
 ## Version 2.7.3
 - Fixed mesh for misc version of dress stands
 - Added API for mannequin pose menu

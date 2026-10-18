@@ -158,7 +158,6 @@ local function applyPendingEquipment()
 		end
 	end
 	if appliedCount == requestedCount then
-		print(string.format("[OAAB Mannequins] applied %d equipment slots on %s", appliedCount, self.id))
 		pendingItemIds = nil
 		if selectedPoseId then
 			poseNeedsApply = true

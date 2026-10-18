@@ -23,7 +23,7 @@ end
 function M.rebuildPairings()
 	local cells = tes3.getActiveCells()
 	local state = pairing.rebuild(cells)
-	retail.refreshAll(state, true, "rebuildPairings")
+	retail.refreshAll(state, true)
 	for _, cell in pairs(cells) do
 		for reference in cell:iterateReferences(tes3.objectType.npc, false) do
 			if discovery.isMannequin(reference) then
@@ -69,7 +69,7 @@ local function startRefreshTimer()
 		iterations = -1,
 		persist = false,
 		callback = function()
-			retail.refreshAll(pairing.getState(), false, "safetyTimer")
+			retail.refreshAll(pairing.getState(), false)
 		end,
 	})
 end
@@ -99,7 +99,7 @@ end)
 -- time menu mode ends. Refresh synchronously here: barterOffer fires too early,
 -- while the proxy can still report its pre-transaction stock to Lua.
 event.register(tes3.event.menuExit, function()
-	retail.refreshAll(pairing.getState(), false, "menuExit")
+	retail.refreshAll(pairing.getState(), false)
 end)
 
 event.register(tes3.event.uiActivated, activation.verifyContentsSource, { filter = "MenuContents" })
