@@ -1,3 +1,4 @@
 GLOBAL: scripts/oaab/mannequins/global.lua
 CUSTOM: scripts/oaab/mannequins/npc.lua
 PLAYER: scripts/oaab/mannequins/player.lua
+GLOBAL: scripts/oaab/glowbugs/lod.lua
