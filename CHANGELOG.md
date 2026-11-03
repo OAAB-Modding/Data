@@ -1,4 +1,8 @@
 # Changelog
+## Version 2.7.5
+- Marshmerrow Bundle Improvements (Remiros)
+- Small Emperor Parasol Fixes (Remiros)
+- Added LOD logic for glowbugs in OpenMW (MD)
 ## Version 2.7.4
 - Removed routine logging for mannequins
 ## Version 2.7.3
