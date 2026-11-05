@@ -31,5 +31,6 @@ if waterVolumes then
 	waterVolumes.registerObject("AB_Fx_WaterRapidSt256a", { depth = 300, plain = true, skyOnly = false, noSwim = false, color = "78aa9f" })
 	waterVolumes.registerObject("AB_Fx_WaterRapidSt256b", { depth = 300, plain = true, skyOnly = false, noSwim = false, color = "78aa9f" })
 	waterVolumes.registerObject("AB_Fx_WaterRapidSt256c", { depth = 300, plain = true, skyOnly = false, noSwim = false, color = "78aa9f" })
+	waterVolumes.registerObject("VV23_Fx_WaterRect256c", { depth = 300, plain = false, skyOnly = false, noSwim = false, color = "78aa9f" })
 
 end
