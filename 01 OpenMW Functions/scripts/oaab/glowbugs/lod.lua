@@ -1,5 +1,6 @@
 -- Containers own bodies and harvesting; activators own particles.
--- Only explicit setVisible callers grant this manager control of enabled.
+-- All bodies follow environmental visibility; setVisible also opts into LOD.
+local core = require('openmw.core')
 local world = require('openmw.world')
 local types = require('openmw.types')
 local util = require('openmw.util')
@@ -11,13 +12,54 @@ if I.OAABGlowbugs then
         onLoad = function(data) if data ~= nil then owner._loadState(data) end end,
     }}
 end
+assert(core.weather, 'OAAB glowbugs require OpenMW 0.50 or newer')
 local models = {
     ['oaab/e/glowbugsreal.nif'] = 'ab_fx_glowbugslargeblue',
     ['oaab/e/glowbugsreal02.nif'] = 'ab_fx_glowbugslargegreen',
 }
 local pairsBySource, policies = {}, {}
+local visibility, dailyRolls = {}, {}
 local activeCells, activeSources, missing = {}, {}, {}
 local retired, timer = {}, 0
+local function getSpawnChance()
+    return world.mwscript.getGlobalVariables().ab_glowbugschance
+end
+local function setSpawnChance(chance)
+    assert(type(chance) == 'number' and chance >= 0 and chance <= 100,
+        'Glowbug spawn chance must be a number from 0 to 100')
+    world.mwscript.getGlobalVariables().ab_glowbugschance = chance
+    -- Reuse today's roll. Changing a setting must not reroll the day.
+    timer = 0.25
+end
+local function isValidWeather(weatherId)
+    -- MWScript weather IDs: clear, cloudy, foggy and overcast; rain starts at 4.
+    return type(weatherId) == 'number' and weatherId >= 0 and weatherId < 4
+        and weatherId % 1 == 0
+end
+local function isCurrentWeatherValid(cell)
+    if not cell then
+        local player = world.players[1]
+        cell = player and player.cell
+    end
+    if not cell then return false end
+    if not cell.isExterior then return true end
+    local weather = core.weather.getCurrent(cell)
+    return weather ~= nil and isValidWeather(weather.scriptId)
+end
+local function environmentVisible(player)
+    local globals = world.mwscript.getGlobalVariables()
+    if not player.cell.isExterior then
+        globals.ab_glowbugsvisible = 0 -- Dialogue filter, as in MWSE.
+        return true
+    end
+    local day, hour = globals.dayspassed, globals.gamehour
+    if dailyRolls[day] == nil then dailyRolls[day] = math.random(100) end
+    local visible = (hour >= 18 or hour <= 6)
+        and isCurrentWeatherValid(player.cell)
+        and dailyRolls[day] <= getSpawnChance()
+    globals.ab_glowbugsvisible = visible and 1 or 0
+    return visible
+end
 local function key(cell)
     return cell.isExterior and (cell.id .. ':' .. cell.gridX .. ':' .. cell.gridY) or cell.id
 end
@@ -43,7 +85,7 @@ local function sameRotation(a, b)
     return (a:apply(util.vector3(1,0,0)) - b:apply(util.vector3(1,0,0))):length() < 0.00001
         and (a:apply(util.vector3(0,1,0)) - b:apply(util.vector3(0,1,0))):length() < 0.00001
 end
-local function maintain(source, player)
+local function maintain(source, player, environment)
     local record = particleRecord(source)
     local pair = pairsBySource[source.id]
     if not record then
@@ -51,12 +93,20 @@ local function maintain(source, player)
         return
     end
     local policy = policies[source.id]
-    local visible = source.enabled
-    if policy then
-        visible = policy.visible
-        local near = (source.position - player.position):length() <= 2560 * source.scale + 512
-        source.enabled = visible and near
+    local state = visibility[source.id]
+    if not state then
+        state = {source = source, visible = source.enabled, applied = source.enabled}
+        visibility[source.id] = state
+    elseif not policy and source.enabled ~= state.applied then
+        -- Respect external enable/disable changes while retaining our own
+        -- logical state through daylight, bad weather and unsuccessful days.
+        state.visible = source.enabled
     end
+    if policy then state.visible = policy.visible end
+    local visible = state.visible and environment
+    local near = not policy or (source.position - player.position):length() <= 2560 * source.scale + 512
+    state.applied = visible and near
+    if source.enabled ~= state.applied then source.enabled = state.applied end
     local particle = pair and pair.particle
     if not particle or not particle:isValid() or particle.count == 0 then
         if not visible then return end
@@ -90,6 +140,7 @@ local function onUpdate(dt)
     timer = 0
     local player = world.players[1]
     if not player or not player.cell then return end
+    local environment = environmentVisible(player)
     local nextCells = {}
     if player.cell.isExterior then
         local x,y = math.floor(player.position.x/8192), math.floor(player.position.y/8192)
@@ -105,10 +156,11 @@ local function onUpdate(dt)
                 local pair = pairsBySource[id]
                 if pair then retire(pair.particle) end
                 pairsBySource[id], policies[id], activeSources[id], missing[id] = nil,nil,nil,nil
+                visibility[id] = nil
             else missing[id] = true end
         elseif source.cell and activeCells[key(source.cell)] then
             missing[id] = nil
-            maintain(source,player)
+            maintain(source,player,environment)
         else
             local pair = pairsBySource[id]
             if pair and pair.particle:isValid() then pair.particle.enabled = false end
@@ -117,14 +169,21 @@ local function onUpdate(dt)
     end
 end
 local function saveState()
-    return {version = 2, pairsBySource = pairsBySource, policies = policies}
+    return {version = 3, pairsBySource = pairsBySource, policies = policies,
+        visibility = visibility, dailyRolls = dailyRolls}
 end
 local function loadState(data)
     pairsBySource, policies, retired = {}, {}, {}
+    visibility, dailyRolls = {}, {}
     activeCells, activeSources, missing, timer = {}, {}, {}, 0
-    if data and data.version == 2 then
+    if data and (data.version == 2 or data.version == 3) then
         pairsBySource, policies = data.pairsBySource or {}, data.policies or {}
         for _, pair in pairs(pairsBySource) do activeSources[pair.source.id] = pair.source end
+        if data.version == 3 then
+            visibility, dailyRolls = data.visibility or {}, data.dailyRolls or {}
+            for id, state in pairs(visibility) do activeSources[id] = state.source end
+        end
+        for id, policy in pairs(policies) do activeSources[id] = policy.source end
     elseif data then
         for _, pair in pairs(data.pairsBySource or {}) do
             if pair.detail then retired[#retired+1] = pair.detail end
@@ -134,14 +193,18 @@ end
 return {
     interfaceName = 'OAABGlowbugs',
     interface = {
-        version = 2,
+        version = 3,
         _saveState = saveState,
         _loadState = loadState,
+        getSpawnChance = getSpawnChance,
+        setSpawnChance = setSpawnChance,
+        isValidWeather = isValidWeather,
+        isCurrentWeatherValid = isCurrentWeatherValid,
         getParticles = function(source)
             local pair = pairsBySource[source.id]
             return pair and pair.particle
         end,
-        -- Opt in and supply logical visibility; distance is composed here.
+        -- Supply logical visibility; environment and distance are composed here.
         -- While registered, callers must use this API instead of enabled.
         setVisible = function(source, visible)
             if not source:isValid() or not particleRecord(source) then return false end
@@ -152,9 +215,18 @@ return {
         end,
         releaseVisibility = function(source)
             local policy = policies[source.id]
-            if policy and source:isValid() and source.count > 0 then source.enabled = policy.visible end
+            if policy and source:isValid() and source.count > 0 then
+                local state = visibility[source.id]
+                if state then state.visible = policy.visible
+                else visibility[source.id] = {source = source, visible = policy.visible, applied = source.enabled} end
+                -- The next update removes LOD but still applies the environment.
+                track(source)
+            end
             policies[source.id] = nil
         end,
+    },
+    eventHandlers = {
+        OAABGlowbugs_SetSpawnChance = function(data) setSpawnChance(data.chance) end,
     },
     engineHandlers = {onObjectActive = onObjectActive, onUpdate = onUpdate, onSave = saveState, onLoad = loadState},
 }
