@@ -8,6 +8,17 @@ on:
         description: "Published GitHub release tag (for example, 2.7.1)"
         required: true
         type: string
+      upload_target:
+        description: Archives to upload (all includes developer tools, both selects main and HD)
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - both
+          - main
+          - hd
+          - dev
       archive_existing_version:
         description: Archive the previous Nexus file version
         required: false
@@ -17,7 +28,7 @@ on:
 permissions:
   contents: read
 
-# All versions update the same Nexus file; let an active upload finish.
+# Serialize uploads across all targets and versions.
 concurrency:
   group: nexus-upload
   cancel-in-progress: false
@@ -28,10 +39,14 @@ jobs:
     timeout-minutes: 45
     steps:
       - name: Validate release tag and Nexus configuration
+        id: selection
         env:
           RELEASE_TAG: ${{ inputs.release_tag }}
+          UPLOAD_TARGET: ${{ inputs.upload_target }}
           NEXUSMODS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
           NEXUSMODS_FILE_ID: ${{ vars.NEXUSMODS_FILE_ID }}
+          NEXUSMODS_HD_FILE_ID: ${{ vars.NEXUSMODS_HD_FILE_ID }}
+          NEXUSMODS_DEV_FILE_ID: ${{ vars.NEXUSMODS_DEV_FILE_ID }}
         shell: bash
         run: |
           set -euo pipefail
@@ -39,34 +54,94 @@ jobs:
             echo "::error::Release tag must use the existing X.Y.Z format, for example 2.7.1."
             exit 1
           fi
-          if [[ -z "$NEXUSMODS_API_KEY" ]]; then
+          case "$UPLOAD_TARGET" in
+            all)
+              targets=(main hd dev)
+              file_id_vars=(NEXUSMODS_FILE_ID NEXUSMODS_HD_FILE_ID NEXUSMODS_DEV_FILE_ID)
+              ;;
+            both)
+              targets=(main hd)
+              file_id_vars=(NEXUSMODS_FILE_ID NEXUSMODS_HD_FILE_ID)
+              ;;
+            main) targets=(main); file_id_vars=(NEXUSMODS_FILE_ID) ;;
+            hd) targets=(hd); file_id_vars=(NEXUSMODS_HD_FILE_ID) ;;
+            dev) targets=(dev); file_id_vars=(NEXUSMODS_DEV_FILE_ID) ;;
+            *)
+              echo "::error::Upload target must be all, both, main, hd, or dev."
+              exit 1
+              ;;
+          esac
+          if [[ ! "$NEXUSMODS_API_KEY" =~ [^[:space:]] ]]; then
             echo "::error::Set the NEXUSMODS_API_KEY repository secret before uploading."
             exit 1
           fi
-          if [[ -z "$NEXUSMODS_FILE_ID" ]]; then
-            echo "::error::Set the NEXUSMODS_FILE_ID repository variable to the existing OAAB_Data main file ID."
-            exit 1
-          fi
+          checked_vars=()
+          for variable in "${file_id_vars[@]}"; do
+            file_id="${!variable}"
+            if [[ -z "$file_id" || "$file_id" =~ [[:space:]] ]]; then
+              echo "::error::Set the $variable repository variable to the persistent file ID from Nexus API Info."
+              exit 1
+            fi
+            for checked in "${checked_vars[@]}"; do
+              if [[ "$file_id" == "${!checked}" ]]; then
+                echo "::error::$checked and $variable must identify different Nexus files."
+                exit 1
+              fi
+            done
+            checked_vars+=("$variable")
+          done
+          printf '%s=true\n' "${targets[@]}" >> "$GITHUB_OUTPUT"
 
-      - name: Download and check the published release archive
+      - name: Download and check the selected release archives
+        id: archives
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.release_tag }}
+          MAIN_SELECTED: ${{ steps.selection.outputs.main }}
+          HD_SELECTED: ${{ steps.selection.outputs.hd }}
+          DEV_SELECTED: ${{ steps.selection.outputs.dev }}
         shell: bash
         run: |
           set -euo pipefail
-          unpublished=$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
-            --json isDraft,isPrerelease --jq '.isDraft or .isPrerelease')
-          if [[ "$unpublished" != "false" ]]; then
-            echo "::error::Select a published, non-prerelease GitHub release."
+          if ! unpublished=$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
+            --json isDraft,isPrerelease --jq '.isDraft or .isPrerelease'); then
+            echo "::error::Could not find or read GitHub release $RELEASE_TAG. Check that the tag has a published release."
             exit 1
           fi
-          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern 'OAAB_Data.7z'
-          test -s OAAB_Data.7z
-          7z t OAAB_Data.7z
+          if [[ "$unpublished" != "false" ]]; then
+            echo "::error::GitHub release $RELEASE_TAG must be published and cannot be a draft or prerelease."
+            exit 1
+          fi
 
-      - name: Upload to Nexus Mods
-        id: nexus
+          download_and_test() {
+            local archive="$1"
+            if ! gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern "$archive"; then
+              echo "::error::Could not download $archive from GitHub release $RELEASE_TAG. Check that the archive is attached to the release."
+              exit 1
+            fi
+            if [[ ! -f "$archive" || ! -s "$archive" ]]; then
+              echo "::error::$archive is missing or empty after downloading release $RELEASE_TAG."
+              exit 1
+            fi
+            if ! 7z t "$archive"; then
+              echo "::error::$archive from release $RELEASE_TAG failed the 7-Zip integrity check."
+              exit 1
+            fi
+          }
+
+          if [[ "$MAIN_SELECTED" == true ]]; then
+            download_and_test OAAB_Data.7z
+          fi
+          if [[ "$HD_SELECTED" == true ]]; then
+            download_and_test OAAB_Data-HD.7z
+          fi
+          if [[ "$DEV_SELECTED" == true ]]; then
+            download_and_test OAAB_Data-Developer-Tools.7z
+          fi
+
+      - name: Upload OAAB_Data to Nexus Mods
+        id: nexus_main
+        if: steps.selection.outputs.main == 'true'
         uses: Nexus-Mods/upload-action@c96019556046053aa26044b44396cd38929daf23 # v1.0.0-beta.10
         with:
           api_key: ${{ secrets.NEXUSMODS_API_KEY }}
@@ -78,14 +153,84 @@ jobs:
           archive_existing_version: ${{ inputs.archive_existing_version }}
           update_mod_version: 'true'
 
-      - name: Record the Nexus upload
+      - name: Upload OAAB_Data (HD) to Nexus Mods
+        id: nexus_hd
+        # Let each selected upload run independently once validation passes.
+        if: ${{ !cancelled() && steps.archives.outcome == 'success' && steps.selection.outputs.hd == 'true' }}
+        uses: Nexus-Mods/upload-action@c96019556046053aa26044b44396cd38929daf23 # v1.0.0-beta.10
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ vars.NEXUSMODS_HD_FILE_ID }}
+          filename: OAAB_Data-HD.7z
+          version: ${{ inputs.release_tag }}
+          display_name: OAAB_Data (HD)
+          category: optional
+          archive_existing_version: ${{ inputs.archive_existing_version }}
+          update_mod_version: 'false'
+
+      - name: Upload OAAB_Data - Developer Tools to Nexus Mods
+        id: nexus_dev
+        if: ${{ !cancelled() && steps.archives.outcome == 'success' && steps.selection.outputs.dev == 'true' }}
+        uses: Nexus-Mods/upload-action@c96019556046053aa26044b44396cd38929daf23 # v1.0.0-beta.10
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ vars.NEXUSMODS_DEV_FILE_ID }}
+          filename: OAAB_Data-Developer-Tools.7z
+          version: ${{ inputs.release_tag }}
+          display_name: OAAB_Data - Developer Tools
+          category: miscellaneous
+          archive_existing_version: ${{ inputs.archive_existing_version }}
+          update_mod_version: 'false'
+
+      - name: Record the Nexus uploads
+        if: ${{ always() }}
         env:
           RELEASE_TAG: ${{ inputs.release_tag }}
-          NEXUS_VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+          UPLOAD_TARGET: ${{ inputs.upload_target }}
+          ARCHIVES_OUTCOME: ${{ steps.archives.outcome }}
+          MAIN_OUTCOME: ${{ steps.nexus_main.outcome }}
+          MAIN_VERSION_ID: ${{ steps.nexus_main.outputs.version_id }}
+          HD_OUTCOME: ${{ steps.nexus_hd.outcome }}
+          HD_VERSION_ID: ${{ steps.nexus_hd.outputs.version_id }}
+          DEV_OUTCOME: ${{ steps.nexus_dev.outcome }}
+          DEV_VERSION_ID: ${{ steps.nexus_dev.outputs.version_id }}
         shell: bash
         run: |
+          report_upload() {
+            local target="$1" archive="$2" outcome="$3" version_id="$4" status
+            if [[ "$UPLOAD_TARGET" != all && "$UPLOAD_TARGET" != "$target" && ( "$UPLOAD_TARGET" != both || "$target" == dev ) ]]; then
+              status='Skipped (outside selected target)'
+            else
+              case "$outcome" in
+                success) status='Uploaded' ;;
+                failure)
+                  status='Failed'
+                  echo "::error::Nexus upload failed for $archive. See its upload step for details." >&2
+                  ;;
+                cancelled) status='Cancelled' ;;
+                *)
+                  status='Skipped'
+                  if [[ "$ARCHIVES_OUTCOME" != success ]]; then
+                    status='Skipped (prerequisite validation did not finish successfully)'
+                  fi
+                  ;;
+              esac
+            fi
+            printf '| `%s` | %s | %s |\n' "$archive" "$status" "${version_id:--}"
+          }
+
+          if [[ ! "$RELEASE_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            RELEASE_TAG='Invalid (expected X.Y.Z)'
+          fi
+          case "$UPLOAD_TARGET" in
+            all|both|main|hd|dev) ;;
+            *) UPLOAD_TARGET='Invalid' ;;
+          esac
           {
-            echo "Uploaded OAAB_Data $RELEASE_TAG to Nexus Mods."
-            echo
-            echo "Nexus file version ID: $NEXUS_VERSION_ID"
+            printf '## Nexus Mods uploads\n\n- Release version: `%s`\n- Upload target: `%s`\n\n' "$RELEASE_TAG" "$UPLOAD_TARGET"
+            echo '| Archive | Status | Nexus file version ID |'
+            echo '| --- | --- | --- |'
+            report_upload main OAAB_Data.7z "$MAIN_OUTCOME" "$MAIN_VERSION_ID"
+            report_upload hd OAAB_Data-HD.7z "$HD_OUTCOME" "$HD_VERSION_ID"
+            report_upload dev OAAB_Data-Developer-Tools.7z "$DEV_OUTCOME" "$DEV_VERSION_ID"
           } >> "$GITHUB_STEP_SUMMARY"

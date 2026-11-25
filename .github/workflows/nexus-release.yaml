@@ -6,9 +6,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       - name: set modified times
         uses: greatness7/action-set-mtime@v1
@@ -20,9 +22,38 @@ jobs:
         shell: bash
         run: 7z a OAAB_Data.7z . '-xr!*.git*' '-x!## *' '-xr!workflow' '-xr!Developer Tools' '-xr!OAAB_Data-HD'
 
-      - name: upload release archive
-        uses: softprops/action-gh-release@v1
+      - name: create HD texture archive
+        shell: bash
+        working-directory: OAAB_Data-HD
+        run: 7z a ../OAAB_Data-HD.7z .
+
+      - name: create developer tools archive
+        shell: bash
+        working-directory: Developer Tools
+        run: |
+          files=('OAAB Developer Tools ReadMe.md' 'OAAB_Cells.ESP')
+          for file in "${files[@]}"; do
+            if [[ ! -f "$file" || ! -s "$file" ]]; then
+              echo "::error::Developer tools file $file is missing or empty."
+              exit 1
+            fi
+          done
+          7z a ../OAAB_Data-Developer-Tools.7z "${files[@]}"
+
+      - name: test release archives
+        shell: bash
+        run: |
+          7z t OAAB_Data.7z
+          7z t OAAB_Data-HD.7z
+          7z t OAAB_Data-Developer-Tools.7z
+
+      - name: upload release archives
+        uses: softprops/action-gh-release@v3
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
-          files: OAAB_Data.7z
+          fail_on_unmatched_files: true
+          files: |
+            OAAB_Data.7z
+            OAAB_Data-HD.7z
+            OAAB_Data-Developer-Tools.7z

@@ -1,4 +1,8 @@
 # Changelog
+## Version 2.7.6
+- Replaced painting textures
+- Named paintings
+- Fixed c_shirt_com02 skinning and geometry
 ## Version 2.7.5
 - Marshmerrow Bundle Improvements (Remiros)
 - Small Emperor Parasol Fixes (Remiros)
