@@ -46,6 +46,11 @@ its root. Update the Nexus changelog separately.
 
 ## Failures and retries
 
+If GitHub release packaging failed and the fix landed after the release tag was
+pushed, open [publish-release-archive](https://github.com/OAAB-Modding/Data/actions/workflows/nexus-release.yaml),
+choose **Run workflow** on `master`, and enter the existing tag. The new run
+builds from that tag using the workflow on `master`.
+
 The workflow accepts published, non-prerelease tags. Missing configuration, a
 missing release asset, or a damaged archive stops the run before any Nexus upload.
 
